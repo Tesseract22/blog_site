@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+    Cat's Blog
+{% endblock title %}
+
+
+{% block content %}
+<div class="container-fluid">
+    {% for article in articles %}
+    <div class="row mt-5">
+        <div class="w-50 mx-auto">
+
+            <div class="col-4 mb-4">
+
+                <div class="card h-100">
+
+                    <h4 class="card-header">{{ article.title }}</h4>
+
+                    <div class="card-body">
+                        <p class="card-text">{{ article.body|slice:'100' }}...</p>
+                    </div>
+    
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Read full article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
