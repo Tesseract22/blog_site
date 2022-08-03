@@ -1,20 +1,30 @@
 
 {% load static %}
-
+{% load polls %}
 <!DOCTYPE html>
 
 <html lang="zh-cn">
 
 <head>
-    <script src="{% static 'jquery/jquery-3.6.0.js' %}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1-lts/dist/umd/popper.min.js"></script>
-    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-
-    <meta charset="utf-8">
-
     <title>{% block title %}{% endblock %}</title>
 
+    <script src="{% static 'jquery/jquery-3.6.0.js' %}"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1-lts/dist/umd/popper.min.js"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'MDB5/js/mdb.min.js' %}"></script>
+    <meta charset="utf-8">
+
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'MDB5/css/mdb.min.css' %}"> {% endcomment %}
+
+
+    <script>
+    $( function() {
+      $( "#sortable" ).sortable();
+    } );
+    </script>
+    {% block head %}{% endblock head %}
 </head>
 
 <body style="background-color:rgb(64,64,64);">
@@ -31,6 +41,7 @@
             <p style="color:rgb(10,10,25);">color</p>
         </div>
     </div>
+
     {% block content %}{% endblock content %}
     {% include 'footer.html' %} 
 </body>

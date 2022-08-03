@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'article',
     "calculator",
+    "templatetags",
     
 ]
 
@@ -66,6 +67,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            "libraries":{                          # 添加这边三行配置
+                'polls':'templatetags.polls'   # 添加这边三行配置        
+            }
         },
     },
 ]

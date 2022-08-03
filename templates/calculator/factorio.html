@@ -1,0 +1,21 @@
+{% extends "/calculator/calculator_main.html" %}
+{% load static %}
+
+
+{% block factorio %}
+<form method="post" action="/factorio/add/">
+    {% csrf_token %}
+    <select class="mdb-select md-form" searchable="Search here..">
+        <option value="" disabled selected>Choose Item</option>
+        <option value="1">USA</option>
+        <option value="2">Germany</option>
+        <option value="3">France</option>
+        <option value="3">Poland</option>
+        <option value="3">Japan</option>
+    </select>
+    <button type="submit" class="btn btn-success">Add Item</button>
+</form>
+
+
+
+{% endblock factorio %}

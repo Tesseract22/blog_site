@@ -1,0 +1,1828 @@
+{
+    "Alternate: Biocoal":[
+       {
+          "Biomass":5.0
+       },
+       {
+          "Coal":6.0
+       }
+    ],
+    "Alternate: Charcoal":[
+       {
+          "Wood":1.0
+       },
+       {
+          "Coal":10.0
+       }
+    ],
+    "Iron Ingot":[
+       {
+          "Iron Ore":1.0
+       },
+       {
+          "Iron Ingot":1.0
+       }
+    ],
+    "Alternate: Iron Alloy Ingot":[
+       {
+          "Iron Ore":2.0,
+          "Copper Ore":2.0
+       },
+       {
+          "Iron Ingot":5.0
+       }
+    ],
+    "Alternate: Pure Iron Ingot":[
+       {
+          "Iron Ore":7.0,
+          "Water":4.0
+       },
+       {
+          "Iron Ingot":13.0
+       }
+    ],
+    "Copper Ingot":[
+       {
+          "Copper Ore":1.0
+       },
+       {
+          "Copper Ingot":1.0
+       }
+    ],
+    "Alternate: Copper Alloy Ingot":[
+       {
+          "Copper Ore":10.0,
+          "Iron Ore":5.0
+       },
+       {
+          "Copper Ingot":20.0
+       }
+    ],
+    "Alternate: Pure Copper Ingot":[
+       {
+          "Copper Ore":6.0,
+          "Water":4.0
+       },
+       {
+          "Copper Ingot":15.0
+       }
+    ],
+    "Caterium Ingot":[
+       {
+          "Caterium Ore":3.0
+       },
+       {
+          "Caterium Ingot":1.0
+       }
+    ],
+    "Alternate: Pure Caterium Ingot":[
+       {
+          "Caterium Ore":2.0,
+          "Water":2.0
+       },
+       {
+          "Caterium Ingot":1.0
+       }
+    ],
+    "Steel Ingot":[
+       {
+          "Iron Ore":3.0,
+          "Coal":3.0
+       },
+       {
+          "Steel Ingot":3.0
+       }
+    ],
+    "Alternate: Coke Steel Ingot":[
+       {
+          "Iron Ore":15.0,
+          "Petroleum Coke":15.0
+       },
+       {
+          "Steel Ingot":20.0
+       }
+    ],
+    "Alternate: Compacted Steel Ingot":[
+       {
+          "Iron Ore":6.0,
+          "Compacted Coal":3.0
+       },
+       {
+          "Steel Ingot":10.0
+       }
+    ],
+    "Alternate: Solid Steel Ingot":[
+       {
+          "Iron Ingot":2.0,
+          "Coal":2.0
+       },
+       {
+          "Steel Ingot":3.0
+       }
+    ],
+    "Aluminum Ingot":[
+       {
+          "Aluminum Scrap":6.0,
+          "Silica":5.0
+       },
+       {
+          "Aluminum Ingot":4.0
+       }
+    ],
+    "Alternate: Pure Aluminum Ingot":[
+       {
+          "Aluminum Scrap":2.0
+       },
+       {
+          "Aluminum Ingot":1.0
+       }
+    ],
+    "Concrete":[
+       {
+          "Limestone":3.0
+       },
+       {
+          "Concrete":1.0
+       }
+    ],
+    "Alternate: Fine Concrete":[
+       {
+          "Silica":3.0,
+          "Limestone":12.0
+       },
+       {
+          "Concrete":10.0
+       }
+    ],
+    "Alternate: Rubber Concrete":[
+       {
+          "Limestone":10.0,
+          "Rubber":2.0
+       },
+       {
+          "Concrete":9.0
+       }
+    ],
+    "Alternate: Wet Concrete":[
+       {
+          "Limestone":6.0,
+          "Water":5.0
+       },
+       {
+          "Concrete":4.0
+       }
+    ],
+    "Quartz Crystal":[
+       {
+          "Raw Quartz":5.0
+       },
+       {
+          "Quartz Crystal":3.0
+       }
+    ],
+    "Alternate: Pure Quartz Crystal":[
+       {
+          "Raw Quartz":9.0,
+          "Water":5.0
+       },
+       {
+          "Quartz Crystal":7.0
+       }
+    ],
+    "Alumina Solution":[
+       {
+          "Bauxite":12.0,
+          "Water":18.0
+       },
+       {
+          "Alumina Solution":12.0,
+          "Silica":5.0
+       }
+    ],
+    "Silica":[
+       {
+          "Raw Quartz":3.0
+       },
+       {
+          "Silica":5.0
+       }
+    ],
+    "Alternate: Cheap Silica":[
+       {
+          "Raw Quartz":3.0,
+          "Limestone":5.0
+       },
+       {
+          "Silica":7.0
+       }
+    ],
+    "Copper Powder":[
+       {
+          "Copper Ingot":30.0
+       },
+       {
+          "Copper Powder":5.0
+       }
+    ],
+    "Fuel":[
+       {
+          "Crude Oil":6.0
+       },
+       {
+          "Fuel":4.0,
+          "Polymer Resin":3.0
+       }
+    ],
+    "Alternate: Heavy Oil Residue":[
+       {
+          "Crude Oil":3.0
+       },
+       {
+          "Heavy Oil Residue":4.0,
+          "Polymer Resin":2.0
+       }
+    ],
+    "Alternate: Polymer Resin":[
+       {
+          "Crude Oil":6.0
+       },
+       {
+          "Polymer Resin":13.0,
+          "Heavy Oil Residue":2.0
+       }
+    ],
+    "Petroleum Coke":[
+       {
+          "Heavy Oil Residue":4.0
+       },
+       {
+          "Petroleum Coke":12.0
+       }
+    ],
+    "Aluminum Scrap":[
+       {
+          "Alumina Solution":4.0,
+          "Coal":2.0
+       },
+       {
+          "Aluminum Scrap":6.0,
+          "Water":2.0
+       }
+    ],
+    "Alternate: Electrode - Aluminum Scrap":[
+       {
+          "Alumina Solution":12.0,
+          "Petroleum Coke":4.0
+       },
+       {
+          "Aluminum Scrap":20.0,
+          "Water":7.0
+       }
+    ],
+    "Alternate: Instant Scrap":[
+       {
+          "Bauxite":15.0,
+          "Coal":10.0,
+          "Sulfuric Acid":5.0,
+          "Water":6.0
+       },
+       {
+          "Aluminum Scrap":30.0,
+          "Water":5.0
+       }
+    ],
+    "Battery":[
+       {
+          "Sulfuric Acid":2.5,
+          "Alumina Solution":2.0,
+          "Aluminum Casing":1.0
+       },
+       {
+          "Battery":1.0,
+          "Water":1.5
+       }
+    ],
+    "Non-fissile Uranium":[
+       {
+          "Uranium Waste":15.0,
+          "Silica":10.0,
+          "Nitric Acid":6.0,
+          "Sulfuric Acid":6.0
+       },
+       {
+          "Non-fissile Uranium":20.0,
+          "Water":6.0
+       }
+    ],
+    "Unpackage Water":[
+       {
+          "Packaged Water":2.0
+       },
+       {
+          "Water":2.0,
+          "Empty Canister":2.0
+       }
+    ],
+    "Alternate: Fertile Uranium":[
+       {
+          "Uranium":5.0,
+          "Uranium Waste":5.0,
+          "Nitric Acid":3.0,
+          "Sulfuric Acid":5.0
+       },
+       {
+          "Non-fissile Uranium":20.0,
+          "Water":8.0
+       }
+    ],
+    "Unpackage Oil":[
+       {
+          "Packaged Oil":2.0
+       },
+       {
+          "Crude Oil":2.0,
+          "Empty Canister":2.0
+       }
+    ],
+    "Plastic":[
+       {
+          "Crude Oil":3.0
+       },
+       {
+          "Plastic":2.0,
+          "Heavy Oil Residue":1.0
+       }
+    ],
+    "Rubber":[
+       {
+          "Crude Oil":3.0
+       },
+       {
+          "Rubber":2.0,
+          "Heavy Oil Residue":2.0
+       }
+    ],
+    "Unpackage Heavy Oil Residue":[
+       {
+          "Packaged Heavy Oil Residue":2.0
+       },
+       {
+          "Heavy Oil Residue":2.0,
+          "Empty Canister":2.0
+       }
+    ],
+    "Residual Fuel":[
+       {
+          "Heavy Oil Residue":6.0
+       },
+       {
+          "Fuel":4.0
+       }
+    ],
+    "Unpackage Fuel":[
+       {
+          "Packaged Fuel":2.0
+       },
+       {
+          "Fuel":2.0,
+          "Empty Canister":2.0
+       }
+    ],
+    "Alternate: Diluted Fuel":[
+       {
+          "Heavy Oil Residue":5.0,
+          "Water":10.0
+       },
+       {
+          "Fuel":10.0
+       }
+    ],
+    "Liquid Biofuel":[
+       {
+          "Solid Biofuel":6.0,
+          "Water":3.0
+       },
+       {
+          "Liquid Biofuel":4.0
+       }
+    ],
+    "Unpackage Liquid Biofuel":[
+       {
+          "Packaged Liquid Biofuel":2.0
+       },
+       {
+          "Liquid Biofuel":2.0,
+          "Empty Canister":2.0
+       }
+    ],
+    "Unpackage Turbofuel":[
+       {
+          "Packaged Turbofuel":2.0
+       },
+       {
+          "Turbofuel":2.0,
+          "Empty Canister":2.0
+       }
+    ],
+    "Alternate: Turbo Blend Fuel":[
+       {
+          "Fuel":2.0,
+          "Heavy Oil Residue":4.0,
+          "Sulfur":3.0,
+          "Petroleum Coke":3.0
+       },
+       {
+          "Turbofuel":6.0
+       }
+    ],
+    "Alternate: Turbo Heavy Fuel":[
+       {
+          "Heavy Oil Residue":5.0,
+          "Compacted Coal":4.0
+       },
+       {
+          "Turbofuel":4.0
+       }
+    ],
+    "Turbofuel":[
+       {
+          "Fuel":6.0,
+          "Compacted Coal":4.0
+       },
+       {
+          "Turbofuel":5.0
+       }
+    ],
+    "Unpackage Alumina Solution":[
+       {
+          "Packaged Alumina Solution":2.0
+       },
+       {
+          "Alumina Solution":2.0,
+          "Empty Canister":2.0
+       }
+    ],
+    "Alternate: Sloppy Alumina":[
+       {
+          "Bauxite":10.0,
+          "Water":10.0
+       },
+       {
+          "Alumina Solution":12.0
+       }
+    ],
+    "Encased Uranium Cell":[
+       {
+          "Uranium":10.0,
+          "Concrete":3.0,
+          "Sulfuric Acid":8.0
+       },
+       {
+          "Encased Uranium Cell":5.0,
+          "Sulfuric Acid":2.0
+       }
+    ],
+    "Sulfuric Acid":[
+       {
+          "Sulfur":5.0,
+          "Water":5.0
+       },
+       {
+          "Sulfuric Acid":5.0
+       }
+    ],
+    "Unpackage Sulfuric Acid":[
+       {
+          "Packaged Sulfuric Acid":1.0
+       },
+       {
+          "Sulfuric Acid":1.0,
+          "Empty Canister":1.0
+       }
+    ],
+    "Nitric Acid":[
+       {
+          "Nitrogen Gas":12.0,
+          "Water":3.0,
+          "Iron Plate":1.0
+       },
+       {
+          "Nitric Acid":3.0
+       }
+    ],
+    "Unpackage Nitric Acid":[
+       {
+          "Packaged Nitric Acid":1.0
+       },
+       {
+          "Nitric Acid":1.0,
+          "Empty Fluid Tank":1.0
+       }
+    ],
+    "Nitrogen Gas":[
+       {
+          "Nitrogen Gas":0.0
+       },
+       {
+          "Nitrogen Gas":0.0
+       }
+    ],
+    "Unpackage Nitrogen Gas":[
+       {
+          "Packaged Nitrogen Gas":1.0
+       },
+       {
+          "Nitrogen Gas":4.0,
+          "Empty Fluid Tank":1.0
+       }
+    ],
+    "Iron Rod":[
+       {
+          "Iron Ingot":1.0
+       },
+       {
+          "Iron Rod":1.0
+       }
+    ],
+    "Alternate: Steel Rod":[
+       {
+          "Steel Ingot":1.0
+       },
+       {
+          "Iron Rod":4.0
+       }
+    ],
+    "Screw":[
+       {
+          "Iron Rod":1.0
+       },
+       {
+          "Screw":4.0
+       }
+    ],
+    "Alternate: Cast Screw":[
+       {
+          "Iron Ingot":5.0
+       },
+       {
+          "Screw":20.0
+       }
+    ],
+    "Alternate: Steel Screw":[
+       {
+          "Steel Beam":1.0
+       },
+       {
+          "Screw":52.0
+       }
+    ],
+    "Iron Plate":[
+       {
+          "Iron Ingot":3.0
+       },
+       {
+          "Iron Plate":2.0
+       }
+    ],
+    "Alternate: Coated Iron Plate":[
+       {
+          "Iron Ingot":10.0,
+          "Plastic":2.0
+       },
+       {
+          "Iron Plate":15.0
+       }
+    ],
+    "Alternate: Steel Coated Plate":[
+       {
+          "Steel Ingot":3.0,
+          "Plastic":2.0
+       },
+       {
+          "Iron Plate":18.0
+       }
+    ],
+    "Reinforced Iron Plate":[
+       {
+          "Iron Plate":6.0,
+          "Screw":12.0
+       },
+       {
+          "Reinforced Iron Plate":1.0
+       }
+    ],
+    "Alternate: Adhered Iron Plate":[
+       {
+          "Iron Plate":3.0,
+          "Rubber":1.0
+       },
+       {
+          "Reinforced Iron Plate":1.0
+       }
+    ],
+    "Alternate: Bolted Iron Plate":[
+       {
+          "Iron Plate":18.0,
+          "Screw":50.0
+       },
+       {
+          "Reinforced Iron Plate":3.0
+       }
+    ],
+    "Alternate: Stitched Iron Plate":[
+       {
+          "Iron Plate":10.0,
+          "Wire":20.0
+       },
+       {
+          "Reinforced Iron Plate":3.0
+       }
+    ],
+    "Copper Sheet":[
+       {
+          "Copper Ingot":2.0
+       },
+       {
+          "Copper Sheet":1.0
+       }
+    ],
+    "Alternate: Steamed Copper Sheet":[
+       {
+          "Copper Ingot":3.0,
+          "Water":3.0
+       },
+       {
+          "Copper Sheet":3.0
+       }
+    ],
+    "Alclad Aluminum Sheet":[
+       {
+          "Aluminum Ingot":3.0,
+          "Copper Ingot":1.0
+       },
+       {
+          "Alclad Aluminum Sheet":3.0
+       }
+    ],
+    "Aluminum Casing":[
+       {
+          "Aluminum Ingot":3.0
+       },
+       {
+          "Aluminum Casing":2.0
+       }
+    ],
+    "Alternate: Alclad Casing":[
+       {
+          "Aluminum Ingot":20.0,
+          "Copper Ingot":10.0
+       },
+       {
+          "Aluminum Casing":15.0
+       }
+    ],
+    "Steel Pipe":[
+       {
+          "Steel Ingot":3.0
+       },
+       {
+          "Steel Pipe":2.0
+       }
+    ],
+    "Steel Beam":[
+       {
+          "Steel Ingot":4.0
+       },
+       {
+          "Steel Beam":1.0
+       }
+    ],
+    "Encased Industrial Beam":[
+       {
+          "Steel Beam":4.0,
+          "Concrete":5.0
+       },
+       {
+          "Encased Industrial Beam":1.0
+       }
+    ],
+    "Alternate: Encased Industrial Pipe":[
+       {
+          "Steel Pipe":7.0,
+          "Concrete":5.0
+       },
+       {
+          "Encased Industrial Beam":1.0
+       }
+    ],
+    "Modular Frame":[
+       {
+          "Reinforced Iron Plate":3.0,
+          "Iron Rod":12.0
+       },
+       {
+          "Modular Frame":2.0
+       }
+    ],
+    "Alternate: Bolted Frame":[
+       {
+          "Reinforced Iron Plate":3.0,
+          "Screw":56.0
+       },
+       {
+          "Modular Frame":2.0
+       }
+    ],
+    "Alternate: Steeled Frame":[
+       {
+          "Reinforced Iron Plate":2.0,
+          "Steel Pipe":10.0
+       },
+       {
+          "Modular Frame":3.0
+       }
+    ],
+    "Heavy Modular Frame":[
+       {
+          "Modular Frame":5.0,
+          "Steel Pipe":15.0,
+          "Encased Industrial Beam":5.0,
+          "Screw":100.0
+       },
+       {
+          "Heavy Modular Frame":1.0
+       }
+    ],
+    "Alternate: Heavy Encased Frame":[
+       {
+          "Modular Frame":8.0,
+          "Encased Industrial Beam":10.0,
+          "Steel Pipe":36.0,
+          "Concrete":22.0
+       },
+       {
+          "Heavy Modular Frame":3.0
+       }
+    ],
+    "Alternate: Heavy Flexible Frame":[
+       {
+          "Modular Frame":5.0,
+          "Encased Industrial Beam":3.0,
+          "Rubber":20.0,
+          "Screw":104.0
+       },
+       {
+          "Heavy Modular Frame":1.0
+       }
+    ],
+    "Fused Modular Frame":[
+       {
+          "Heavy Modular Frame":1.0,
+          "Aluminum Casing":50.0,
+          "Nitrogen Gas":25.0
+       },
+       {
+          "Fused Modular Frame":1.0
+       }
+    ],
+    "Alternate: Heat-Fused Frame":[
+       {
+          "Heavy Modular Frame":1.0,
+          "Aluminum Ingot":50.0,
+          "Nitric Acid":8.0,
+          "Fuel":10.0
+       },
+       {
+          "Fused Modular Frame":1.0
+       }
+    ],
+    "Fabric":[
+       {
+          "Mycelia":1.0,
+          "Biomass":5.0
+       },
+       {
+          "Fabric":1.0
+       }
+    ],
+    "Alternate: Polyester Fabric":[
+       {
+          "Polymer Resin":16.0,
+          "Water":10.0
+       },
+       {
+          "Fabric":1.0
+       }
+    ],
+    "Residual Plastic":[
+       {
+          "Polymer Resin":6.0,
+          "Water":2.0
+       },
+       {
+          "Plastic":2.0
+       }
+    ],
+    "Alternate: Recycled Plastic":[
+       {
+          "Rubber":6.0,
+          "Fuel":6.0
+       },
+       {
+          "Plastic":12.0
+       }
+    ],
+    "Residual Rubber":[
+       {
+          "Polymer Resin":4.0,
+          "Water":4.0
+       },
+       {
+          "Rubber":2.0
+       }
+    ],
+    "Alternate: Recycled Rubber":[
+       {
+          "Plastic":6.0,
+          "Fuel":6.0
+       },
+       {
+          "Rubber":12.0
+       }
+    ],
+    "Rotor":[
+       {
+          "Iron Rod":5.0,
+          "Screw":25.0
+       },
+       {
+          "Rotor":1.0
+       }
+    ],
+    "Alternate: Copper Rotor":[
+       {
+          "Copper Sheet":6.0,
+          "Screw":52.0
+       },
+       {
+          "Rotor":3.0
+       }
+    ],
+    "Alternate: Steel Rotor":[
+       {
+          "Steel Pipe":2.0,
+          "Wire":6.0
+       },
+       {
+          "Rotor":1.0
+       }
+    ],
+    "Stator":[
+       {
+          "Steel Pipe":3.0,
+          "Wire":8.0
+       },
+       {
+          "Stator":1.0
+       }
+    ],
+    "Alternate: Quickwire Stator":[
+       {
+          "Steel Pipe":4.0,
+          "Quickwire":15.0
+       },
+       {
+          "Stator":2.0
+       }
+    ],
+    "Alternate: Classic Battery":[
+       {
+          "Sulfur":6.0,
+          "Alclad Aluminum Sheet":7.0,
+          "Plastic":8.0,
+          "Wire":12.0
+       },
+       {
+          "Battery":4.0
+       }
+    ],
+    "Motor":[
+       {
+          "Rotor":2.0,
+          "Stator":2.0
+       },
+       {
+          "Motor":1.0
+       }
+    ],
+    "Alternate: Electric Motor":[
+       {
+          "Electromagnetic Control Rod":1.0,
+          "Rotor":2.0
+       },
+       {
+          "Motor":2.0
+       }
+    ],
+    "Alternate: Rigour Motor":[
+       {
+          "Rotor":3.0,
+          "Stator":3.0,
+          "Crystal Oscillator":1.0
+       },
+       {
+          "Motor":6.0
+       }
+    ],
+    "Heat Sink":[
+       {
+          "Alclad Aluminum Sheet":5.0,
+          "Copper Sheet":3.0
+       },
+       {
+          "Heat Sink":1.0
+       }
+    ],
+    "Alternate: Heat Exchanger":[
+       {
+          "Aluminum Casing":3.0,
+          "Rubber":3.0
+       },
+       {
+          "Heat Sink":1.0
+       }
+    ],
+    "Cooling System":[
+       {
+          "Heat Sink":2.0,
+          "Rubber":2.0,
+          "Water":5.0,
+          "Nitrogen Gas":25.0
+       },
+       {
+          "Cooling System":1.0
+       }
+    ],
+    "Alternate: Cooling Device":[
+       {
+          "Heat Sink":5.0,
+          "Motor":1.0,
+          "Nitrogen Gas":24.0
+       },
+       {
+          "Cooling System":2.0
+       }
+    ],
+    "Turbo Motor":[
+       {
+          "Cooling System":4.0,
+          "Radio Control Unit":2.0,
+          "Motor":4.0,
+          "Rubber":24.0
+       },
+       {
+          "Turbo Motor":1.0
+       }
+    ],
+    "Alternate: Turbo Electric Motor":[
+       {
+          "Motor":7.0,
+          "Radio Control Unit":9.0,
+          "Electromagnetic Control Rod":5.0,
+          "Rotor":7.0
+       },
+       {
+          "Turbo Motor":3.0
+       }
+    ],
+    "Alternate: Turbo Pressure Motor":[
+       {
+          "Motor":4.0,
+          "Pressure Conversion Cube":1.0,
+          "Packaged Nitrogen Gas":24.0,
+          "Stator":8.0
+       },
+       {
+          "Turbo Motor":2.0
+       }
+    ],
+    "Wire":[
+       {
+          "Copper Ingot":1.0
+       },
+       {
+          "Wire":2.0
+       }
+    ],
+    "Alternate: Caterium Wire":[
+       {
+          "Caterium Ingot":1.0
+       },
+       {
+          "Wire":8.0
+       }
+    ],
+    "Alternate: Fused Wire":[
+       {
+          "Copper Ingot":4.0,
+          "Caterium Ingot":1.0
+       },
+       {
+          "Wire":30.0
+       }
+    ],
+    "Alternate: Iron Wire":[
+       {
+          "Iron Ingot":5.0
+       },
+       {
+          "Wire":9.0
+       }
+    ],
+    "Cable":[
+       {
+          "Wire":2.0
+       },
+       {
+          "Cable":1.0
+       }
+    ],
+    "Alternate: Coated Cable":[
+       {
+          "Wire":5.0,
+          "Heavy Oil Residue":2.0
+       },
+       {
+          "Cable":9.0
+       }
+    ],
+    "Alternate: Insulated Cable":[
+       {
+          "Wire":9.0,
+          "Rubber":6.0
+       },
+       {
+          "Cable":20.0
+       }
+    ],
+    "Alternate: Quickwire Cable":[
+       {
+          "Quickwire":3.0,
+          "Rubber":2.0
+       },
+       {
+          "Cable":11.0
+       }
+    ],
+    "Quickwire":[
+       {
+          "Caterium Ingot":1.0
+       },
+       {
+          "Quickwire":5.0
+       }
+    ],
+    "Alternate: Fused Quickwire":[
+       {
+          "Caterium Ingot":1.0,
+          "Copper Ingot":5.0
+       },
+       {
+          "Quickwire":12.0
+       }
+    ],
+    "Circuit Board":[
+       {
+          "Copper Sheet":2.0,
+          "Plastic":4.0
+       },
+       {
+          "Circuit Board":1.0
+       }
+    ],
+    "Alternate: Caterium Circuit Board":[
+       {
+          "Plastic":10.0,
+          "Quickwire":30.0
+       },
+       {
+          "Circuit Board":7.0
+       }
+    ],
+    "Alternate: Electrode Circuit Board":[
+       {
+          "Rubber":6.0,
+          "Petroleum Coke":9.0
+       },
+       {
+          "Circuit Board":1.0
+       }
+    ],
+    "Alternate: Silicon Circuit Board":[
+       {
+          "Copper Sheet":11.0,
+          "Silica":11.0
+       },
+       {
+          "Circuit Board":5.0
+       }
+    ],
+    "AI Limiter":[
+       {
+          "Copper Sheet":5.0,
+          "Quickwire":20.0
+       },
+       {
+          "AI Limiter":1.0
+       }
+    ],
+    "High-Speed Connector":[
+       {
+          "Quickwire":56.0,
+          "Cable":10.0,
+          "Circuit Board":1.0
+       },
+       {
+          "High-Speed Connector":1.0
+       }
+    ],
+    "Alternate: Silicon High-Speed Connector":[
+       {
+          "Quickwire":60.0,
+          "Silica":25.0,
+          "Circuit Board":2.0
+       },
+       {
+          "High-Speed Connector":2.0
+       }
+    ],
+    "Computer":[
+       {
+          "Circuit Board":10.0,
+          "Cable":9.0,
+          "Plastic":18.0,
+          "Screw":52.0
+       },
+       {
+          "Computer":1.0
+       }
+    ],
+    "Alternate: Caterium Computer":[
+       {
+          "Circuit Board":7.0,
+          "Quickwire":28.0,
+          "Rubber":12.0
+       },
+       {
+          "Computer":1.0
+       }
+    ],
+    "Alternate: Crystal Computer":[
+       {
+          "Circuit Board":8.0,
+          "Crystal Oscillator":3.0
+       },
+       {
+          "Computer":3.0
+       }
+    ],
+    "Supercomputer":[
+       {
+          "Computer":2.0,
+          "AI Limiter":2.0,
+          "High-Speed Connector":3.0,
+          "Plastic":28.0
+       },
+       {
+          "Supercomputer":1.0
+       }
+    ],
+    "Alternate: OC Supercomputer":[
+       {
+          "Radio Control Unit":3.0,
+          "Cooling System":3.0
+       },
+       {
+          "Supercomputer":1.0
+       }
+    ],
+    "Alternate: Super-State Computer":[
+       {
+          "Computer":3.0,
+          "Electromagnetic Control Rod":2.0,
+          "Battery":20.0,
+          "Wire":45.0
+       },
+       {
+          "Supercomputer":2.0
+       }
+    ],
+    "Radio Control Unit":[
+       {
+          "Aluminum Casing":32.0,
+          "Crystal Oscillator":1.0,
+          "Computer":1.0
+       },
+       {
+          "Radio Control Unit":2.0
+       }
+    ],
+    "Alternate: Radio Connection Unit":[
+       {
+          "Heat Sink":4.0,
+          "High-Speed Connector":2.0,
+          "Quartz Crystal":12.0
+       },
+       {
+          "Radio Control Unit":1.0
+       }
+    ],
+    "Alternate: Radio Control System":[
+       {
+          "Crystal Oscillator":1.0,
+          "Circuit Board":10.0,
+          "Aluminum Casing":60.0,
+          "Rubber":30.0
+       },
+       {
+          "Radio Control Unit":3.0
+       }
+    ],
+    "Crystal Oscillator":[
+       {
+          "Quartz Crystal":36.0,
+          "Cable":28.0,
+          "Reinforced Iron Plate":5.0
+       },
+       {
+          "Crystal Oscillator":2.0
+       }
+    ],
+    "Alternate: Insulated Crystal Oscillator":[
+       {
+          "Quartz Crystal":10.0,
+          "Rubber":7.0,
+          "AI Limiter":1.0
+       },
+       {
+          "Crystal Oscillator":1.0
+       }
+    ],
+    "Empty Canister":[
+       {
+          "Plastic":2.0
+       },
+       {
+          "Empty Canister":4.0
+       }
+    ],
+    "Alternate: Coated Iron Canister":[
+       {
+          "Iron Plate":2.0,
+          "Copper Sheet":1.0
+       },
+       {
+          "Empty Canister":4.0
+       }
+    ],
+    "Alternate: Steel Canister":[
+       {
+          "Steel Ingot":3.0
+       },
+       {
+          "Empty Canister":2.0
+       }
+    ],
+    "Empty Fluid Tank":[
+       {
+          "Aluminum Ingot":1.0
+       },
+       {
+          "Empty Fluid Tank":1.0
+       }
+    ],
+    "Pressure Conversion Cube":[
+       {
+          "Fused Modular Frame":1.0,
+          "Radio Control Unit":2.0
+       },
+       {
+          "Pressure Conversion Cube":1.0
+       }
+    ],
+    "Packaged Water":[
+       {
+          "Water":2.0,
+          "Empty Canister":2.0
+       },
+       {
+          "Packaged Water":2.0
+       }
+    ],
+    "Packaged Alumina Solution":[
+       {
+          "Alumina Solution":2.0,
+          "Empty Canister":2.0
+       },
+       {
+          "Packaged Alumina Solution":2.0
+       }
+    ],
+    "Packaged Sulfuric Acid":[
+       {
+          "Sulfuric Acid":2.0,
+          "Empty Canister":2.0
+       },
+       {
+          "Packaged Sulfuric Acid":2.0
+       }
+    ],
+    "Packaged Nitric Acid":[
+       {
+          "Nitric Acid":1.0,
+          "Empty Fluid Tank":1.0
+       },
+       {
+          "Packaged Nitric Acid":1.0
+       }
+    ],
+    "Packaged Nitrogen Gas":[
+       {
+          "Nitrogen Gas":4.0,
+          "Empty Fluid Tank":1.0
+       },
+       {
+          "Packaged Nitrogen Gas":1.0
+       }
+    ],
+    "Biomass (Alien Carapace)":[
+       {
+          "Alien Carapace":1.0
+       },
+       {
+          "Biomass":100.0
+       }
+    ],
+    "Biomass (Alien Organs)":[
+       {
+          "Alien Organs":1.0
+       },
+       {
+          "Biomass":200.0
+       }
+    ],
+    "Biomass (Leaves)":[
+       {
+          "Leaves":10.0
+       },
+       {
+          "Biomass":5.0
+       }
+    ],
+    "Biomass (Mycelia)":[
+       {
+          "Mycelia":10.0
+       },
+       {
+          "Biomass":10.0
+       }
+    ],
+    "Biomass (Wood)":[
+       {
+          "Wood":4.0
+       },
+       {
+          "Biomass":20.0
+       }
+    ],
+    "Alternate: Compacted Coal":[
+       {
+          "Coal":5.0,
+          "Sulfur":5.0
+       },
+       {
+          "Compacted Coal":5.0
+       }
+    ],
+    "Packaged Oil":[
+       {
+          "Crude Oil":2.0,
+          "Empty Canister":2.0
+       },
+       {
+          "Packaged Oil":2.0
+       }
+    ],
+    "Packaged Heavy Oil Residue":[
+       {
+          "Heavy Oil Residue":2.0,
+          "Empty Canister":2.0
+       },
+       {
+          "Packaged Heavy Oil Residue":2.0
+       }
+    ],
+    "Solid Biofuel":[
+       {
+          "Biomass":8.0
+       },
+       {
+          "Solid Biofuel":4.0
+       }
+    ],
+    "Packaged Fuel":[
+       {
+          "Fuel":2.0,
+          "Empty Canister":2.0
+       },
+       {
+          "Packaged Fuel":2.0
+       }
+    ],
+    "Alternate: Diluted Packaged Fuel":[
+       {
+          "Heavy Oil Residue":1.0,
+          "Packaged Water":2.0
+       },
+       {
+          "Packaged Fuel":2.0
+       }
+    ],
+    "Packaged Liquid Biofuel":[
+       {
+          "Liquid Biofuel":2.0,
+          "Empty Canister":2.0
+       },
+       {
+          "Packaged Liquid Biofuel":2.0
+       }
+    ],
+    "Packaged Turbofuel":[
+       {
+          "Turbofuel":2.0,
+          "Empty Canister":2.0
+       },
+       {
+          "Packaged Turbofuel":2.0
+       }
+    ],
+    "Uranium Fuel Rod":[
+       {
+          "Encased Uranium Cell":50.0,
+          "Encased Industrial Beam":3.0,
+          "Electromagnetic Control Rod":5.0
+       },
+       {
+          "Uranium Fuel Rod":1.0
+       }
+    ],
+    "Alternate: Uranium Fuel Unit":[
+       {
+          "Encased Uranium Cell":100.0,
+          "Electromagnetic Control Rod":10.0,
+          "Crystal Oscillator":3.0,
+          "Beacon":6.0
+       },
+       {
+          "Uranium Fuel Rod":3.0
+       }
+    ],
+    "Plutonium Fuel Rod":[
+       {
+          "Encased Plutonium Cell":30.0,
+          "Steel Beam":18.0,
+          "Electromagnetic Control Rod":6.0,
+          "Heat Sink":10.0
+       },
+       {
+          "Plutonium Fuel Rod":1.0
+       }
+    ],
+    "Alternate: Plutonium Fuel Unit":[
+       {
+          "Encased Plutonium Cell":20.0,
+          "Pressure Conversion Cube":1.0
+       },
+       {
+          "Plutonium Fuel Rod":1.0
+       }
+    ],
+    "Black Powder":[
+       {
+          "Coal":1.0,
+          "Sulfur":2.0
+       },
+       {
+          "Black Powder":1.0
+       }
+    ],
+    "Alternate: Fine Black Powder":[
+       {
+          "Sulfur":2.0,
+          "Compacted Coal":1.0
+       },
+       {
+          "Black Powder":4.0
+       }
+    ],
+    "Nobelisk":[
+       {
+          "Black Powder":5.0,
+          "Steel Pipe":10.0
+       },
+       {
+          "Nobelisk":1.0
+       }
+    ],
+    "Alternate: Seismic Nobelisk":[
+       {
+          "Black Powder":8.0,
+          "Steel Pipe":8.0,
+          "Crystal Oscillator":1.0
+       },
+       {
+          "Nobelisk":4.0
+       }
+    ],
+    "Gas Filter":[
+       {
+          "Coal":5.0,
+          "Rubber":2.0,
+          "Fabric":2.0
+       },
+       {
+          "Gas Filter":1.0
+       }
+    ],
+    "Color Cartridge":[
+       {
+          "Flower Petals":5.0
+       },
+       {
+          "Color Cartridge":10.0
+       }
+    ],
+    "Rifle Cartridge":[
+       {
+          "Beacon":1.0,
+          "Steel Pipe":10.0,
+          "Black Powder":10.0,
+          "Rubber":10.0
+       },
+       {
+          "Rifle Cartridge":5.0
+       }
+    ],
+    "Spiked Rebar":[
+       {
+          "Iron Rod":1.0
+       },
+       {
+          "Spiked Rebar":1.0
+       }
+    ],
+    "Beacon":[
+       {
+          "Iron Plate":3.0,
+          "Iron Rod":1.0,
+          "Wire":15.0,
+          "Cable":2.0
+       },
+       {
+          "Beacon":1.0
+       }
+    ],
+    "Alternate: Crystal Beacon":[
+       {
+          "Steel Beam":4.0,
+          "Steel Pipe":16.0,
+          "Crystal Oscillator":1.0
+       },
+       {
+          "Beacon":20.0
+       }
+    ],
+    "Iodine Infused Filter":[
+       {
+          "Gas Filter":1.0,
+          "Quickwire":8.0,
+          "Aluminum Casing":1.0
+       },
+       {
+          "Iodine Infused Filter":1.0
+       }
+    ],
+    "Electromagnetic Control Rod":[
+       {
+          "Stator":3.0,
+          "AI Limiter":2.0
+       },
+       {
+          "Electromagnetic Control Rod":2.0
+       }
+    ],
+    "Alternate: Electromagnetic Connection Rod":[
+       {
+          "Stator":2.0,
+          "High-Speed Connector":1.0
+       },
+       {
+          "Electromagnetic Control Rod":2.0
+       }
+    ],
+    "Alternate: Infused Uranium Cell":[
+       {
+          "Uranium":5.0,
+          "Silica":3.0,
+          "Sulfur":5.0,
+          "Quickwire":15.0
+       },
+       {
+          "Encased Uranium Cell":4.0
+       }
+    ],
+    "Plutonium Pellet":[
+       {
+          "Non-fissile Uranium":100.0,
+          "Uranium Waste":25.0
+       },
+       {
+          "Plutonium Pellet":30.0
+       }
+    ],
+    "Encased Plutonium Cell":[
+       {
+          "Plutonium Pellet":2.0,
+          "Concrete":4.0
+       },
+       {
+          "Encased Plutonium Cell":1.0
+       }
+    ],
+    "Alternate: Instant Plutonium Cell":[
+       {
+          "Non-fissile Uranium":150.0,
+          "Aluminum Casing":20.0
+       },
+       {
+          "Encased Plutonium Cell":20.0
+       }
+    ],
+    "Uranium Waste":[
+       {
+          "Uranium Fuel Rod":1.0
+       },
+       {
+          "Uranium Waste":50.0
+       }
+    ],
+    "Plutonium Waste":[
+       {
+          "Plutonium Fuel Rod":1.0
+       },
+       {
+          "Plutonium Waste":10.0
+       }
+    ],
+    "Power Shard (1)":[
+       {
+          "Blue Power Slug":1.0
+       },
+       {
+          "Power Shard":1.0
+       }
+    ],
+    "Power Shard (2)":[
+       {
+          "Yellow Power Slug":1.0
+       },
+       {
+          "Power Shard":2.0
+       }
+    ],
+    "Power Shard (5)":[
+       {
+          "Purple Power Slug":1.0
+       },
+       {
+          "Power Shard":5.0
+       }
+    ],
+    "Smart Plating":[
+       {
+          "Reinforced Iron Plate":1.0,
+          "Rotor":1.0
+       },
+       {
+          "Smart Plating":1.0
+       }
+    ],
+    "Alternate: Plastic Smart Plating":[
+       {
+          "Reinforced Iron Plate":1.0,
+          "Rotor":1.0,
+          "Plastic":3.0
+       },
+       {
+          "Smart Plating":2.0
+       }
+    ],
+    "Versatile Framework":[
+       {
+          "Modular Frame":1.0,
+          "Steel Beam":12.0
+       },
+       {
+          "Versatile Framework":2.0
+       }
+    ],
+    "Alternate: Flexible Framework":[
+       {
+          "Modular Frame":1.0,
+          "Steel Beam":6.0,
+          "Rubber":8.0
+       },
+       {
+          "Versatile Framework":2.0
+       }
+    ],
+    "Automated Wiring":[
+       {
+          "Stator":1.0,
+          "Cable":20.0
+       },
+       {
+          "Automated Wiring":1.0
+       }
+    ],
+    "Alternate: Automated Speed Wiring":[
+       {
+          "Stator":2.0,
+          "Wire":40.0,
+          "High-Speed Connector":1.0
+       },
+       {
+          "Automated Wiring":4.0
+       }
+    ],
+    "Modular Engine":[
+       {
+          "Motor":2.0,
+          "Rubber":15.0,
+          "Smart Plating":2.0
+       },
+       {
+          "Modular Engine":1.0
+       }
+    ],
+    "Adaptive Control Unit":[
+       {
+          "Automated Wiring":15.0,
+          "Circuit Board":10.0,
+          "Heavy Modular Frame":2.0,
+          "Computer":2.0
+       },
+       {
+          "Adaptive Control Unit":2.0
+       }
+    ],
+    "Assembly Director System":[
+       {
+          "Adaptive Control Unit":2.0,
+          "Supercomputer":1.0
+       },
+       {
+          "Assembly Director System":1.0
+       }
+    ],
+    "Magnetic Field Generator":[
+       {
+          "Versatile Framework":5.0,
+          "Electromagnetic Control Rod":2.0,
+          "Battery":10.0
+       },
+       {
+          "Magnetic Field Generator":2.0
+       }
+    ],
+    "Thermal Propulsion Rocket":[
+       {
+          "Modular Engine":5.0,
+          "Turbo Motor":2.0,
+          "Cooling System":6.0,
+          "Fused Modular Frame":2.0
+       },
+       {
+          "Thermal Propulsion Rocket":2.0
+       }
+    ],
+    "Nuclear Pasta":[
+       {
+          "Copper Powder":200.0,
+          "Pressure Conversion Cube":1.0
+       },
+       {
+          "Nuclear Pasta":1.0
+       }
+    ]
+ }

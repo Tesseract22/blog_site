@@ -1,38 +1,85 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% load polls %}
 
 {% block title %}
     Cat's Projects
 {% endblock title %}
+{% block head %}
+<script src="{% static 'scripts/update.js' %}"></script>
+<script>
+  $( function() {
+    $( "#sortable" ).sortable();
+  } );
+</script>
+{% endblock head %}
 
 
 {% block content %}
+
 <div id="accordion">
     <div class="card text-white bg-dark">
       <div class="card-header" id="headingOne">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <h5 class="text-white bg-dark">Factorio</h5>
+            <h3 class="text-white bg-dark">Factorio</h3>
           </button>
       </div>
   
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
         <div class="card-body">
-            <select class="mdb-select md-form" searchable="Search here..">
-                <option value="" disabled selected>Choose Item</option>
-                <option value="1">USA</option>
-                <option value="2">Germany</option>
-                <option value="3">France</option>
-                <option value="3">Poland</option>
-                <option value="3">Japan</option>
-            </select>
+          <div class="container ml-1 mr-1">
+            <div class="row">
+              <div class="col">
+                <h4>Targets:</h4>
+              </div>
+              <div class="col">
+                <h4>Priorities</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <form method="post" action="/factorio/update/" autocomplete="off" id="items-form">
+                  <datalist id="factorio_items">
+                    {% for i in factorio_items %}
+                      <option value="{{ i }}">{{ i | empty:"-" | title }}</option>
+                    {% endfor %}
+                  </datalist>
+                  {% csrf_token %}
+                  <div class="form-group row">
+                    <div class="col-xs-2">
+                      <input class="form-control" list="factorio_items" id="name" placeholder="Search for Item">
+                    </div>
+                    <div class="col-xs-2">
+                      <input class="form-control" id="amount" placeholder="Enter Amount...">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col">
+                <dl id="sortable">
+                  {% for i in factorio_raw %}
+                    <li class="ui-state-default" style="list-style-type:none" id="{{ i }}">
+                      <div class="card text-white bg-secondary w-50">
+                        <h4 class="text-center">{{ i | empty:"-" | title }}</h4>
+                      </div>
+                  {% endfor %}
+                  </li>
+                </dl> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-success" onclick="add()">Add Item</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="card text-white bg-dark">
       <div class="card-header" id="headingTwo">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <h5 class="text-white bg-dark">Satisfactory</h5>
+            <h3 class="text-white bg-dark">Satisfactory</3>
           </button>
       </div>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -42,8 +89,10 @@
       </div>
     </div>
 </div>
+
+
+
+
+
 {% endblock content %}
 
-{% block cal %}
-
-{% endblock cal %}
