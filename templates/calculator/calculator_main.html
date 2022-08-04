@@ -6,12 +6,14 @@
     Cat's Projects
 {% endblock title %}
 {% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/calculator.css' %}">
 <script src="{% static 'scripts/update.js' %}"></script>
 <script>
   $( function() {
-    $( "#sortable" ).sortable();
+    $( "#priorities" ).sortable();
   } );
 </script>
+<script> var django_csrf_token = '{{ csrf_token }}'; </script>
 {% endblock head %}
 
 
@@ -21,7 +23,7 @@
     <div class="card text-white bg-dark">
       <div class="card-header" id="headingOne">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <h3 class="text-white bg-dark">Factorio</h3>
+            <h3 class="text-white bg-dark">FACTORIO</h3>
           </button>
       </div>
   
@@ -33,30 +35,31 @@
                 <h4>Targets:</h4>
               </div>
               <div class="col">
-                <h4>Priorities</h4>
+                <h4>Priorities:</h4>
+
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <form method="post" action="/factorio/update/" autocomplete="off" id="items-form">
+                <form method="post" action="/calculator/update/" autocomplete="off" id="items-form">
+                  {% csrf_token %}
                   <datalist id="factorio_items">
                     {% for i in factorio_items %}
                       <option value="{{ i }}">{{ i | empty:"-" | title }}</option>
                     {% endfor %}
                   </datalist>
-                  {% csrf_token %}
-                  <div class="form-group row">
+                  <div class="form-group row" id="factorio_target_1">
                     <div class="col-xs-2">
-                      <input class="form-control" list="factorio_items" id="name" placeholder="Search for Item">
+                      <input class="form-control" list="factorio_items" placeholder="Search for Item" name="name_1" id="name_1">
                     </div>
                     <div class="col-xs-2">
-                      <input class="form-control" id="amount" placeholder="Enter Amount...">
+                      <input class="form-control" placeholder="Enter Amount..." name="amount_1" id="amount_1">
                     </div>
                   </div>
                 </form>
               </div>
               <div class="col">
-                <dl id="sortable">
+                <dl id="priorities">
                   {% for i in factorio_raw %}
                     <li class="ui-state-default" style="list-style-type:none" id="{{ i }}">
                       <div class="card text-white bg-secondary w-50">
@@ -69,8 +72,24 @@
             </div>
             <div class="row">
               <div class="col">
-                <button class="btn btn-success" onclick="add()">Add Item</button>
+                <button class="btn" id="add_btn" onclick="Add()">Add Item</button>
               </div>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-dark" style="background-color: #05111e; border-color: #05111e;">Items</button>
+                <button type="button" class="btn btn-dark" style="background-color: #05111e; border-color: #05111e;">Recipes</button>
+                <button type="button" class="btn btn-dark" style="background-color: #05111e; border-color: #05111e;">Flow Chart</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="card w-75">
+                <div class="card-header" style="color: black">
+                  Results:
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" style="background-color: #05111e; color: white">Cras justo odio</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -90,6 +109,18 @@
     </div>
 </div>
 
+<script>
+  var form = document.getElementById("items-form")
+  form.addEventListener("change", Update); 
+</script>
+
+<script>
+  $('#items-form').on('submit', function(event) {
+    event.preventDefault();
+    console.log("form submitted!")  // sanity check
+    Update()
+  });
+</script>
 
 
 

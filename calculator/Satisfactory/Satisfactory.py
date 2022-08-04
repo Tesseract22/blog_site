@@ -1,6 +1,7 @@
 import sys
-from .. import RecipeMatrix
-from .... import Core
+sys.path.append('../calculator')
+import RecipeMatrix
+import Core
 import os
 import json
 
@@ -35,9 +36,9 @@ class Satisfactory(Core.Calculator):
 
 
 if __name__ == "__main__":
-    print(recipes)
+    # print(recipes)
     s = Satisfactory(recipes, items, raw)
-    print(items)
+    # print(items)
     target = {}
     target['Motor'] = 5
     target['Encased Industrial Beam'] = 5

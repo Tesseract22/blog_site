@@ -151,6 +151,15 @@ class RecipeMatrix:
         opt = linprog(c=obj_func, A_ub=lhs_ineq, b_ub=rhs_ineq, A_eq=lhs_eq, b_eq= rhs_eq, method="highs")
         return opt
 
+    def RecipesToItems(self, x:np.array):
+        items = []
+        for i in range(self.shape[0]):
+            for j in range(self.shape[1]):
+                if x[j] != 0 and self.matrix[i][j] != 0:
+                    items.append(i)
+                    continue
+        return items
+    
     '''
     ---debug---
     '''

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'article',
     "calculator",
     "templatetags",
+    # "compressor",
     
 ]
 
@@ -125,6 +126,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+# COMPRESS_ROOT = '/compress/'
+# STATICFILES_FINDERS = [``
+#     "compressor.finders.CompressorFinder",
+# ]
+
+# COMPRESS_PRECOMPILERS = (
+#     ('text/x-scss', 'django_libsass.SassCompiler'),
+# )
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

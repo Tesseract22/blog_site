@@ -1,0 +1,14 @@
+.col-xs-2 {
+    padding:5px;
+}
+
+#add_btn {
+    color: white;
+    background: rgba(2, 2, 44, 0.555);
+}
+
+
+.btn-dark {
+    background-color: #05111e;
+    border-color: #05111e;
+}

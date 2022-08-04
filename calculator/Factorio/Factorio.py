@@ -50,7 +50,7 @@ if __name__ == '__main__':
     target['low-density-structure'] = 10
     priority = ["iron-ore", "copper-ore", "coal", "crude-oil", "wood",]
 
-    ans = f.Solve(target, priority)
+    ans = f.SolveHuman(target, priority)
     print(ans)
     # new = []
     # new.extend(fluid)

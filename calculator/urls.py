@@ -1,10 +1,10 @@
-app_name = 'article'
+app_name = 'calculator'
 
 from django.conf.urls import url
 from . import views
 
 
 urlpatterns = [
-    url('', views.calculator_main)
-
+    url('main/', views.calculator_main),
+    url('update/', views.update),
 ]
