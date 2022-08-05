@@ -1,6 +1,10 @@
 
 {% load static %}
 {% load polls %}
+{% load compress %}
+{% compress css %}
+    <link type="text/x-scss" href="{% static 'bootstrap/scss/bootstrap.scss' %}" rel="stylesheet" media="screen">
+{% endcompress %}
 <!DOCTYPE html>
 
 <html lang="zh-cn">

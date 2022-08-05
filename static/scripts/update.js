@@ -17,7 +17,7 @@ function Solve() {
         }
         targets[item_name] += parseInt(item_amount)
     }
-    var res
+    var res = {}
     $.ajax({
         url : "/calculator/update/", // the endpoint
         type : "POST", // http method
@@ -25,9 +25,9 @@ function Solve() {
         dataType: 'json',
         headers:{"X-CSRFToken": django_csrf_token},
         success : function(json) {
-            res = json
             console.log(json); // log the returned json to the console
             console.log("success"); // another sanity check
+            UpdateUI(json)
         },
         // handle a non-successful response
         error : function(xhr,errmsg,err) {
@@ -76,7 +76,9 @@ function GetPriorities() {
     var p = []
     for (var i = 0; i < children.length; ++i) {
         var el = children[i]
-        p.push(el.id)
+        if (el.id != '') {
+            p.push(el.id)
+        }
     }
     return p
 }
@@ -116,7 +118,28 @@ function DeleteRow(el) {
 }
 
 
+function RenderItems(items) {
+    var ul = document.getElementById("res_items_list")
+    while (ul.firstChild) {
+        ul.removeChild(ul.firstChild)
+    }
+    for (var i = 0; i < items.length; ++i) {
+        var li = document.createElement("li")
+        li.setAttribute("class", "list-group-item")
+        if ((i + 1) % 2 == 0) {
+            li.setAttribute("style", "background-color: #1f3853; color: white")
+        } else {
+            li.setAttribute("style", "background-color: #1978df; color: white")
+        }
+        li.innerHTML = items[i]
+        ul.appendChild(li)
+    }
+}
+
+function UpdateUI(res) {
+    RenderItems(res['items'])
+}
+
 function Update() {
     var res = Solve()
-    
 }

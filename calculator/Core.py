@@ -1,7 +1,10 @@
 
-from . import RecipeMatrix
-
+import sys
+import os
+sys.path.insert(0, os.path.abspath('.'))
+from calculator import RecipeMatrix
 import numpy as np
+
 '''
 ---NEED DOCUMENTATION---
 '''
@@ -28,26 +31,43 @@ class Calculator:
                 tmp_matrix[self.item_idx_dict[i[0]], col] = -i[1]
             for i in r['products']:
                 tmp_matrix[self.item_idx_dict[i[0]], col] = i[1]
-        print("core ")
         for r in self.raw:
-            print("raw")
             self.recipe_names.append("raw: " + r)
         self.matrix = RecipeMatrix.RecipeMatrix(tmp_matrix, [self.item_idx_dict[r] for r in self.raw])
-    '''
-    ---NEED DOCUMENTATION---
+
+    def RecipeArrToNameDict(self, arr) -> dict:
+        '''
+        Covert a recipe array to human-friendly dict
+        
+        arr: the index of array correspond to a recipe, and value at that idex determines the weight
+
+        Returns a dict: {(recipe_name) : (weight)}
+        
+        '''
+        return {self.recipe_names[i] : arr[i] for i in range(len(arr) - 1) if arr[i] != 0} # excluding tax
+
+    def RecipesIdxToNameList(self, li:list) -> list:
+        '''
+        Covert a list of idxes to human-friendly names of recipes
+        
+        '''
+        return [self.recipe_names[i] for i in li]
     
-    '''
     def SimplePriority(self, priority:list) -> list:
-        return [ self.recipe_names.index(p) for p in priority ]
-
-
-
+        '''
+        Convert names of items to recipe idxes, assuming that these idxes are in raw items
     
-    '''
-    ---NEED DOCUMENTATION---
-    
-    '''
+        '''
+        return [ self.recipe_names.index("raw: " + p) for p in priority ]
+
+    def ItemsIdxToNameList(self, li:list) -> list:
+        return [self.items[i] for i in li]
+
+
     def Solve(self, target:dict, priority:list) -> np.array:
+        '''
+        Solve human-readable target and priority and return huamn-readable answer array
+        '''
         # turn the dict into numpy array
         target_arr = np.zeros(self.matrix.shape[0] - 1) #excluding tax
         for name, value in target.items():
@@ -55,33 +75,21 @@ class Calculator:
                 raise ValueError("Can not produce negative amount of %s"%name)
             target_arr[self.item_idx_dict[name]] = value
         priority_arr = self.SimplePriority(priority)
-        p = [212, 213, 214, 215, 216, 217, 218, 219, 220, 222]
         ans = self.matrix.Solve(target_arr, priority_arr)
         x = np.around(ans.x, decimals=5)
         return x # excluding tax
+    
+    def ItemsInvolve(self, x:np.array):
+        item_idxes = self.matrix.ItemsInvolve(x)
+        return self.ItemsIdxToNameList(item_idxes)
+
 
     '''
     ---NEED DOCUMENTATION---
     
     '''
-    def SolveHuman(self, target:dict, priority:list) -> dict:
-        x = self.Solve(target, priority)
-        return {self.recipe_names[i] : x[i] for i in range(len(x) - 1) if x[i] != 0} # excluding tax
-
-    '''
-    ---NEED DOCUMENTATION---
     
-    '''
-    def RecipesToItems(self, x:np.array) -> dict:
-        pass
-
-    '''
-    ---NEED DOCUMENTATION---
-    
-    '''
-    def SolveVisual(self, target:dict, priority:list) -> dict:
-        x, _ = self.Solve(target, priority)
-        return self.ListVisualize(x)
 
 
-
+if __name__ == '__main__':
+    pass

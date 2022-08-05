@@ -10,8 +10,12 @@
 <script src="{% static 'scripts/update.js' %}"></script>
 <script>
   $( function() {
-    $( "#priorities" ).sortable();
-  } );
+    $( "#priorities" ).sortable({
+      change: function(event, ui) {
+        Update()
+      }
+    });
+  });
 </script>
 <script> var django_csrf_token = '{{ csrf_token }}'; </script>
 {% endblock head %}
@@ -87,8 +91,8 @@
                 <div class="card-header" style="color: black">
                   Results:
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item" style="background-color: #05111e; color: white">Cras justo odio</li>
+                <ul class="list-group list-group-flush" id="res_items_list">
+                  <li class="list-group-item" style="background-color: #05111e; color: white">DEBUG</li>
                 </ul>
             </div>
           </div>
@@ -117,11 +121,10 @@
 <script>
   $('#items-form').on('submit', function(event) {
     event.preventDefault();
-    console.log("form submitted!")  // sanity check
+    console.log("calculating...")  // sanity check
     Update()
   });
 </script>
-
 
 
 

@@ -1,10 +1,10 @@
 import sys
-sys.path.append('../calculator')
-import RecipeMatrix
-import Core
+import os
+sys.path.insert(0, os.path.abspath('.'))
+from calculator import Core
 import os
 import json
-import numpy as np
+
 '''
 ---NEED DOCUMENTATION---
 '''
@@ -40,18 +40,22 @@ with open(ITEMS_PATH, 'r') as f:
 '''
 ---NEED DOCUMENTATION---
 '''
+
 class Factorio(Core.Calculator):
-   pass
+
+    pass
 
 
 if __name__ == '__main__':
+    
     f = Factorio(recipes, items, raw)
     target = {}
     target['low-density-structure'] = 10
     priority = ["iron-ore", "copper-ore", "coal", "crude-oil", "wood",]
-
-    ans = f.SolveHuman(target, priority)
-    print(ans)
+    x = f.Solve(target, priority)
+    ans = f.RecipeArrToNameDict(x)
+    items = f.ItemsInvolve(x)
+    print(items)
     # new = []
     # new.extend(fluid)
     # for i in items:
