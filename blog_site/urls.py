@@ -14,17 +14,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from django.urls import path, re_path
+from django.urls import path, include, re_path
 from django.views.static import serve
 from django.conf import settings
 
 from . import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('article/', include('article.urls', namespace='article')),
     path('calculator/', include('calculator.urls', namespace='calculator')),
     path('', views.main_site),
     path('test/', views.test),
-    re_path('^stiaic/(?P<path>.*)',serve,{'document_root':settings.STATIC_ROOT}),
+    re_path(r'^stiaic/(?P<path>.*)$',serve,{'document_root':settings.STATIC_ROOT}),
 ]
