@@ -7,4 +7,5 @@ from . import views
 urlpatterns = [
     url('main/', views.calculator_main),
     url('update/', views.update),
+    url('get_recipe/', views.get_recipe),
 ]

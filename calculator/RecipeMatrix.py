@@ -69,12 +69,13 @@ class RecipeMatrix:
     '''
 
 
-    def __init__(self, matrix:np.array, raw_idxes:list) -> None:
+    def __init__(self, matrix:np.array, alt_idx:tuple, raw_idxes:list, multiplier:int) -> None:
         '''
         Initialize the object, add pseduo recipe and locate alt recipes in the matrix
         self:
         matrix: the recipe matrix, or graph matrix
         raw_idxes: the idxes have the elment you want to appoint as raw material
+        multiplier: an int that would multiply target and divide results. This clear edge behavior regarding tax
         '''
         self.matrix = np.copy(matrix)
         self.raw_idxes = []
@@ -84,8 +85,10 @@ class RecipeMatrix:
         
         # Add taxes to all recipe
         self.matrix = AddTaxes(self.matrix)
+        self.alt_idx = alt_idx
         self.shape = self.matrix.shape
-
+        
+        self.multiplier = multiplier
 
     
     def ObjFunc(self, priority:list, level_ratio=10) -> np.array:
@@ -111,19 +114,29 @@ class RecipeMatrix:
         return res
 
    
-    def Inequalities(self, target:np.array) -> np.array:
+    def Inequalities(self, target:np.array, alt:list) -> np.array:
         '''
         Construc the left and right inequalities for LP.
         target: used to construct right hand inequalities
+        alt: the alternate recipes availiable
         Returns two matrix, representing each ineq.
         '''
         # scipy default set to less or equal to, <=, but we want >=
         # so we need to multiply our result by -1
         
         # Everythng in the matrix except the last row
-        lhs_ineq = -self.matrix[:-1, :]
+        alt_matrix = np.copy(self.matrix)
+        j = 0
+        print(alt, self.alt_idx)
+        for col in self.alt_idx:
+            if j < len(alt) and alt[j] == col:
+                j += 1
+            else:
+                print("a")
+                alt_matrix[:-1,col] = 0
+        lhs_ineq = -alt_matrix[:-1, :]
         # Just the target
-        rhs_ineq = -target
+        rhs_ineq = -target * self.multiplier
         return lhs_ineq, rhs_ineq
 
 
@@ -141,14 +154,14 @@ class RecipeMatrix:
 
 
     
-    def Solve(self, target, priority):
+    def Solve(self, target, priority, alt:list):
         '''
         Solving the problem with linear programming.
         target: the desire output in a np.array
         priority: the prioritiy used to construct the object function params
         Returns the amount needed for each recipe in an array.
         '''
-        lhs_ineq, rhs_ineq = self.Inequalities(target)
+        lhs_ineq, rhs_ineq = self.Inequalities(target, alt)
         lhs_eq, rhs_eq = self.Equalities()
         obj_func = self.ObjFunc(priority)
         # the bound of x_i, are by default 0 - inf
@@ -169,7 +182,20 @@ class RecipeMatrix:
                     break
         return items
     
-
+    def ItemFlow(self, item:int, x:np.array) -> dict:
+        '''
+        '''
+        res = {}
+        res['input'] = {}
+        res['output'] = {}
+        item_row = self.matrix[item]
+        for i in range(len(item_row) - 1): #ignore tax
+            t  = x[i] * item_row[i]
+            if t < 0:
+                res["output"][i] = -t
+            elif t > 0:
+                res['input'][i] = t
+        return res
     def PrintAns(self, ans, recipe_name_list):
         '''
         ---debug---
@@ -184,7 +210,10 @@ class RecipeMatrix:
             elif i in self.raw_idxes:
                 print(i, ans[i])
 
-
+    def GetRecipe(self, recipe:int) -> dict:
+        print(recipe)
+        return {index : self.matrix[index, recipe] for index in np.where(self.matrix[:-1, recipe] != 0)[0]}
+            
     
 
 

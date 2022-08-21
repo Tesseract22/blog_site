@@ -30,13 +30,15 @@ dirname = os.path.dirname(__file__)
 ITEMS_PATH = os.path.join(dirname, "local/items.json")
 RECIPES_PATH = os.path.join(dirname, "local/recipes.json")
 OLD_PATH = os.path.join(dirname, "local/item_list.json")
-
+ALT_PATH = os.path.join(dirname, 'local/alt.json')
 
 with open(RECIPES_PATH, 'r') as f:
     recipes = json.load(f)
 # print(recipes)
 with open(ITEMS_PATH, 'r') as f:
     items = json.load(f)
+with open(ALT_PATH, 'r') as f:
+    alt = json.load(f)
 '''
 ---NEED DOCUMENTATION---
 '''
@@ -48,19 +50,19 @@ class Factorio(Core.Calculator):
 
 if __name__ == '__main__':
     
-    f = Factorio(recipes, items, raw)
+    f = Factorio(recipes, alt, items, raw)
     target = {}
-    target['low-density-structure'] = 10
+    target['iron-plate'] = 10
     priority = ["iron-ore", "copper-ore", "coal", "crude-oil", "wood",]
-    x = f.Solve(target, priority)
+    x = f.Solve(target, priority, ['basic-oil-processing'])
     ans = f.RecipeArrToNameDict(x)
-    items = f.ItemsInvolve(x)
-    print(items)
+    # items = f.ItemsInvolve(x)
+    # print(items)
     # new = []
     # new.extend(fluid)
     # for i in items:
     #     if i not in ban:
     #         new.append(i)
-
+    f.GetRecipe("iron-plate")
 
 
