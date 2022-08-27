@@ -1,13 +1,19 @@
 
 var count = 1
-
-function Solve() {
-    console.log("create")
+// $('#items-form').on('change', function(event) {
+//     event.preventDefault();
+//     console.log("calculating...")  // sanity check
+//     Update(game)
+// });
+function Solve(game) {
+    // console.log("game is:" + game)
+    
     var targets = GetTargets()
     var priorities = GetPriorities()
     var alt = GetAlt()
+    // var url = `/calculator/${game}/update/`
     $.ajax({
-        url : "/calculator/update/", // the endpoint
+        url : `/calculator/${game}/update/`, // the endpoint
         type : "POST", // http method
         data : {"priorities" : JSON.stringify(priorities), "targets" : JSON.stringify(targets), "alt" : JSON.stringify(alt)}, // data sent with the post request
         dataType: 'json',
@@ -60,9 +66,8 @@ function GetAlt() {
         if (el.checked) {
             alt.push(el.getAttribute('value'))
         }
-        console.log(el.getAttribute('type'))
+        // console.log(el.getAttribute('type'))
     })
-    console.log(alt)
     return alt
     
 }
@@ -94,7 +99,7 @@ function GetTargets() {
         var amount = amounts[i].value
         res[name] = parseInt(amount)
     }
-    console.log(res)
+    // console.log(res)
     return res
 
 }
@@ -126,8 +131,8 @@ function RenderItems(itemflow) {
 
 
         var icon = document.createElement("img")
-        var icon_src = '/static/img/factorio_item_icon/' +  items[i].replaceAll(' ', '-').toLowerCase() + ".webp"
-        console.log(icon_src)
+        var icon_src = `/static/img/${game}_item_icon/` +  items[i].replaceAll(' ', '-').toLowerCase() + img_type
+        // console.log(icon_src)
         icon.setAttribute("src", icon_src)
         icon.setAttribute("class", "item-icon")
         btn.appendChild(icon)
@@ -172,7 +177,7 @@ function RenderItemPut(el, put) {
     var input_data = put['input']
     for (var k in input_data) {
 
-        console.log(k)
+        // console.log(k)
         var li = document.createElement("li")
         li.setAttribute("class", "list-group-item")
         li.setAttribute("style", "color: white; background: #490000")
@@ -219,14 +224,15 @@ function UpdateUI(res) {
     RenderItems(res['items'])
 }
 
-function Update() {
-    Solve()
+function Update(game) {
+    console.log("update, game:" + game)
+    Solve(game)
 }
 
 function GetRecipe(el) {
     var recipe_name = el.name
     $.ajax({
-        url : "/calculator/get_recipe/", // the endpoint
+        url : `/calculator/${game}/get_recipe/`, // the endpoint
         type : "POST", // http method
         data : {'recipe_name': recipe_name}, // data sent with the post request
         dataType: 'json',

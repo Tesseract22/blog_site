@@ -18,6 +18,9 @@ class Calculator:
     '''
     ---NEED DOCUMENTATION---
     '''
+    def ParseName(name:str):
+        return name
+
     def __init__(self, recipes:list, alt:list, items:list, raw:list, multiplier:int =10000) -> None:
         self.recipes = recipes
         self.items = items
@@ -48,6 +51,7 @@ class Calculator:
         self.multiplier = multiplier
         self.matrix = RecipeMatrix.RecipeMatrix(tmp_matrix, range(self.alt_start, self.alt_end), [self.item_idx_dict[r] for r in self.raw], self.multiplier)
         
+        print(self.recipe_names)
 
     def RecipeArrToNameDict(self, arr) -> dict:
         '''
@@ -127,6 +131,7 @@ class Calculator:
 
 
     def GetRecipe(self, recipe:str) -> dict:
+        # print(self.recipe_names)
         recipe_i = self.recipe_names.index(recipe)
         raw_res = self.matrix.GetRecipe(recipe_i)
         res = {}

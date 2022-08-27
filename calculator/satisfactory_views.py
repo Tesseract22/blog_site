@@ -5,27 +5,29 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import json
 
-from calculator.Factorio import Factorio as FC
+from calculator.Satisfactory import Satisfactory as game
 
 
 
 dirname = os.path.dirname(__file__)
 
 
-f = FC.Factorio(FC.recipes, FC.alt, FC.items, FC.raw)
+f = game.Satisfactory(game.recipes, game.alt, game.items, game.raw)
 
 
-def factorio(request):
+def main(request):
     ctx = {}
-    ctx['items'] = FC.items
-    ctx['raw'] = FC.raw
-    ctx['alt'] = [r['name'] for r in FC.alt]
-    return render(request, "calculator/factorio.html", ctx)
+    ctx['items'] = game.items
+    ctx['raw'] = game.raw
+    ctx['alt'] = [r['name'] for r in game.alt]
+    ctx['game'] = 'satisfactory'
+    ctx['img_type'] = '.png'
+    return render(request, "calculator/satisfactory.html", ctx)
 
 
 def update(request):
     res = {}
-    print("update")
+    print("s reached")
     if request.method == "POST":    
         targets = request.POST['targets']
         priorities = request.POST["priorities"]

@@ -15,11 +15,13 @@ dirname = os.path.dirname(__file__)
 f = FC.Factorio(FC.recipes, FC.alt, FC.items, FC.raw)
 
 
-def factorio(request):
+def main(request):
     ctx = {}
     ctx['items'] = FC.items
     ctx['raw'] = FC.raw
     ctx['alt'] = [r['name'] for r in FC.alt]
+    ctx['game'] = 'factorio'
+    ctx['img_type'] = '.webp'
     return render(request, "calculator/factorio.html", ctx)
 
 

@@ -10,10 +10,14 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/calculator.css' %}">
 <script src="{% static 'scripts/update.js' %}"></script>
 <script>
+  var game = '{{ game }}'
+  var img_type = '{{ img_type }}'
+</script>
+<script>
   $( function() {
     $( "#priorities" ).sortable({
       change: function(event, ui) {
-        Update()
+        Update(game)
       }
     });
   });
@@ -138,20 +142,12 @@
 
 <script>
   var form = document.getElementById("items-form")
-  form.addEventListener("change", Update); 
+  form.addEventListener("change", function() {
+    Update(game)
+  }); 
 </script>
 
-<script>
-  $('#items-form').on('submit', function(event) {
-    event.preventDefault();
-    console.log("calculating...")  // sanity check
-    Update()
-  });
-
-  $(  )
-</script>
 
 
 
 {% endblock content %}
-

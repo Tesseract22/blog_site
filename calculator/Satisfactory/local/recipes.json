@@ -1,3923 +1,3923 @@
 [
-    {
-       "name":"Alternate: Biocoal",
-       "ingredients":[
-          [
-             "Biomass",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Coal",
-             6.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Charcoal",
-       "ingredients":[
-          [
-             "Wood",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Coal",
-             10.0
-          ]
-       ]
-    },
-    {
-       "name":"Iron Ingot",
-       "ingredients":[
-          [
-             "Iron Ore",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Iron Ingot",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Iron Alloy Ingot",
-       "ingredients":[
-          [
-             "Iron Ore",
-             2.0
-          ],
-          [
-             "Copper Ore",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Iron Ingot",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Pure Iron Ingot",
-       "ingredients":[
-          [
-             "Iron Ore",
-             7.0
-          ],
-          [
-             "Water",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Iron Ingot",
-             13.0
-          ]
-       ]
-    },
-    {
-       "name":"Copper Ingot",
-       "ingredients":[
-          [
-             "Copper Ore",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Copper Ingot",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Copper Alloy Ingot",
-       "ingredients":[
-          [
-             "Copper Ore",
-             10.0
-          ],
-          [
-             "Iron Ore",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Copper Ingot",
-             20.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Pure Copper Ingot",
-       "ingredients":[
-          [
-             "Copper Ore",
-             6.0
-          ],
-          [
-             "Water",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Copper Ingot",
-             15.0
-          ]
-       ]
-    },
-    {
-       "name":"Caterium Ingot",
-       "ingredients":[
-          [
-             "Caterium Ore",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Caterium Ingot",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Pure Caterium Ingot",
-       "ingredients":[
-          [
-             "Caterium Ore",
-             2.0
-          ],
-          [
-             "Water",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Caterium Ingot",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Steel Ingot",
-       "ingredients":[
-          [
-             "Iron Ore",
-             3.0
-          ],
-          [
-             "Coal",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Steel Ingot",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Coke Steel Ingot",
-       "ingredients":[
-          [
-             "Iron Ore",
-             15.0
-          ],
-          [
-             "Petroleum Coke",
-             15.0
-          ]
-       ],
-       "products":[
-          [
-             "Steel Ingot",
-             20.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Compacted Steel Ingot",
-       "ingredients":[
-          [
-             "Iron Ore",
-             6.0
-          ],
-          [
-             "Compacted Coal",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Steel Ingot",
-             10.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Solid Steel Ingot",
-       "ingredients":[
-          [
-             "Iron Ingot",
-             2.0
-          ],
-          [
-             "Coal",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Steel Ingot",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Aluminum Ingot",
-       "ingredients":[
-          [
-             "Aluminum Scrap",
-             6.0
-          ],
-          [
-             "Silica",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Aluminum Ingot",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Pure Aluminum Ingot",
-       "ingredients":[
-          [
-             "Aluminum Scrap",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Aluminum Ingot",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Concrete",
-       "ingredients":[
-          [
-             "Limestone",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Concrete",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Fine Concrete",
-       "ingredients":[
-          [
-             "Silica",
-             3.0
-          ],
-          [
-             "Limestone",
-             12.0
-          ]
-       ],
-       "products":[
-          [
-             "Concrete",
-             10.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Rubber Concrete",
-       "ingredients":[
-          [
-             "Limestone",
-             10.0
-          ],
-          [
-             "Rubber",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Concrete",
-             9.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Wet Concrete",
-       "ingredients":[
-          [
-             "Limestone",
-             6.0
-          ],
-          [
-             "Water",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Concrete",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Quartz Crystal",
-       "ingredients":[
-          [
-             "Raw Quartz",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Quartz Crystal",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Pure Quartz Crystal",
-       "ingredients":[
-          [
-             "Raw Quartz",
-             9.0
-          ],
-          [
-             "Water",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Quartz Crystal",
-             7.0
-          ]
-       ]
-    },
-    {
-       "name":"Alumina Solution",
-       "ingredients":[
-          [
-             "Bauxite",
-             12.0
-          ],
-          [
-             "Water",
-             18.0
-          ]
-       ],
-       "products":[
-          [
-             "Alumina Solution",
-             12.0
-          ],
-          [
-             "Silica",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Silica",
-       "ingredients":[
-          [
-             "Raw Quartz",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Silica",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Cheap Silica",
-       "ingredients":[
-          [
-             "Raw Quartz",
-             3.0
-          ],
-          [
-             "Limestone",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Silica",
-             7.0
-          ]
-       ]
-    },
-    {
-       "name":"Copper Powder",
-       "ingredients":[
-          [
-             "Copper Ingot",
-             30.0
-          ]
-       ],
-       "products":[
-          [
-             "Copper Powder",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Fuel",
-       "ingredients":[
-          [
-             "Crude Oil",
-             6.0
-          ]
-       ],
-       "products":[
-          [
-             "Fuel",
-             4.0
-          ],
-          [
-             "Polymer Resin",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Heavy Oil Residue",
-       "ingredients":[
-          [
-             "Crude Oil",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Heavy Oil Residue",
-             4.0
-          ],
-          [
-             "Polymer Resin",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Polymer Resin",
-       "ingredients":[
-          [
-             "Crude Oil",
-             6.0
-          ]
-       ],
-       "products":[
-          [
-             "Polymer Resin",
-             13.0
-          ],
-          [
-             "Heavy Oil Residue",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Petroleum Coke",
-       "ingredients":[
-          [
-             "Heavy Oil Residue",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Petroleum Coke",
-             12.0
-          ]
-       ]
-    },
-    {
-       "name":"Aluminum Scrap",
-       "ingredients":[
-          [
-             "Alumina Solution",
-             4.0
-          ],
-          [
-             "Coal",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Aluminum Scrap",
-             6.0
-          ],
-          [
-             "Water",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Electrode - Aluminum Scrap",
-       "ingredients":[
-          [
-             "Alumina Solution",
-             12.0
-          ],
-          [
-             "Petroleum Coke",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Aluminum Scrap",
-             20.0
-          ],
-          [
-             "Water",
-             7.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Instant Scrap",
-       "ingredients":[
-          [
-             "Bauxite",
-             15.0
-          ],
-          [
-             "Coal",
-             10.0
-          ],
-          [
-             "Sulfuric Acid",
-             5.0
-          ],
-          [
-             "Water",
-             6.0
-          ]
-       ],
-       "products":[
-          [
-             "Aluminum Scrap",
-             30.0
-          ],
-          [
-             "Water",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Battery",
-       "ingredients":[
-          [
-             "Sulfuric Acid",
-             2.5
-          ],
-          [
-             "Alumina Solution",
-             2.0
-          ],
-          [
-             "Aluminum Casing",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Battery",
-             1.0
-          ],
-          [
-             "Water",
-             1.5
-          ]
-       ]
-    },
-    {
-       "name":"Non-fissile Uranium",
-       "ingredients":[
-          [
-             "Uranium Waste",
-             15.0
-          ],
-          [
-             "Silica",
-             10.0
-          ],
-          [
-             "Nitric Acid",
-             6.0
-          ],
-          [
-             "Sulfuric Acid",
-             6.0
-          ]
-       ],
-       "products":[
-          [
-             "Non-fissile Uranium",
-             20.0
-          ],
-          [
-             "Water",
-             6.0
-          ]
-       ]
-    },
-    {
-       "name":"Unpackage Water",
-       "ingredients":[
-          [
-             "Packaged Water",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Water",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Fertile Uranium",
-       "ingredients":[
-          [
-             "Uranium",
-             5.0
-          ],
-          [
-             "Uranium Waste",
-             5.0
-          ],
-          [
-             "Nitric Acid",
-             3.0
-          ],
-          [
-             "Sulfuric Acid",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Non-fissile Uranium",
-             20.0
-          ],
-          [
-             "Water",
-             8.0
-          ]
-       ]
-    },
-    {
-       "name":"Unpackage Oil",
-       "ingredients":[
-          [
-             "Packaged Oil",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Crude Oil",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Plastic",
-       "ingredients":[
-          [
-             "Crude Oil",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Plastic",
-             2.0
-          ],
-          [
-             "Heavy Oil Residue",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Rubber",
-       "ingredients":[
-          [
-             "Crude Oil",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Rubber",
-             2.0
-          ],
-          [
-             "Heavy Oil Residue",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Unpackage Heavy Oil Residue",
-       "ingredients":[
-          [
-             "Packaged Heavy Oil Residue",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Heavy Oil Residue",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Residual Fuel",
-       "ingredients":[
-          [
-             "Heavy Oil Residue",
-             6.0
-          ]
-       ],
-       "products":[
-          [
-             "Fuel",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Unpackage Fuel",
-       "ingredients":[
-          [
-             "Packaged Fuel",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Fuel",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Diluted Fuel",
-       "ingredients":[
-          [
-             "Heavy Oil Residue",
-             5.0
-          ],
-          [
-             "Water",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Fuel",
-             10.0
-          ]
-       ]
-    },
-    {
-       "name":"Liquid Biofuel",
-       "ingredients":[
-          [
-             "Solid Biofuel",
-             6.0
-          ],
-          [
-             "Water",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Liquid Biofuel",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Unpackage Liquid Biofuel",
-       "ingredients":[
-          [
-             "Packaged Liquid Biofuel",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Liquid Biofuel",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Unpackage Turbofuel",
-       "ingredients":[
-          [
-             "Packaged Turbofuel",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Turbofuel",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Turbo Blend Fuel",
-       "ingredients":[
-          [
-             "Fuel",
-             2.0
-          ],
-          [
-             "Heavy Oil Residue",
-             4.0
-          ],
-          [
-             "Sulfur",
-             3.0
-          ],
-          [
-             "Petroleum Coke",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Turbofuel",
-             6.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Turbo Heavy Fuel",
-       "ingredients":[
-          [
-             "Heavy Oil Residue",
-             5.0
-          ],
-          [
-             "Compacted Coal",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Turbofuel",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Turbofuel",
-       "ingredients":[
-          [
-             "Fuel",
-             6.0
-          ],
-          [
-             "Compacted Coal",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Turbofuel",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Unpackage Alumina Solution",
-       "ingredients":[
-          [
-             "Packaged Alumina Solution",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Alumina Solution",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Sloppy Alumina",
-       "ingredients":[
-          [
-             "Bauxite",
-             10.0
-          ],
-          [
-             "Water",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Alumina Solution",
-             12.0
-          ]
-       ]
-    },
-    {
-       "name":"Encased Uranium Cell",
-       "ingredients":[
-          [
-             "Uranium",
-             10.0
-          ],
-          [
-             "Concrete",
-             3.0
-          ],
-          [
-             "Sulfuric Acid",
-             8.0
-          ]
-       ],
-       "products":[
-          [
-             "Encased Uranium Cell",
-             5.0
-          ],
-          [
-             "Sulfuric Acid",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Sulfuric Acid",
-       "ingredients":[
-          [
-             "Sulfur",
-             5.0
-          ],
-          [
-             "Water",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Sulfuric Acid",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Unpackage Sulfuric Acid",
-       "ingredients":[
-          [
-             "Packaged Sulfuric Acid",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Sulfuric Acid",
-             1.0
-          ],
-          [
-             "Empty Canister",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Nitric Acid",
-       "ingredients":[
-          [
-             "Nitrogen Gas",
-             12.0
-          ],
-          [
-             "Water",
-             3.0
-          ],
-          [
-             "Iron Plate",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Nitric Acid",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Unpackage Nitric Acid",
-       "ingredients":[
-          [
-             "Packaged Nitric Acid",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Nitric Acid",
-             1.0
-          ],
-          [
-             "Empty Fluid Tank",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Nitrogen Gas",
-       "ingredients":[
-          [
-             "Nitrogen Gas",
-             0.0
-          ]
-       ],
-       "products":[
-          [
-             "Nitrogen Gas",
-             0.0
-          ]
-       ]
-    },
-    {
-       "name":"Unpackage Nitrogen Gas",
-       "ingredients":[
-          [
-             "Packaged Nitrogen Gas",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Nitrogen Gas",
-             4.0
-          ],
-          [
-             "Empty Fluid Tank",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Iron Rod",
-       "ingredients":[
-          [
-             "Iron Ingot",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Iron Rod",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Steel Rod",
-       "ingredients":[
-          [
-             "Steel Ingot",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Iron Rod",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Screw",
-       "ingredients":[
-          [
-             "Iron Rod",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Screw",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Cast Screw",
-       "ingredients":[
-          [
-             "Iron Ingot",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Screw",
-             20.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Steel Screw",
-       "ingredients":[
-          [
-             "Steel Beam",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Screw",
-             52.0
-          ]
-       ]
-    },
-    {
-       "name":"Iron Plate",
-       "ingredients":[
-          [
-             "Iron Ingot",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Iron Plate",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Coated Iron Plate",
-       "ingredients":[
-          [
-             "Iron Ingot",
-             10.0
-          ],
-          [
-             "Plastic",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Iron Plate",
-             15.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Steel Coated Plate",
-       "ingredients":[
-          [
-             "Steel Ingot",
-             3.0
-          ],
-          [
-             "Plastic",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Iron Plate",
-             18.0
-          ]
-       ]
-    },
-    {
-       "name":"Reinforced Iron Plate",
-       "ingredients":[
-          [
-             "Iron Plate",
-             6.0
-          ],
-          [
-             "Screw",
-             12.0
-          ]
-       ],
-       "products":[
-          [
-             "Reinforced Iron Plate",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Adhered Iron Plate",
-       "ingredients":[
-          [
-             "Iron Plate",
-             3.0
-          ],
-          [
-             "Rubber",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Reinforced Iron Plate",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Bolted Iron Plate",
-       "ingredients":[
-          [
-             "Iron Plate",
-             18.0
-          ],
-          [
-             "Screw",
-             50.0
-          ]
-       ],
-       "products":[
-          [
-             "Reinforced Iron Plate",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Stitched Iron Plate",
-       "ingredients":[
-          [
-             "Iron Plate",
-             10.0
-          ],
-          [
-             "Wire",
-             20.0
-          ]
-       ],
-       "products":[
-          [
-             "Reinforced Iron Plate",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Copper Sheet",
-       "ingredients":[
-          [
-             "Copper Ingot",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Copper Sheet",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Steamed Copper Sheet",
-       "ingredients":[
-          [
-             "Copper Ingot",
-             3.0
-          ],
-          [
-             "Water",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Copper Sheet",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Alclad Aluminum Sheet",
-       "ingredients":[
-          [
-             "Aluminum Ingot",
-             3.0
-          ],
-          [
-             "Copper Ingot",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Alclad Aluminum Sheet",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Aluminum Casing",
-       "ingredients":[
-          [
-             "Aluminum Ingot",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Aluminum Casing",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Alclad Casing",
-       "ingredients":[
-          [
-             "Aluminum Ingot",
-             20.0
-          ],
-          [
-             "Copper Ingot",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Aluminum Casing",
-             15.0
-          ]
-       ]
-    },
-    {
-       "name":"Steel Pipe",
-       "ingredients":[
-          [
-             "Steel Ingot",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Steel Pipe",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Steel Beam",
-       "ingredients":[
-          [
-             "Steel Ingot",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Steel Beam",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Encased Industrial Beam",
-       "ingredients":[
-          [
-             "Steel Beam",
-             4.0
-          ],
-          [
-             "Concrete",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Encased Industrial Beam",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Encased Industrial Pipe",
-       "ingredients":[
-          [
-             "Steel Pipe",
-             7.0
-          ],
-          [
-             "Concrete",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Encased Industrial Beam",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Modular Frame",
-       "ingredients":[
-          [
-             "Reinforced Iron Plate",
-             3.0
-          ],
-          [
-             "Iron Rod",
-             12.0
-          ]
-       ],
-       "products":[
-          [
-             "Modular Frame",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Bolted Frame",
-       "ingredients":[
-          [
-             "Reinforced Iron Plate",
-             3.0
-          ],
-          [
-             "Screw",
-             56.0
-          ]
-       ],
-       "products":[
-          [
-             "Modular Frame",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Steeled Frame",
-       "ingredients":[
-          [
-             "Reinforced Iron Plate",
-             2.0
-          ],
-          [
-             "Steel Pipe",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Modular Frame",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Heavy Modular Frame",
-       "ingredients":[
-          [
-             "Modular Frame",
-             5.0
-          ],
-          [
-             "Steel Pipe",
-             15.0
-          ],
-          [
-             "Encased Industrial Beam",
-             5.0
-          ],
-          [
-             "Screw",
-             100.0
-          ]
-       ],
-       "products":[
-          [
-             "Heavy Modular Frame",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Heavy Encased Frame",
-       "ingredients":[
-          [
-             "Modular Frame",
-             8.0
-          ],
-          [
-             "Encased Industrial Beam",
-             10.0
-          ],
-          [
-             "Steel Pipe",
-             36.0
-          ],
-          [
-             "Concrete",
-             22.0
-          ]
-       ],
-       "products":[
-          [
-             "Heavy Modular Frame",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Heavy Flexible Frame",
-       "ingredients":[
-          [
-             "Modular Frame",
-             5.0
-          ],
-          [
-             "Encased Industrial Beam",
-             3.0
-          ],
-          [
-             "Rubber",
-             20.0
-          ],
-          [
-             "Screw",
-             104.0
-          ]
-       ],
-       "products":[
-          [
-             "Heavy Modular Frame",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Fused Modular Frame",
-       "ingredients":[
-          [
-             "Heavy Modular Frame",
-             1.0
-          ],
-          [
-             "Aluminum Casing",
-             50.0
-          ],
-          [
-             "Nitrogen Gas",
-             25.0
-          ]
-       ],
-       "products":[
-          [
-             "Fused Modular Frame",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Heat-Fused Frame",
-       "ingredients":[
-          [
-             "Heavy Modular Frame",
-             1.0
-          ],
-          [
-             "Aluminum Ingot",
-             50.0
-          ],
-          [
-             "Nitric Acid",
-             8.0
-          ],
-          [
-             "Fuel",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Fused Modular Frame",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Fabric",
-       "ingredients":[
-          [
-             "Mycelia",
-             1.0
-          ],
-          [
-             "Biomass",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Fabric",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Polyester Fabric",
-       "ingredients":[
-          [
-             "Polymer Resin",
-             16.0
-          ],
-          [
-             "Water",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Fabric",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Residual Plastic",
-       "ingredients":[
-          [
-             "Polymer Resin",
-             6.0
-          ],
-          [
-             "Water",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Plastic",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Recycled Plastic",
-       "ingredients":[
-          [
-             "Rubber",
-             6.0
-          ],
-          [
-             "Fuel",
-             6.0
-          ]
-       ],
-       "products":[
-          [
-             "Plastic",
-             12.0
-          ]
-       ]
-    },
-    {
-       "name":"Residual Rubber",
-       "ingredients":[
-          [
-             "Polymer Resin",
-             4.0
-          ],
-          [
-             "Water",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Rubber",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Recycled Rubber",
-       "ingredients":[
-          [
-             "Plastic",
-             6.0
-          ],
-          [
-             "Fuel",
-             6.0
-          ]
-       ],
-       "products":[
-          [
-             "Rubber",
-             12.0
-          ]
-       ]
-    },
-    {
-       "name":"Rotor",
-       "ingredients":[
-          [
-             "Iron Rod",
-             5.0
-          ],
-          [
-             "Screw",
-             25.0
-          ]
-       ],
-       "products":[
-          [
-             "Rotor",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Copper Rotor",
-       "ingredients":[
-          [
-             "Copper Sheet",
-             6.0
-          ],
-          [
-             "Screw",
-             52.0
-          ]
-       ],
-       "products":[
-          [
-             "Rotor",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Steel Rotor",
-       "ingredients":[
-          [
-             "Steel Pipe",
-             2.0
-          ],
-          [
-             "Wire",
-             6.0
-          ]
-       ],
-       "products":[
-          [
-             "Rotor",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Stator",
-       "ingredients":[
-          [
-             "Steel Pipe",
-             3.0
-          ],
-          [
-             "Wire",
-             8.0
-          ]
-       ],
-       "products":[
-          [
-             "Stator",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Quickwire Stator",
-       "ingredients":[
-          [
-             "Steel Pipe",
-             4.0
-          ],
-          [
-             "Quickwire",
-             15.0
-          ]
-       ],
-       "products":[
-          [
-             "Stator",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Classic Battery",
-       "ingredients":[
-          [
-             "Sulfur",
-             6.0
-          ],
-          [
-             "Alclad Aluminum Sheet",
-             7.0
-          ],
-          [
-             "Plastic",
-             8.0
-          ],
-          [
-             "Wire",
-             12.0
-          ]
-       ],
-       "products":[
-          [
-             "Battery",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Motor",
-       "ingredients":[
-          [
-             "Rotor",
-             2.0
-          ],
-          [
-             "Stator",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Motor",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Electric Motor",
-       "ingredients":[
-          [
-             "Electromagnetic Control Rod",
-             1.0
-          ],
-          [
-             "Rotor",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Motor",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Rigour Motor",
-       "ingredients":[
-          [
-             "Rotor",
-             3.0
-          ],
-          [
-             "Stator",
-             3.0
-          ],
-          [
-             "Crystal Oscillator",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Motor",
-             6.0
-          ]
-       ]
-    },
-    {
-       "name":"Heat Sink",
-       "ingredients":[
-          [
-             "Alclad Aluminum Sheet",
-             5.0
-          ],
-          [
-             "Copper Sheet",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Heat Sink",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Heat Exchanger",
-       "ingredients":[
-          [
-             "Aluminum Casing",
-             3.0
-          ],
-          [
-             "Rubber",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Heat Sink",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Cooling System",
-       "ingredients":[
-          [
-             "Heat Sink",
-             2.0
-          ],
-          [
-             "Rubber",
-             2.0
-          ],
-          [
-             "Water",
-             5.0
-          ],
-          [
-             "Nitrogen Gas",
-             25.0
-          ]
-       ],
-       "products":[
-          [
-             "Cooling System",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Cooling Device",
-       "ingredients":[
-          [
-             "Heat Sink",
-             5.0
-          ],
-          [
-             "Motor",
-             1.0
-          ],
-          [
-             "Nitrogen Gas",
-             24.0
-          ]
-       ],
-       "products":[
-          [
-             "Cooling System",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Turbo Motor",
-       "ingredients":[
-          [
-             "Cooling System",
-             4.0
-          ],
-          [
-             "Radio Control Unit",
-             2.0
-          ],
-          [
-             "Motor",
-             4.0
-          ],
-          [
-             "Rubber",
-             24.0
-          ]
-       ],
-       "products":[
-          [
-             "Turbo Motor",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Turbo Electric Motor",
-       "ingredients":[
-          [
-             "Motor",
-             7.0
-          ],
-          [
-             "Radio Control Unit",
-             9.0
-          ],
-          [
-             "Electromagnetic Control Rod",
-             5.0
-          ],
-          [
-             "Rotor",
-             7.0
-          ]
-       ],
-       "products":[
-          [
-             "Turbo Motor",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Turbo Pressure Motor",
-       "ingredients":[
-          [
-             "Motor",
-             4.0
-          ],
-          [
-             "Pressure Conversion Cube",
-             1.0
-          ],
-          [
-             "Packaged Nitrogen Gas",
-             24.0
-          ],
-          [
-             "Stator",
-             8.0
-          ]
-       ],
-       "products":[
-          [
-             "Turbo Motor",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Wire",
-       "ingredients":[
-          [
-             "Copper Ingot",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Wire",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Caterium Wire",
-       "ingredients":[
-          [
-             "Caterium Ingot",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Wire",
-             8.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Fused Wire",
-       "ingredients":[
-          [
-             "Copper Ingot",
-             4.0
-          ],
-          [
-             "Caterium Ingot",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Wire",
-             30.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Iron Wire",
-       "ingredients":[
-          [
-             "Iron Ingot",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Wire",
-             9.0
-          ]
-       ]
-    },
-    {
-       "name":"Cable",
-       "ingredients":[
-          [
-             "Wire",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Cable",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Coated Cable",
-       "ingredients":[
-          [
-             "Wire",
-             5.0
-          ],
-          [
-             "Heavy Oil Residue",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Cable",
-             9.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Insulated Cable",
-       "ingredients":[
-          [
-             "Wire",
-             9.0
-          ],
-          [
-             "Rubber",
-             6.0
-          ]
-       ],
-       "products":[
-          [
-             "Cable",
-             20.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Quickwire Cable",
-       "ingredients":[
-          [
-             "Quickwire",
-             3.0
-          ],
-          [
-             "Rubber",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Cable",
-             11.0
-          ]
-       ]
-    },
-    {
-       "name":"Quickwire",
-       "ingredients":[
-          [
-             "Caterium Ingot",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Quickwire",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Fused Quickwire",
-       "ingredients":[
-          [
-             "Caterium Ingot",
-             1.0
-          ],
-          [
-             "Copper Ingot",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Quickwire",
-             12.0
-          ]
-       ]
-    },
-    {
-       "name":"Circuit Board",
-       "ingredients":[
-          [
-             "Copper Sheet",
-             2.0
-          ],
-          [
-             "Plastic",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Circuit Board",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Caterium Circuit Board",
-       "ingredients":[
-          [
-             "Plastic",
-             10.0
-          ],
-          [
-             "Quickwire",
-             30.0
-          ]
-       ],
-       "products":[
-          [
-             "Circuit Board",
-             7.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Electrode Circuit Board",
-       "ingredients":[
-          [
-             "Rubber",
-             6.0
-          ],
-          [
-             "Petroleum Coke",
-             9.0
-          ]
-       ],
-       "products":[
-          [
-             "Circuit Board",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Silicon Circuit Board",
-       "ingredients":[
-          [
-             "Copper Sheet",
-             11.0
-          ],
-          [
-             "Silica",
-             11.0
-          ]
-       ],
-       "products":[
-          [
-             "Circuit Board",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"AI Limiter",
-       "ingredients":[
-          [
-             "Copper Sheet",
-             5.0
-          ],
-          [
-             "Quickwire",
-             20.0
-          ]
-       ],
-       "products":[
-          [
-             "AI Limiter",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"High-Speed Connector",
-       "ingredients":[
-          [
-             "Quickwire",
-             56.0
-          ],
-          [
-             "Cable",
-             10.0
-          ],
-          [
-             "Circuit Board",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "High-Speed Connector",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Silicon High-Speed Connector",
-       "ingredients":[
-          [
-             "Quickwire",
-             60.0
-          ],
-          [
-             "Silica",
-             25.0
-          ],
-          [
-             "Circuit Board",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "High-Speed Connector",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Computer",
-       "ingredients":[
-          [
-             "Circuit Board",
-             10.0
-          ],
-          [
-             "Cable",
-             9.0
-          ],
-          [
-             "Plastic",
-             18.0
-          ],
-          [
-             "Screw",
-             52.0
-          ]
-       ],
-       "products":[
-          [
-             "Computer",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Caterium Computer",
-       "ingredients":[
-          [
-             "Circuit Board",
-             7.0
-          ],
-          [
-             "Quickwire",
-             28.0
-          ],
-          [
-             "Rubber",
-             12.0
-          ]
-       ],
-       "products":[
-          [
-             "Computer",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Crystal Computer",
-       "ingredients":[
-          [
-             "Circuit Board",
-             8.0
-          ],
-          [
-             "Crystal Oscillator",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Computer",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Supercomputer",
-       "ingredients":[
-          [
-             "Computer",
-             2.0
-          ],
-          [
-             "AI Limiter",
-             2.0
-          ],
-          [
-             "High-Speed Connector",
-             3.0
-          ],
-          [
-             "Plastic",
-             28.0
-          ]
-       ],
-       "products":[
-          [
-             "Supercomputer",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: OC Supercomputer",
-       "ingredients":[
-          [
-             "Radio Control Unit",
-             3.0
-          ],
-          [
-             "Cooling System",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Supercomputer",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Super-State Computer",
-       "ingredients":[
-          [
-             "Computer",
-             3.0
-          ],
-          [
-             "Electromagnetic Control Rod",
-             2.0
-          ],
-          [
-             "Battery",
-             20.0
-          ],
-          [
-             "Wire",
-             45.0
-          ]
-       ],
-       "products":[
-          [
-             "Supercomputer",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Radio Control Unit",
-       "ingredients":[
-          [
-             "Aluminum Casing",
-             32.0
-          ],
-          [
-             "Crystal Oscillator",
-             1.0
-          ],
-          [
-             "Computer",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Radio Control Unit",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Radio Connection Unit",
-       "ingredients":[
-          [
-             "Heat Sink",
-             4.0
-          ],
-          [
-             "High-Speed Connector",
-             2.0
-          ],
-          [
-             "Quartz Crystal",
-             12.0
-          ]
-       ],
-       "products":[
-          [
-             "Radio Control Unit",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Radio Control System",
-       "ingredients":[
-          [
-             "Crystal Oscillator",
-             1.0
-          ],
-          [
-             "Circuit Board",
-             10.0
-          ],
-          [
-             "Aluminum Casing",
-             60.0
-          ],
-          [
-             "Rubber",
-             30.0
-          ]
-       ],
-       "products":[
-          [
-             "Radio Control Unit",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Crystal Oscillator",
-       "ingredients":[
-          [
-             "Quartz Crystal",
-             36.0
-          ],
-          [
-             "Cable",
-             28.0
-          ],
-          [
-             "Reinforced Iron Plate",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Crystal Oscillator",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Insulated Crystal Oscillator",
-       "ingredients":[
-          [
-             "Quartz Crystal",
-             10.0
-          ],
-          [
-             "Rubber",
-             7.0
-          ],
-          [
-             "AI Limiter",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Crystal Oscillator",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Empty Canister",
-       "ingredients":[
-          [
-             "Plastic",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Empty Canister",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Coated Iron Canister",
-       "ingredients":[
-          [
-             "Iron Plate",
-             2.0
-          ],
-          [
-             "Copper Sheet",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Empty Canister",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Steel Canister",
-       "ingredients":[
-          [
-             "Steel Ingot",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Empty Fluid Tank",
-       "ingredients":[
-          [
-             "Aluminum Ingot",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Empty Fluid Tank",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Pressure Conversion Cube",
-       "ingredients":[
-          [
-             "Fused Modular Frame",
-             1.0
-          ],
-          [
-             "Radio Control Unit",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Pressure Conversion Cube",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Packaged Water",
-       "ingredients":[
-          [
-             "Water",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Water",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Packaged Alumina Solution",
-       "ingredients":[
-          [
-             "Alumina Solution",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Alumina Solution",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Packaged Sulfuric Acid",
-       "ingredients":[
-          [
-             "Sulfuric Acid",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Sulfuric Acid",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Packaged Nitric Acid",
-       "ingredients":[
-          [
-             "Nitric Acid",
-             1.0
-          ],
-          [
-             "Empty Fluid Tank",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Nitric Acid",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Packaged Nitrogen Gas",
-       "ingredients":[
-          [
-             "Nitrogen Gas",
-             4.0
-          ],
-          [
-             "Empty Fluid Tank",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Nitrogen Gas",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Biomass (Alien Carapace)",
-       "ingredients":[
-          [
-             "Alien Carapace",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Biomass",
-             100.0
-          ]
-       ]
-    },
-    {
-       "name":"Biomass (Alien Organs)",
-       "ingredients":[
-          [
-             "Alien Organs",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Biomass",
-             200.0
-          ]
-       ]
-    },
-    {
-       "name":"Biomass (Leaves)",
-       "ingredients":[
-          [
-             "Leaves",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Biomass",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Biomass (Mycelia)",
-       "ingredients":[
-          [
-             "Mycelia",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Biomass",
-             10.0
-          ]
-       ]
-    },
-    {
-       "name":"Biomass (Wood)",
-       "ingredients":[
-          [
-             "Wood",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Biomass",
-             20.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Compacted Coal",
-       "ingredients":[
-          [
-             "Coal",
-             5.0
-          ],
-          [
-             "Sulfur",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Compacted Coal",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Packaged Oil",
-       "ingredients":[
-          [
-             "Crude Oil",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Oil",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Packaged Heavy Oil Residue",
-       "ingredients":[
-          [
-             "Heavy Oil Residue",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Heavy Oil Residue",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Solid Biofuel",
-       "ingredients":[
-          [
-             "Biomass",
-             8.0
-          ]
-       ],
-       "products":[
-          [
-             "Solid Biofuel",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Packaged Fuel",
-       "ingredients":[
-          [
-             "Fuel",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Fuel",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Diluted Packaged Fuel",
-       "ingredients":[
-          [
-             "Heavy Oil Residue",
-             1.0
-          ],
-          [
-             "Packaged Water",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Fuel",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Packaged Liquid Biofuel",
-       "ingredients":[
-          [
-             "Liquid Biofuel",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Liquid Biofuel",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Packaged Turbofuel",
-       "ingredients":[
-          [
-             "Turbofuel",
-             2.0
-          ],
-          [
-             "Empty Canister",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Packaged Turbofuel",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Uranium Fuel Rod",
-       "ingredients":[
-          [
-             "Encased Uranium Cell",
-             50.0
-          ],
-          [
-             "Encased Industrial Beam",
-             3.0
-          ],
-          [
-             "Electromagnetic Control Rod",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Uranium Fuel Rod",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Uranium Fuel Unit",
-       "ingredients":[
-          [
-             "Encased Uranium Cell",
-             100.0
-          ],
-          [
-             "Electromagnetic Control Rod",
-             10.0
-          ],
-          [
-             "Crystal Oscillator",
-             3.0
-          ],
-          [
-             "Beacon",
-             6.0
-          ]
-       ],
-       "products":[
-          [
-             "Uranium Fuel Rod",
-             3.0
-          ]
-       ]
-    },
-    {
-       "name":"Plutonium Fuel Rod",
-       "ingredients":[
-          [
-             "Encased Plutonium Cell",
-             30.0
-          ],
-          [
-             "Steel Beam",
-             18.0
-          ],
-          [
-             "Electromagnetic Control Rod",
-             6.0
-          ],
-          [
-             "Heat Sink",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Plutonium Fuel Rod",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Plutonium Fuel Unit",
-       "ingredients":[
-          [
-             "Encased Plutonium Cell",
-             20.0
-          ],
-          [
-             "Pressure Conversion Cube",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Plutonium Fuel Rod",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Black Powder",
-       "ingredients":[
-          [
-             "Coal",
-             1.0
-          ],
-          [
-             "Sulfur",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Black Powder",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Fine Black Powder",
-       "ingredients":[
-          [
-             "Sulfur",
-             2.0
-          ],
-          [
-             "Compacted Coal",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Black Powder",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Nobelisk",
-       "ingredients":[
-          [
-             "Black Powder",
-             5.0
-          ],
-          [
-             "Steel Pipe",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Nobelisk",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Seismic Nobelisk",
-       "ingredients":[
-          [
-             "Black Powder",
-             8.0
-          ],
-          [
-             "Steel Pipe",
-             8.0
-          ],
-          [
-             "Crystal Oscillator",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Nobelisk",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Gas Filter",
-       "ingredients":[
-          [
-             "Coal",
-             5.0
-          ],
-          [
-             "Rubber",
-             2.0
-          ],
-          [
-             "Fabric",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Gas Filter",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Color Cartridge",
-       "ingredients":[
-          [
-             "Flower Petals",
-             5.0
-          ]
-       ],
-       "products":[
-          [
-             "Color Cartridge",
-             10.0
-          ]
-       ]
-    },
-    {
-       "name":"Rifle Cartridge",
-       "ingredients":[
-          [
-             "Beacon",
-             1.0
-          ],
-          [
-             "Steel Pipe",
-             10.0
-          ],
-          [
-             "Black Powder",
-             10.0
-          ],
-          [
-             "Rubber",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Rifle Cartridge",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Spiked Rebar",
-       "ingredients":[
-          [
-             "Iron Rod",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Spiked Rebar",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Beacon",
-       "ingredients":[
-          [
-             "Iron Plate",
-             3.0
-          ],
-          [
-             "Iron Rod",
-             1.0
-          ],
-          [
-             "Wire",
-             15.0
-          ],
-          [
-             "Cable",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Beacon",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Crystal Beacon",
-       "ingredients":[
-          [
-             "Steel Beam",
-             4.0
-          ],
-          [
-             "Steel Pipe",
-             16.0
-          ],
-          [
-             "Crystal Oscillator",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Beacon",
-             20.0
-          ]
-       ]
-    },
-    {
-       "name":"Iodine Infused Filter",
-       "ingredients":[
-          [
-             "Gas Filter",
-             1.0
-          ],
-          [
-             "Quickwire",
-             8.0
-          ],
-          [
-             "Aluminum Casing",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Iodine Infused Filter",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Electromagnetic Control Rod",
-       "ingredients":[
-          [
-             "Stator",
-             3.0
-          ],
-          [
-             "AI Limiter",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Electromagnetic Control Rod",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Electromagnetic Connection Rod",
-       "ingredients":[
-          [
-             "Stator",
-             2.0
-          ],
-          [
-             "High-Speed Connector",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Electromagnetic Control Rod",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Infused Uranium Cell",
-       "ingredients":[
-          [
-             "Uranium",
-             5.0
-          ],
-          [
-             "Silica",
-             3.0
-          ],
-          [
-             "Sulfur",
-             5.0
-          ],
-          [
-             "Quickwire",
-             15.0
-          ]
-       ],
-       "products":[
-          [
-             "Encased Uranium Cell",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Plutonium Pellet",
-       "ingredients":[
-          [
-             "Non-fissile Uranium",
-             100.0
-          ],
-          [
-             "Uranium Waste",
-             25.0
-          ]
-       ],
-       "products":[
-          [
-             "Plutonium Pellet",
-             30.0
-          ]
-       ]
-    },
-    {
-       "name":"Encased Plutonium Cell",
-       "ingredients":[
-          [
-             "Plutonium Pellet",
-             2.0
-          ],
-          [
-             "Concrete",
-             4.0
-          ]
-       ],
-       "products":[
-          [
-             "Encased Plutonium Cell",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Instant Plutonium Cell",
-       "ingredients":[
-          [
-             "Non-fissile Uranium",
-             150.0
-          ],
-          [
-             "Aluminum Casing",
-             20.0
-          ]
-       ],
-       "products":[
-          [
-             "Encased Plutonium Cell",
-             20.0
-          ]
-       ]
-    },
-    {
-       "name":"Uranium Waste",
-       "ingredients":[
-          [
-             "Uranium Fuel Rod",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Uranium Waste",
-             50.0
-          ]
-       ]
-    },
-    {
-       "name":"Plutonium Waste",
-       "ingredients":[
-          [
-             "Plutonium Fuel Rod",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Plutonium Waste",
-             10.0
-          ]
-       ]
-    },
-    {
-       "name":"Power Shard (1)",
-       "ingredients":[
-          [
-             "Blue Power Slug",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Power Shard",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Power Shard (2)",
-       "ingredients":[
-          [
-             "Yellow Power Slug",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Power Shard",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Power Shard (5)",
-       "ingredients":[
-          [
-             "Purple Power Slug",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Power Shard",
-             5.0
-          ]
-       ]
-    },
-    {
-       "name":"Smart Plating",
-       "ingredients":[
-          [
-             "Reinforced Iron Plate",
-             1.0
-          ],
-          [
-             "Rotor",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Smart Plating",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Plastic Smart Plating",
-       "ingredients":[
-          [
-             "Reinforced Iron Plate",
-             1.0
-          ],
-          [
-             "Rotor",
-             1.0
-          ],
-          [
-             "Plastic",
-             3.0
-          ]
-       ],
-       "products":[
-          [
-             "Smart Plating",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Versatile Framework",
-       "ingredients":[
-          [
-             "Modular Frame",
-             1.0
-          ],
-          [
-             "Steel Beam",
-             12.0
-          ]
-       ],
-       "products":[
-          [
-             "Versatile Framework",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Flexible Framework",
-       "ingredients":[
-          [
-             "Modular Frame",
-             1.0
-          ],
-          [
-             "Steel Beam",
-             6.0
-          ],
-          [
-             "Rubber",
-             8.0
-          ]
-       ],
-       "products":[
-          [
-             "Versatile Framework",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Automated Wiring",
-       "ingredients":[
-          [
-             "Stator",
-             1.0
-          ],
-          [
-             "Cable",
-             20.0
-          ]
-       ],
-       "products":[
-          [
-             "Automated Wiring",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Alternate: Automated Speed Wiring",
-       "ingredients":[
-          [
-             "Stator",
-             2.0
-          ],
-          [
-             "Wire",
-             40.0
-          ],
-          [
-             "High-Speed Connector",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Automated Wiring",
-             4.0
-          ]
-       ]
-    },
-    {
-       "name":"Modular Engine",
-       "ingredients":[
-          [
-             "Motor",
-             2.0
-          ],
-          [
-             "Rubber",
-             15.0
-          ],
-          [
-             "Smart Plating",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Modular Engine",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Adaptive Control Unit",
-       "ingredients":[
-          [
-             "Automated Wiring",
-             15.0
-          ],
-          [
-             "Circuit Board",
-             10.0
-          ],
-          [
-             "Heavy Modular Frame",
-             2.0
-          ],
-          [
-             "Computer",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Adaptive Control Unit",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Assembly Director System",
-       "ingredients":[
-          [
-             "Adaptive Control Unit",
-             2.0
-          ],
-          [
-             "Supercomputer",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Assembly Director System",
-             1.0
-          ]
-       ]
-    },
-    {
-       "name":"Magnetic Field Generator",
-       "ingredients":[
-          [
-             "Versatile Framework",
-             5.0
-          ],
-          [
-             "Electromagnetic Control Rod",
-             2.0
-          ],
-          [
-             "Battery",
-             10.0
-          ]
-       ],
-       "products":[
-          [
-             "Magnetic Field Generator",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Thermal Propulsion Rocket",
-       "ingredients":[
-          [
-             "Modular Engine",
-             5.0
-          ],
-          [
-             "Turbo Motor",
-             2.0
-          ],
-          [
-             "Cooling System",
-             6.0
-          ],
-          [
-             "Fused Modular Frame",
-             2.0
-          ]
-       ],
-       "products":[
-          [
-             "Thermal Propulsion Rocket",
-             2.0
-          ]
-       ]
-    },
-    {
-       "name":"Nuclear Pasta",
-       "ingredients":[
-          [
-             "Copper Powder",
-             200.0
-          ],
-          [
-             "Pressure Conversion Cube",
-             1.0
-          ]
-       ],
-       "products":[
-          [
-             "Nuclear Pasta",
-             1.0
-          ]
-       ]
-    }
- ]
+ {
+  "name": "alternate-biocoal",
+  "ingredients": [
+   [
+    "biomass",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "coal",
+    6.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-charcoal",
+  "ingredients": [
+   [
+    "wood",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "coal",
+    10.0
+   ]
+  ]
+ },
+ {
+  "name": "iron-ingot",
+  "ingredients": [
+   [
+    "iron-ore",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "iron-ingot",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-iron-alloy-ingot",
+  "ingredients": [
+   [
+    "iron-ore",
+    2.0
+   ],
+   [
+    "copper-ore",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "iron-ingot",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-pure-iron-ingot",
+  "ingredients": [
+   [
+    "iron-ore",
+    7.0
+   ],
+   [
+    "water",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "iron-ingot",
+    13.0
+   ]
+  ]
+ },
+ {
+  "name": "copper-ingot",
+  "ingredients": [
+   [
+    "copper-ore",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "copper-ingot",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-copper-alloy-ingot",
+  "ingredients": [
+   [
+    "copper-ore",
+    10.0
+   ],
+   [
+    "iron-ore",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "copper-ingot",
+    20.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-pure-copper-ingot",
+  "ingredients": [
+   [
+    "copper-ore",
+    6.0
+   ],
+   [
+    "water",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "copper-ingot",
+    15.0
+   ]
+  ]
+ },
+ {
+  "name": "caterium-ingot",
+  "ingredients": [
+   [
+    "caterium-ore",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "caterium-ingot",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-pure-caterium-ingot",
+  "ingredients": [
+   [
+    "caterium-ore",
+    2.0
+   ],
+   [
+    "water",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "caterium-ingot",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "steel-ingot",
+  "ingredients": [
+   [
+    "iron-ore",
+    3.0
+   ],
+   [
+    "coal",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "steel-ingot",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-coke-steel-ingot",
+  "ingredients": [
+   [
+    "iron-ore",
+    15.0
+   ],
+   [
+    "petroleum-coke",
+    15.0
+   ]
+  ],
+  "products": [
+   [
+    "steel-ingot",
+    20.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-compacted-steel-ingot",
+  "ingredients": [
+   [
+    "iron-ore",
+    6.0
+   ],
+   [
+    "compacted-coal",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "steel-ingot",
+    10.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-solid-steel-ingot",
+  "ingredients": [
+   [
+    "iron-ingot",
+    2.0
+   ],
+   [
+    "coal",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "steel-ingot",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "aluminum-ingot",
+  "ingredients": [
+   [
+    "aluminum-scrap",
+    6.0
+   ],
+   [
+    "silica",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "aluminum-ingot",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-pure-aluminum-ingot",
+  "ingredients": [
+   [
+    "aluminum-scrap",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "aluminum-ingot",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "concrete",
+  "ingredients": [
+   [
+    "limestone",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "concrete",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-fine-concrete",
+  "ingredients": [
+   [
+    "silica",
+    3.0
+   ],
+   [
+    "limestone",
+    12.0
+   ]
+  ],
+  "products": [
+   [
+    "concrete",
+    10.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-rubber-concrete",
+  "ingredients": [
+   [
+    "limestone",
+    10.0
+   ],
+   [
+    "rubber",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "concrete",
+    9.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-wet-concrete",
+  "ingredients": [
+   [
+    "limestone",
+    6.0
+   ],
+   [
+    "water",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "concrete",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "quartz-crystal",
+  "ingredients": [
+   [
+    "raw-quartz",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "quartz-crystal",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-pure-quartz-crystal",
+  "ingredients": [
+   [
+    "raw-quartz",
+    9.0
+   ],
+   [
+    "water",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "quartz-crystal",
+    7.0
+   ]
+  ]
+ },
+ {
+  "name": "alumina-solution",
+  "ingredients": [
+   [
+    "bauxite",
+    12.0
+   ],
+   [
+    "water",
+    18.0
+   ]
+  ],
+  "products": [
+   [
+    "alumina-solution",
+    12.0
+   ],
+   [
+    "silica",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "silica",
+  "ingredients": [
+   [
+    "raw-quartz",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "silica",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-cheap-silica",
+  "ingredients": [
+   [
+    "raw-quartz",
+    3.0
+   ],
+   [
+    "limestone",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "silica",
+    7.0
+   ]
+  ]
+ },
+ {
+  "name": "copper-powder",
+  "ingredients": [
+   [
+    "copper-ingot",
+    30.0
+   ]
+  ],
+  "products": [
+   [
+    "copper-powder",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "fuel",
+  "ingredients": [
+   [
+    "crude-oil",
+    6.0
+   ]
+  ],
+  "products": [
+   [
+    "fuel",
+    4.0
+   ],
+   [
+    "polymer-resin",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-heavy-oil-residue",
+  "ingredients": [
+   [
+    "crude-oil",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "heavy-oil-residue",
+    4.0
+   ],
+   [
+    "polymer-resin",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-polymer-resin",
+  "ingredients": [
+   [
+    "crude-oil",
+    6.0
+   ]
+  ],
+  "products": [
+   [
+    "polymer-resin",
+    13.0
+   ],
+   [
+    "heavy-oil-residue",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "petroleum-coke",
+  "ingredients": [
+   [
+    "heavy-oil-residue",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "petroleum-coke",
+    12.0
+   ]
+  ]
+ },
+ {
+  "name": "aluminum-scrap",
+  "ingredients": [
+   [
+    "alumina-solution",
+    4.0
+   ],
+   [
+    "coal",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "aluminum-scrap",
+    6.0
+   ],
+   [
+    "water",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-electrode---aluminum-scrap",
+  "ingredients": [
+   [
+    "alumina-solution",
+    12.0
+   ],
+   [
+    "petroleum-coke",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "aluminum-scrap",
+    20.0
+   ],
+   [
+    "water",
+    7.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-instant-scrap",
+  "ingredients": [
+   [
+    "bauxite",
+    15.0
+   ],
+   [
+    "coal",
+    10.0
+   ],
+   [
+    "sulfuric-acid",
+    5.0
+   ],
+   [
+    "water",
+    6.0
+   ]
+  ],
+  "products": [
+   [
+    "aluminum-scrap",
+    30.0
+   ],
+   [
+    "water",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "battery",
+  "ingredients": [
+   [
+    "sulfuric-acid",
+    2.5
+   ],
+   [
+    "alumina-solution",
+    2.0
+   ],
+   [
+    "aluminum-casing",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "battery",
+    1.0
+   ],
+   [
+    "water",
+    1.5
+   ]
+  ]
+ },
+ {
+  "name": "non-fissile-uranium",
+  "ingredients": [
+   [
+    "uranium-waste",
+    15.0
+   ],
+   [
+    "silica",
+    10.0
+   ],
+   [
+    "nitric-acid",
+    6.0
+   ],
+   [
+    "sulfuric-acid",
+    6.0
+   ]
+  ],
+  "products": [
+   [
+    "non-fissile-uranium",
+    20.0
+   ],
+   [
+    "water",
+    6.0
+   ]
+  ]
+ },
+ {
+  "name": "unpackage-water",
+  "ingredients": [
+   [
+    "packaged-water",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "water",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-fertile-uranium",
+  "ingredients": [
+   [
+    "uranium",
+    5.0
+   ],
+   [
+    "uranium-waste",
+    5.0
+   ],
+   [
+    "nitric-acid",
+    3.0
+   ],
+   [
+    "sulfuric-acid",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "non-fissile-uranium",
+    20.0
+   ],
+   [
+    "water",
+    8.0
+   ]
+  ]
+ },
+ {
+  "name": "unpackage-oil",
+  "ingredients": [
+   [
+    "packaged-oil",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "crude-oil",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "plastic",
+  "ingredients": [
+   [
+    "crude-oil",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "plastic",
+    2.0
+   ],
+   [
+    "heavy-oil-residue",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "rubber",
+  "ingredients": [
+   [
+    "crude-oil",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "rubber",
+    2.0
+   ],
+   [
+    "heavy-oil-residue",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "unpackage-heavy-oil-residue",
+  "ingredients": [
+   [
+    "packaged-heavy-oil-residue",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "heavy-oil-residue",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "residual-fuel",
+  "ingredients": [
+   [
+    "heavy-oil-residue",
+    6.0
+   ]
+  ],
+  "products": [
+   [
+    "fuel",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "unpackage-fuel",
+  "ingredients": [
+   [
+    "packaged-fuel",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "fuel",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-diluted-fuel",
+  "ingredients": [
+   [
+    "heavy-oil-residue",
+    5.0
+   ],
+   [
+    "water",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "fuel",
+    10.0
+   ]
+  ]
+ },
+ {
+  "name": "liquid-biofuel",
+  "ingredients": [
+   [
+    "solid-biofuel",
+    6.0
+   ],
+   [
+    "water",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "liquid-biofuel",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "unpackage-liquid-biofuel",
+  "ingredients": [
+   [
+    "packaged-liquid-biofuel",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "liquid-biofuel",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "unpackage-turbofuel",
+  "ingredients": [
+   [
+    "packaged-turbofuel",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "turbofuel",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-turbo-blend-fuel",
+  "ingredients": [
+   [
+    "fuel",
+    2.0
+   ],
+   [
+    "heavy-oil-residue",
+    4.0
+   ],
+   [
+    "sulfur",
+    3.0
+   ],
+   [
+    "petroleum-coke",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "turbofuel",
+    6.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-turbo-heavy-fuel",
+  "ingredients": [
+   [
+    "heavy-oil-residue",
+    5.0
+   ],
+   [
+    "compacted-coal",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "turbofuel",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "turbofuel",
+  "ingredients": [
+   [
+    "fuel",
+    6.0
+   ],
+   [
+    "compacted-coal",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "turbofuel",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "unpackage-alumina-solution",
+  "ingredients": [
+   [
+    "packaged-alumina-solution",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "alumina-solution",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-sloppy-alumina",
+  "ingredients": [
+   [
+    "bauxite",
+    10.0
+   ],
+   [
+    "water",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "alumina-solution",
+    12.0
+   ]
+  ]
+ },
+ {
+  "name": "encased-uranium-cell",
+  "ingredients": [
+   [
+    "uranium",
+    10.0
+   ],
+   [
+    "concrete",
+    3.0
+   ],
+   [
+    "sulfuric-acid",
+    8.0
+   ]
+  ],
+  "products": [
+   [
+    "encased-uranium-cell",
+    5.0
+   ],
+   [
+    "sulfuric-acid",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "sulfuric-acid",
+  "ingredients": [
+   [
+    "sulfur",
+    5.0
+   ],
+   [
+    "water",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "sulfuric-acid",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "unpackage-sulfuric-acid",
+  "ingredients": [
+   [
+    "packaged-sulfuric-acid",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "sulfuric-acid",
+    1.0
+   ],
+   [
+    "empty-canister",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "nitric-acid",
+  "ingredients": [
+   [
+    "nitrogen-gas",
+    12.0
+   ],
+   [
+    "water",
+    3.0
+   ],
+   [
+    "iron-plate",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "nitric-acid",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "unpackage-nitric-acid",
+  "ingredients": [
+   [
+    "packaged-nitric-acid",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "nitric-acid",
+    1.0
+   ],
+   [
+    "empty-fluid-tank",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "nitrogen-gas",
+  "ingredients": [
+   [
+    "nitrogen-gas",
+    0.0
+   ]
+  ],
+  "products": [
+   [
+    "nitrogen-gas",
+    0.0
+   ]
+  ]
+ },
+ {
+  "name": "unpackage-nitrogen-gas",
+  "ingredients": [
+   [
+    "packaged-nitrogen-gas",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "nitrogen-gas",
+    4.0
+   ],
+   [
+    "empty-fluid-tank",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "iron-rod",
+  "ingredients": [
+   [
+    "iron-ingot",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "iron-rod",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-steel-rod",
+  "ingredients": [
+   [
+    "steel-ingot",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "iron-rod",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "screw",
+  "ingredients": [
+   [
+    "iron-rod",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "screw",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-cast-screw",
+  "ingredients": [
+   [
+    "iron-ingot",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "screw",
+    20.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-steel-screw",
+  "ingredients": [
+   [
+    "steel-beam",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "screw",
+    52.0
+   ]
+  ]
+ },
+ {
+  "name": "iron-plate",
+  "ingredients": [
+   [
+    "iron-ingot",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "iron-plate",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-coated-iron-plate",
+  "ingredients": [
+   [
+    "iron-ingot",
+    10.0
+   ],
+   [
+    "plastic",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "iron-plate",
+    15.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-steel-coated-plate",
+  "ingredients": [
+   [
+    "steel-ingot",
+    3.0
+   ],
+   [
+    "plastic",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "iron-plate",
+    18.0
+   ]
+  ]
+ },
+ {
+  "name": "reinforced-iron-plate",
+  "ingredients": [
+   [
+    "iron-plate",
+    6.0
+   ],
+   [
+    "screw",
+    12.0
+   ]
+  ],
+  "products": [
+   [
+    "reinforced-iron-plate",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-adhered-iron-plate",
+  "ingredients": [
+   [
+    "iron-plate",
+    3.0
+   ],
+   [
+    "rubber",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "reinforced-iron-plate",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-bolted-iron-plate",
+  "ingredients": [
+   [
+    "iron-plate",
+    18.0
+   ],
+   [
+    "screw",
+    50.0
+   ]
+  ],
+  "products": [
+   [
+    "reinforced-iron-plate",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-stitched-iron-plate",
+  "ingredients": [
+   [
+    "iron-plate",
+    10.0
+   ],
+   [
+    "wire",
+    20.0
+   ]
+  ],
+  "products": [
+   [
+    "reinforced-iron-plate",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "copper-sheet",
+  "ingredients": [
+   [
+    "copper-ingot",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "copper-sheet",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-steamed-copper-sheet",
+  "ingredients": [
+   [
+    "copper-ingot",
+    3.0
+   ],
+   [
+    "water",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "copper-sheet",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "alclad-aluminum-sheet",
+  "ingredients": [
+   [
+    "aluminum-ingot",
+    3.0
+   ],
+   [
+    "copper-ingot",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "alclad-aluminum-sheet",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "aluminum-casing",
+  "ingredients": [
+   [
+    "aluminum-ingot",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "aluminum-casing",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-alclad-casing",
+  "ingredients": [
+   [
+    "aluminum-ingot",
+    20.0
+   ],
+   [
+    "copper-ingot",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "aluminum-casing",
+    15.0
+   ]
+  ]
+ },
+ {
+  "name": "steel-pipe",
+  "ingredients": [
+   [
+    "steel-ingot",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "steel-pipe",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "steel-beam",
+  "ingredients": [
+   [
+    "steel-ingot",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "steel-beam",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "encased-industrial-beam",
+  "ingredients": [
+   [
+    "steel-beam",
+    4.0
+   ],
+   [
+    "concrete",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "encased-industrial-beam",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-encased-industrial-pipe",
+  "ingredients": [
+   [
+    "steel-pipe",
+    7.0
+   ],
+   [
+    "concrete",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "encased-industrial-beam",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "modular-frame",
+  "ingredients": [
+   [
+    "reinforced-iron-plate",
+    3.0
+   ],
+   [
+    "iron-rod",
+    12.0
+   ]
+  ],
+  "products": [
+   [
+    "modular-frame",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-bolted-frame",
+  "ingredients": [
+   [
+    "reinforced-iron-plate",
+    3.0
+   ],
+   [
+    "screw",
+    56.0
+   ]
+  ],
+  "products": [
+   [
+    "modular-frame",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-steeled-frame",
+  "ingredients": [
+   [
+    "reinforced-iron-plate",
+    2.0
+   ],
+   [
+    "steel-pipe",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "modular-frame",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "heavy-modular-frame",
+  "ingredients": [
+   [
+    "modular-frame",
+    5.0
+   ],
+   [
+    "steel-pipe",
+    15.0
+   ],
+   [
+    "encased-industrial-beam",
+    5.0
+   ],
+   [
+    "screw",
+    100.0
+   ]
+  ],
+  "products": [
+   [
+    "heavy-modular-frame",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-heavy-encased-frame",
+  "ingredients": [
+   [
+    "modular-frame",
+    8.0
+   ],
+   [
+    "encased-industrial-beam",
+    10.0
+   ],
+   [
+    "steel-pipe",
+    36.0
+   ],
+   [
+    "concrete",
+    22.0
+   ]
+  ],
+  "products": [
+   [
+    "heavy-modular-frame",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-heavy-flexible-frame",
+  "ingredients": [
+   [
+    "modular-frame",
+    5.0
+   ],
+   [
+    "encased-industrial-beam",
+    3.0
+   ],
+   [
+    "rubber",
+    20.0
+   ],
+   [
+    "screw",
+    104.0
+   ]
+  ],
+  "products": [
+   [
+    "heavy-modular-frame",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "fused-modular-frame",
+  "ingredients": [
+   [
+    "heavy-modular-frame",
+    1.0
+   ],
+   [
+    "aluminum-casing",
+    50.0
+   ],
+   [
+    "nitrogen-gas",
+    25.0
+   ]
+  ],
+  "products": [
+   [
+    "fused-modular-frame",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-heat-fused-frame",
+  "ingredients": [
+   [
+    "heavy-modular-frame",
+    1.0
+   ],
+   [
+    "aluminum-ingot",
+    50.0
+   ],
+   [
+    "nitric-acid",
+    8.0
+   ],
+   [
+    "fuel",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "fused-modular-frame",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "fabric",
+  "ingredients": [
+   [
+    "mycelia",
+    1.0
+   ],
+   [
+    "biomass",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "fabric",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-polyester-fabric",
+  "ingredients": [
+   [
+    "polymer-resin",
+    16.0
+   ],
+   [
+    "water",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "fabric",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "residual-plastic",
+  "ingredients": [
+   [
+    "polymer-resin",
+    6.0
+   ],
+   [
+    "water",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "plastic",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-recycled-plastic",
+  "ingredients": [
+   [
+    "rubber",
+    6.0
+   ],
+   [
+    "fuel",
+    6.0
+   ]
+  ],
+  "products": [
+   [
+    "plastic",
+    12.0
+   ]
+  ]
+ },
+ {
+  "name": "residual-rubber",
+  "ingredients": [
+   [
+    "polymer-resin",
+    4.0
+   ],
+   [
+    "water",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "rubber",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-recycled-rubber",
+  "ingredients": [
+   [
+    "plastic",
+    6.0
+   ],
+   [
+    "fuel",
+    6.0
+   ]
+  ],
+  "products": [
+   [
+    "rubber",
+    12.0
+   ]
+  ]
+ },
+ {
+  "name": "rotor",
+  "ingredients": [
+   [
+    "iron-rod",
+    5.0
+   ],
+   [
+    "screw",
+    25.0
+   ]
+  ],
+  "products": [
+   [
+    "rotor",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-copper-rotor",
+  "ingredients": [
+   [
+    "copper-sheet",
+    6.0
+   ],
+   [
+    "screw",
+    52.0
+   ]
+  ],
+  "products": [
+   [
+    "rotor",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-steel-rotor",
+  "ingredients": [
+   [
+    "steel-pipe",
+    2.0
+   ],
+   [
+    "wire",
+    6.0
+   ]
+  ],
+  "products": [
+   [
+    "rotor",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "stator",
+  "ingredients": [
+   [
+    "steel-pipe",
+    3.0
+   ],
+   [
+    "wire",
+    8.0
+   ]
+  ],
+  "products": [
+   [
+    "stator",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-quickwire-stator",
+  "ingredients": [
+   [
+    "steel-pipe",
+    4.0
+   ],
+   [
+    "quickwire",
+    15.0
+   ]
+  ],
+  "products": [
+   [
+    "stator",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-classic-battery",
+  "ingredients": [
+   [
+    "sulfur",
+    6.0
+   ],
+   [
+    "alclad-aluminum-sheet",
+    7.0
+   ],
+   [
+    "plastic",
+    8.0
+   ],
+   [
+    "wire",
+    12.0
+   ]
+  ],
+  "products": [
+   [
+    "battery",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "motor",
+  "ingredients": [
+   [
+    "rotor",
+    2.0
+   ],
+   [
+    "stator",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "motor",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-electric-motor",
+  "ingredients": [
+   [
+    "electromagnetic-control-rod",
+    1.0
+   ],
+   [
+    "rotor",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "motor",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-rigour-motor",
+  "ingredients": [
+   [
+    "rotor",
+    3.0
+   ],
+   [
+    "stator",
+    3.0
+   ],
+   [
+    "crystal-oscillator",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "motor",
+    6.0
+   ]
+  ]
+ },
+ {
+  "name": "heat-sink",
+  "ingredients": [
+   [
+    "alclad-aluminum-sheet",
+    5.0
+   ],
+   [
+    "copper-sheet",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "heat-sink",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-heat-exchanger",
+  "ingredients": [
+   [
+    "aluminum-casing",
+    3.0
+   ],
+   [
+    "rubber",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "heat-sink",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "cooling-system",
+  "ingredients": [
+   [
+    "heat-sink",
+    2.0
+   ],
+   [
+    "rubber",
+    2.0
+   ],
+   [
+    "water",
+    5.0
+   ],
+   [
+    "nitrogen-gas",
+    25.0
+   ]
+  ],
+  "products": [
+   [
+    "cooling-system",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-cooling-device",
+  "ingredients": [
+   [
+    "heat-sink",
+    5.0
+   ],
+   [
+    "motor",
+    1.0
+   ],
+   [
+    "nitrogen-gas",
+    24.0
+   ]
+  ],
+  "products": [
+   [
+    "cooling-system",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "turbo-motor",
+  "ingredients": [
+   [
+    "cooling-system",
+    4.0
+   ],
+   [
+    "radio-control-unit",
+    2.0
+   ],
+   [
+    "motor",
+    4.0
+   ],
+   [
+    "rubber",
+    24.0
+   ]
+  ],
+  "products": [
+   [
+    "turbo-motor",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-turbo-electric-motor",
+  "ingredients": [
+   [
+    "motor",
+    7.0
+   ],
+   [
+    "radio-control-unit",
+    9.0
+   ],
+   [
+    "electromagnetic-control-rod",
+    5.0
+   ],
+   [
+    "rotor",
+    7.0
+   ]
+  ],
+  "products": [
+   [
+    "turbo-motor",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-turbo-pressure-motor",
+  "ingredients": [
+   [
+    "motor",
+    4.0
+   ],
+   [
+    "pressure-conversion-cube",
+    1.0
+   ],
+   [
+    "packaged-nitrogen-gas",
+    24.0
+   ],
+   [
+    "stator",
+    8.0
+   ]
+  ],
+  "products": [
+   [
+    "turbo-motor",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "wire",
+  "ingredients": [
+   [
+    "copper-ingot",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "wire",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-caterium-wire",
+  "ingredients": [
+   [
+    "caterium-ingot",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "wire",
+    8.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-fused-wire",
+  "ingredients": [
+   [
+    "copper-ingot",
+    4.0
+   ],
+   [
+    "caterium-ingot",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "wire",
+    30.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-iron-wire",
+  "ingredients": [
+   [
+    "iron-ingot",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "wire",
+    9.0
+   ]
+  ]
+ },
+ {
+  "name": "cable",
+  "ingredients": [
+   [
+    "wire",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "cable",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-coated-cable",
+  "ingredients": [
+   [
+    "wire",
+    5.0
+   ],
+   [
+    "heavy-oil-residue",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "cable",
+    9.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-insulated-cable",
+  "ingredients": [
+   [
+    "wire",
+    9.0
+   ],
+   [
+    "rubber",
+    6.0
+   ]
+  ],
+  "products": [
+   [
+    "cable",
+    20.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-quickwire-cable",
+  "ingredients": [
+   [
+    "quickwire",
+    3.0
+   ],
+   [
+    "rubber",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "cable",
+    11.0
+   ]
+  ]
+ },
+ {
+  "name": "quickwire",
+  "ingredients": [
+   [
+    "caterium-ingot",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "quickwire",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-fused-quickwire",
+  "ingredients": [
+   [
+    "caterium-ingot",
+    1.0
+   ],
+   [
+    "copper-ingot",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "quickwire",
+    12.0
+   ]
+  ]
+ },
+ {
+  "name": "circuit-board",
+  "ingredients": [
+   [
+    "copper-sheet",
+    2.0
+   ],
+   [
+    "plastic",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "circuit-board",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-caterium-circuit-board",
+  "ingredients": [
+   [
+    "plastic",
+    10.0
+   ],
+   [
+    "quickwire",
+    30.0
+   ]
+  ],
+  "products": [
+   [
+    "circuit-board",
+    7.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-electrode-circuit-board",
+  "ingredients": [
+   [
+    "rubber",
+    6.0
+   ],
+   [
+    "petroleum-coke",
+    9.0
+   ]
+  ],
+  "products": [
+   [
+    "circuit-board",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-silicon-circuit-board",
+  "ingredients": [
+   [
+    "copper-sheet",
+    11.0
+   ],
+   [
+    "silica",
+    11.0
+   ]
+  ],
+  "products": [
+   [
+    "circuit-board",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "ai-limiter",
+  "ingredients": [
+   [
+    "copper-sheet",
+    5.0
+   ],
+   [
+    "quickwire",
+    20.0
+   ]
+  ],
+  "products": [
+   [
+    "ai-limiter",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "high-speed-connector",
+  "ingredients": [
+   [
+    "quickwire",
+    56.0
+   ],
+   [
+    "cable",
+    10.0
+   ],
+   [
+    "circuit-board",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "high-speed-connector",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-silicon-high-speed-connector",
+  "ingredients": [
+   [
+    "quickwire",
+    60.0
+   ],
+   [
+    "silica",
+    25.0
+   ],
+   [
+    "circuit-board",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "high-speed-connector",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "computer",
+  "ingredients": [
+   [
+    "circuit-board",
+    10.0
+   ],
+   [
+    "cable",
+    9.0
+   ],
+   [
+    "plastic",
+    18.0
+   ],
+   [
+    "screw",
+    52.0
+   ]
+  ],
+  "products": [
+   [
+    "computer",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-caterium-computer",
+  "ingredients": [
+   [
+    "circuit-board",
+    7.0
+   ],
+   [
+    "quickwire",
+    28.0
+   ],
+   [
+    "rubber",
+    12.0
+   ]
+  ],
+  "products": [
+   [
+    "computer",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-crystal-computer",
+  "ingredients": [
+   [
+    "circuit-board",
+    8.0
+   ],
+   [
+    "crystal-oscillator",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "computer",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "supercomputer",
+  "ingredients": [
+   [
+    "computer",
+    2.0
+   ],
+   [
+    "ai-limiter",
+    2.0
+   ],
+   [
+    "high-speed-connector",
+    3.0
+   ],
+   [
+    "plastic",
+    28.0
+   ]
+  ],
+  "products": [
+   [
+    "supercomputer",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-oc-supercomputer",
+  "ingredients": [
+   [
+    "radio-control-unit",
+    3.0
+   ],
+   [
+    "cooling-system",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "supercomputer",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-super-state-computer",
+  "ingredients": [
+   [
+    "computer",
+    3.0
+   ],
+   [
+    "electromagnetic-control-rod",
+    2.0
+   ],
+   [
+    "battery",
+    20.0
+   ],
+   [
+    "wire",
+    45.0
+   ]
+  ],
+  "products": [
+   [
+    "supercomputer",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "radio-control-unit",
+  "ingredients": [
+   [
+    "aluminum-casing",
+    32.0
+   ],
+   [
+    "crystal-oscillator",
+    1.0
+   ],
+   [
+    "computer",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "radio-control-unit",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-radio-connection-unit",
+  "ingredients": [
+   [
+    "heat-sink",
+    4.0
+   ],
+   [
+    "high-speed-connector",
+    2.0
+   ],
+   [
+    "quartz-crystal",
+    12.0
+   ]
+  ],
+  "products": [
+   [
+    "radio-control-unit",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-radio-control-system",
+  "ingredients": [
+   [
+    "crystal-oscillator",
+    1.0
+   ],
+   [
+    "circuit-board",
+    10.0
+   ],
+   [
+    "aluminum-casing",
+    60.0
+   ],
+   [
+    "rubber",
+    30.0
+   ]
+  ],
+  "products": [
+   [
+    "radio-control-unit",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "crystal-oscillator",
+  "ingredients": [
+   [
+    "quartz-crystal",
+    36.0
+   ],
+   [
+    "cable",
+    28.0
+   ],
+   [
+    "reinforced-iron-plate",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "crystal-oscillator",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-insulated-crystal-oscillator",
+  "ingredients": [
+   [
+    "quartz-crystal",
+    10.0
+   ],
+   [
+    "rubber",
+    7.0
+   ],
+   [
+    "ai-limiter",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "crystal-oscillator",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "empty-canister",
+  "ingredients": [
+   [
+    "plastic",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "empty-canister",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-coated-iron-canister",
+  "ingredients": [
+   [
+    "iron-plate",
+    2.0
+   ],
+   [
+    "copper-sheet",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "empty-canister",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-steel-canister",
+  "ingredients": [
+   [
+    "steel-ingot",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "empty-canister",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "empty-fluid-tank",
+  "ingredients": [
+   [
+    "aluminum-ingot",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "empty-fluid-tank",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "pressure-conversion-cube",
+  "ingredients": [
+   [
+    "fused-modular-frame",
+    1.0
+   ],
+   [
+    "radio-control-unit",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "pressure-conversion-cube",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "packaged-water",
+  "ingredients": [
+   [
+    "water",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-water",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "packaged-alumina-solution",
+  "ingredients": [
+   [
+    "alumina-solution",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-alumina-solution",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "packaged-sulfuric-acid",
+  "ingredients": [
+   [
+    "sulfuric-acid",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-sulfuric-acid",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "packaged-nitric-acid",
+  "ingredients": [
+   [
+    "nitric-acid",
+    1.0
+   ],
+   [
+    "empty-fluid-tank",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-nitric-acid",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "packaged-nitrogen-gas",
+  "ingredients": [
+   [
+    "nitrogen-gas",
+    4.0
+   ],
+   [
+    "empty-fluid-tank",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-nitrogen-gas",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "biomass-(alien-carapace)",
+  "ingredients": [
+   [
+    "alien-carapace",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "biomass",
+    100.0
+   ]
+  ]
+ },
+ {
+  "name": "biomass-(alien-organs)",
+  "ingredients": [
+   [
+    "alien-organs",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "biomass",
+    200.0
+   ]
+  ]
+ },
+ {
+  "name": "biomass-(leaves)",
+  "ingredients": [
+   [
+    "leaves",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "biomass",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "biomass-(mycelia)",
+  "ingredients": [
+   [
+    "mycelia",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "biomass",
+    10.0
+   ]
+  ]
+ },
+ {
+  "name": "biomass-(wood)",
+  "ingredients": [
+   [
+    "wood",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "biomass",
+    20.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-compacted-coal",
+  "ingredients": [
+   [
+    "coal",
+    5.0
+   ],
+   [
+    "sulfur",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "compacted-coal",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "packaged-oil",
+  "ingredients": [
+   [
+    "crude-oil",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-oil",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "packaged-heavy-oil-residue",
+  "ingredients": [
+   [
+    "heavy-oil-residue",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-heavy-oil-residue",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "solid-biofuel",
+  "ingredients": [
+   [
+    "biomass",
+    8.0
+   ]
+  ],
+  "products": [
+   [
+    "solid-biofuel",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "packaged-fuel",
+  "ingredients": [
+   [
+    "fuel",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-fuel",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-diluted-packaged-fuel",
+  "ingredients": [
+   [
+    "heavy-oil-residue",
+    1.0
+   ],
+   [
+    "packaged-water",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-fuel",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "packaged-liquid-biofuel",
+  "ingredients": [
+   [
+    "liquid-biofuel",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-liquid-biofuel",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "packaged-turbofuel",
+  "ingredients": [
+   [
+    "turbofuel",
+    2.0
+   ],
+   [
+    "empty-canister",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "packaged-turbofuel",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "uranium-fuel-rod",
+  "ingredients": [
+   [
+    "encased-uranium-cell",
+    50.0
+   ],
+   [
+    "encased-industrial-beam",
+    3.0
+   ],
+   [
+    "electromagnetic-control-rod",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "uranium-fuel-rod",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-uranium-fuel-unit",
+  "ingredients": [
+   [
+    "encased-uranium-cell",
+    100.0
+   ],
+   [
+    "electromagnetic-control-rod",
+    10.0
+   ],
+   [
+    "crystal-oscillator",
+    3.0
+   ],
+   [
+    "beacon",
+    6.0
+   ]
+  ],
+  "products": [
+   [
+    "uranium-fuel-rod",
+    3.0
+   ]
+  ]
+ },
+ {
+  "name": "plutonium-fuel-rod",
+  "ingredients": [
+   [
+    "encased-plutonium-cell",
+    30.0
+   ],
+   [
+    "steel-beam",
+    18.0
+   ],
+   [
+    "electromagnetic-control-rod",
+    6.0
+   ],
+   [
+    "heat-sink",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "plutonium-fuel-rod",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-plutonium-fuel-unit",
+  "ingredients": [
+   [
+    "encased-plutonium-cell",
+    20.0
+   ],
+   [
+    "pressure-conversion-cube",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "plutonium-fuel-rod",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "black-powder",
+  "ingredients": [
+   [
+    "coal",
+    1.0
+   ],
+   [
+    "sulfur",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "black-powder",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-fine-black-powder",
+  "ingredients": [
+   [
+    "sulfur",
+    2.0
+   ],
+   [
+    "compacted-coal",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "black-powder",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "nobelisk",
+  "ingredients": [
+   [
+    "black-powder",
+    5.0
+   ],
+   [
+    "steel-pipe",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "nobelisk",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-seismic-nobelisk",
+  "ingredients": [
+   [
+    "black-powder",
+    8.0
+   ],
+   [
+    "steel-pipe",
+    8.0
+   ],
+   [
+    "crystal-oscillator",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "nobelisk",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "gas-filter",
+  "ingredients": [
+   [
+    "coal",
+    5.0
+   ],
+   [
+    "rubber",
+    2.0
+   ],
+   [
+    "fabric",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "gas-filter",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "color-cartridge",
+  "ingredients": [
+   [
+    "flower-petals",
+    5.0
+   ]
+  ],
+  "products": [
+   [
+    "color-cartridge",
+    10.0
+   ]
+  ]
+ },
+ {
+  "name": "rifle-cartridge",
+  "ingredients": [
+   [
+    "beacon",
+    1.0
+   ],
+   [
+    "steel-pipe",
+    10.0
+   ],
+   [
+    "black-powder",
+    10.0
+   ],
+   [
+    "rubber",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "rifle-cartridge",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "spiked-rebar",
+  "ingredients": [
+   [
+    "iron-rod",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "spiked-rebar",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "beacon",
+  "ingredients": [
+   [
+    "iron-plate",
+    3.0
+   ],
+   [
+    "iron-rod",
+    1.0
+   ],
+   [
+    "wire",
+    15.0
+   ],
+   [
+    "cable",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "beacon",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-crystal-beacon",
+  "ingredients": [
+   [
+    "steel-beam",
+    4.0
+   ],
+   [
+    "steel-pipe",
+    16.0
+   ],
+   [
+    "crystal-oscillator",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "beacon",
+    20.0
+   ]
+  ]
+ },
+ {
+  "name": "iodine-infused-filter",
+  "ingredients": [
+   [
+    "gas-filter",
+    1.0
+   ],
+   [
+    "quickwire",
+    8.0
+   ],
+   [
+    "aluminum-casing",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "iodine-infused-filter",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "electromagnetic-control-rod",
+  "ingredients": [
+   [
+    "stator",
+    3.0
+   ],
+   [
+    "ai-limiter",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "electromagnetic-control-rod",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-electromagnetic-connection-rod",
+  "ingredients": [
+   [
+    "stator",
+    2.0
+   ],
+   [
+    "high-speed-connector",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "electromagnetic-control-rod",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-infused-uranium-cell",
+  "ingredients": [
+   [
+    "uranium",
+    5.0
+   ],
+   [
+    "silica",
+    3.0
+   ],
+   [
+    "sulfur",
+    5.0
+   ],
+   [
+    "quickwire",
+    15.0
+   ]
+  ],
+  "products": [
+   [
+    "encased-uranium-cell",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "plutonium-pellet",
+  "ingredients": [
+   [
+    "non-fissile-uranium",
+    100.0
+   ],
+   [
+    "uranium-waste",
+    25.0
+   ]
+  ],
+  "products": [
+   [
+    "plutonium-pellet",
+    30.0
+   ]
+  ]
+ },
+ {
+  "name": "encased-plutonium-cell",
+  "ingredients": [
+   [
+    "plutonium-pellet",
+    2.0
+   ],
+   [
+    "concrete",
+    4.0
+   ]
+  ],
+  "products": [
+   [
+    "encased-plutonium-cell",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-instant-plutonium-cell",
+  "ingredients": [
+   [
+    "non-fissile-uranium",
+    150.0
+   ],
+   [
+    "aluminum-casing",
+    20.0
+   ]
+  ],
+  "products": [
+   [
+    "encased-plutonium-cell",
+    20.0
+   ]
+  ]
+ },
+ {
+  "name": "uranium-waste",
+  "ingredients": [
+   [
+    "uranium-fuel-rod",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "uranium-waste",
+    50.0
+   ]
+  ]
+ },
+ {
+  "name": "plutonium-waste",
+  "ingredients": [
+   [
+    "plutonium-fuel-rod",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "plutonium-waste",
+    10.0
+   ]
+  ]
+ },
+ {
+  "name": "power-shard-(1)",
+  "ingredients": [
+   [
+    "blue-power-slug",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "power-shard",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "power-shard-(2)",
+  "ingredients": [
+   [
+    "yellow-power-slug",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "power-shard",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "power-shard-(5)",
+  "ingredients": [
+   [
+    "purple-power-slug",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "power-shard",
+    5.0
+   ]
+  ]
+ },
+ {
+  "name": "smart-plating",
+  "ingredients": [
+   [
+    "reinforced-iron-plate",
+    1.0
+   ],
+   [
+    "rotor",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "smart-plating",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-plastic-smart-plating",
+  "ingredients": [
+   [
+    "reinforced-iron-plate",
+    1.0
+   ],
+   [
+    "rotor",
+    1.0
+   ],
+   [
+    "plastic",
+    3.0
+   ]
+  ],
+  "products": [
+   [
+    "smart-plating",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "versatile-framework",
+  "ingredients": [
+   [
+    "modular-frame",
+    1.0
+   ],
+   [
+    "steel-beam",
+    12.0
+   ]
+  ],
+  "products": [
+   [
+    "versatile-framework",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-flexible-framework",
+  "ingredients": [
+   [
+    "modular-frame",
+    1.0
+   ],
+   [
+    "steel-beam",
+    6.0
+   ],
+   [
+    "rubber",
+    8.0
+   ]
+  ],
+  "products": [
+   [
+    "versatile-framework",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "automated-wiring",
+  "ingredients": [
+   [
+    "stator",
+    1.0
+   ],
+   [
+    "cable",
+    20.0
+   ]
+  ],
+  "products": [
+   [
+    "automated-wiring",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "alternate-automated-speed-wiring",
+  "ingredients": [
+   [
+    "stator",
+    2.0
+   ],
+   [
+    "wire",
+    40.0
+   ],
+   [
+    "high-speed-connector",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "automated-wiring",
+    4.0
+   ]
+  ]
+ },
+ {
+  "name": "modular-engine",
+  "ingredients": [
+   [
+    "motor",
+    2.0
+   ],
+   [
+    "rubber",
+    15.0
+   ],
+   [
+    "smart-plating",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "modular-engine",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "adaptive-control-unit",
+  "ingredients": [
+   [
+    "automated-wiring",
+    15.0
+   ],
+   [
+    "circuit-board",
+    10.0
+   ],
+   [
+    "heavy-modular-frame",
+    2.0
+   ],
+   [
+    "computer",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "adaptive-control-unit",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "assembly-director-system",
+  "ingredients": [
+   [
+    "adaptive-control-unit",
+    2.0
+   ],
+   [
+    "supercomputer",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "assembly-director-system",
+    1.0
+   ]
+  ]
+ },
+ {
+  "name": "magnetic-field-generator",
+  "ingredients": [
+   [
+    "versatile-framework",
+    5.0
+   ],
+   [
+    "electromagnetic-control-rod",
+    2.0
+   ],
+   [
+    "battery",
+    10.0
+   ]
+  ],
+  "products": [
+   [
+    "magnetic-field-generator",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "thermal-propulsion-rocket",
+  "ingredients": [
+   [
+    "modular-engine",
+    5.0
+   ],
+   [
+    "turbo-motor",
+    2.0
+   ],
+   [
+    "cooling-system",
+    6.0
+   ],
+   [
+    "fused-modular-frame",
+    2.0
+   ]
+  ],
+  "products": [
+   [
+    "thermal-propulsion-rocket",
+    2.0
+   ]
+  ]
+ },
+ {
+  "name": "nuclear-pasta",
+  "ingredients": [
+   [
+    "copper-powder",
+    200.0
+   ],
+   [
+    "pressure-conversion-cube",
+    1.0
+   ]
+  ],
+  "products": [
+   [
+    "nuclear-pasta",
+    1.0
+   ]
+  ]
+ }
+]

@@ -9,7 +9,7 @@
 {% block options %}
 {% for a in alt %}
     <div class="form-check form-check-inline">
-        <label class="form-check-label" onclick="Update()">
+        <label class="form-check-label" onclick="Update(game)">
         {% if forloop.first %}
             <input class="form-check-input" type="radio" value="{{ a }}" name="alt-checkbox" checked>
         {% else %}

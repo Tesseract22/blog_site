@@ -1,28 +1,30 @@
 import sys
-sys.path.append('../calculator')
-import RecipeMatrix
-import Core
+import os
+sys.path.insert(0, os.path.abspath('.'))
+from calculator import Core
 import os
 import json
+
 
 dirname = os.path.dirname(__file__)
 ITEMS_PATH = os.path.join(dirname, "local/items.json")
 RECIPES_PATH = os.path.join(dirname, "local/recipes.json")
-
-raw = ["Limestone",
-    "Iron Ore",
-    "Copper Ore",
-    "Caterium Ore",
-    "Coal",
-    "Raw Quartz",
-    "Sulfur",
-    "Bauxite",
-    # "S.A.M. Ore",
-    "Uranium",
-    "Water",
-    "Crude Oil",
-    "Nitrogen Gas",]
-miss = ["Alien Carapace", 'Alien Organs']
+alt = []
+raw = [
+   "limestone",
+   "iron-ore",
+   "copper-ore",
+   "caterium-ore",
+   "coal",
+   "raw-quartz",
+   "sulfur",
+   "bauxite",
+   "uranium",
+   "water",
+   "crude-oil",
+   "nitrogen-gas"
+]
+miss = ["alien-carapace", 'alien-organs']
 with open(RECIPES_PATH, 'r') as f:
     recipes = json.load(f)
 # print(recipes)
