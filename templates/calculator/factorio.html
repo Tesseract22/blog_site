@@ -1,21 +1,24 @@
-{% extends "/calculator/calculator_main.html" %}
+
+{% extends "calculator/calculator_main.html" %}
 {% load static %}
+{% load polls %}
 
+{% block game_icon %}{% static 'img/factorio.png' %}{% endblock game_icon %}
+{% block game_name %}Factorio{% endblock game_name %}
 
-{% block factorio %}
-<form method="post" action="/factorio/add/">
-    {% csrf_token %}
-    <select class="mdb-select md-form" searchable="Search here..">
-        <option value="" disabled selected>Choose Item</option>
-        <option value="1">USA</option>
-        <option value="2">Germany</option>
-        <option value="3">France</option>
-        <option value="3">Poland</option>
-        <option value="3">Japan</option>
-    </select>
-    <button type="submit" class="btn btn-success">Add Item</button>
-</form>
+{% block options %}
+{% for a in alt %}
+    <div class="form-check form-check-inline">
+        <label class="form-check-label" onclick="Update()">
+        {% if forloop.first %}
+            <input class="form-check-input" type="radio" value="{{ a }}" name="alt-checkbox" checked>
+        {% else %}
+            <input class="form-check-input" type="radio" value="{{ a }}" name="alt-checkbox">
+        {% endif %}
+        {{ a | empty:"-" | title }}
+            </input>
+        </label>
+    </div>
+{% endfor %}
+{% endblock options %}
 
-
-
-{% endblock factorio %}

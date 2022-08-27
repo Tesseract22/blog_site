@@ -3,23 +3,9 @@ var count = 1
 
 function Solve() {
     console.log("create")
-    var targets = {}
+    var targets = GetTargets()
     var priorities = GetPriorities()
     var alt = GetAlt()
-    for (var i = 1; i <= count; ++i) {
-        // var item_name = $('#name_' + i).value
-        var item_name = document.getElementById("name_" + i).value
-        var item_amount = document.getElementById("amount_" + i).value
-        console.log(item_name, item_amount)
-        if (item_name == '' || item_amount == '') {
-            continue
-        }
-        if (!(item_name in targets)) {
-            targets[item_name] = 0
-        }
-        targets[item_name] += parseInt(item_amount)
-    }
-    var res = {}
     $.ajax({
         url : "/calculator/update/", // the endpoint
         type : "POST", // http method
@@ -38,13 +24,12 @@ function Solve() {
             console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
         }
     });
-    return res
 };
 
 
 
 function Add() {
-    var new_row = document.getElementById("factorio_target_1").cloneNode(true)
+    var new_row = document.getElementById("factorio_target").cloneNode(true)
     var new_col = document.createElement("div")
     new_col.setAttribute("class", "col-xs-2")
     but = document.createElement("button")
@@ -62,12 +47,10 @@ function Add() {
 
     count += 1
 
-    new_row.id = "factorio_target_" + count
+    // new_row.id = "factorio_target_" + count
     
-    new_row.children[0].firstElementChild.name = "name_" + count
-    new_row.children[0].firstElementChild.id = "name_" + count
-    new_row.children[1].firstElementChild.name = "amount_" + count
-    new_row.children[1].firstElementChild.id = "amount_" + count
+    new_row.children[0].firstElementChild.name = "name"
+    new_row.children[1].firstElementChild.name = "amount"
 
 
 }
@@ -98,12 +81,21 @@ function GetPriorities() {
 }
 
 function GetTargets() {
-    var items_form = document.getElementById("items-form")
-    var rows = items_form.children
-    for (var i = 0; i < rows.length; i++) {
-        var name = rows[i].children[0]
-        var amount = rows[i].children[1]
+    var names = document.getElementsByName("name")
+    var amounts = document.getElementsByName("amount")
+    var l = names.length
+    if (l != amounts.length) {
+        alert("Unexpected Targets")
+        return
     }
+    var res = {}
+    for (var i = 0; i < l; ++i) {
+        var name = names[i].value
+        var amount = amounts[i].value
+        res[name] = parseInt(amount)
+    }
+    console.log(res)
+    return res
 
 }
 
@@ -112,23 +104,6 @@ function DeleteRow(el) {
 
     var row = el.parentNode.parentNode
     row.remove()
-
-    var items_form = document.getElementById("items-form")
-    var rows = items_form.children
-    var j = 1
-    for (var i = 0; i < rows.length; i++) {
-        var row = rows[i]
-        console.log(row)
-        if (row.className == "form-group row") {
-            row.id = "factorio_target_" + j
-            row.children[0].firstElementChild.name = "name_" + j
-            row.children[0].firstElementChild.id = "name_" + j
-            row.children[1].firstElementChild.name = "amount_" + j
-            row.children[1].firstElementChild.id = "amount_" + j
-            j++
-        }
-        console.log(i)
-    }
 }
 
 

@@ -32,13 +32,11 @@
 <div id="accordion">
     <div class="card text-white bg-dark">
       <div class="card-header" id="headingOne">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            <img src="{% static 'img/factorio.png' %}" alt="" style="margin-top: -7px;width: 50px;">
-            <h3 class="text-white bg-dark" style="display: inline;">FACTORIO</h3>
-          </button>
+          <img src="{% block game_icon %}{% endblock game_icon %}" alt="" style="margin-top: -7px;width: 50px;">
+          <h3 class="text-white bg-dark" style="display: inline;">{% block game_name %}{% endblock game_name %}</h3>
       </div>
   
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div data-parent="#accordion">
         <div class="card-body">
           <div class="container-lg ml-1 mr-1">
             <div class="row">
@@ -58,24 +56,24 @@
               <div class="col-4">
                 <form method="post" action="/calculator/update/" autocomplete="off" id="items-form">
                   {% csrf_token %}
-                  <datalist id="factorio_items">
-                    {% for i in factorio_items %}
+                  <datalist id="items">
+                    {% for i in items %}
                       <option value="{{ i }}">{{ i | empty:"-" | title }}</option>
                     {% endfor %}
                   </datalist>
-                  <div class="form-group row" id="factorio_target_1">
+                  <div class="form-group row" id="factorio_target">
                     <div class="col-md-5">
-                      <input class="form-control" list="factorio_items" placeholder="Search for Item" name="name_1" id="name_1">
+                      <input class="form-control" list="items" placeholder="Search for Item" name="name">
                     </div>
                     <div class="col-md-5">
-                      <input class="form-control" placeholder="Enter Amount..." name="amount_1" id="amount_1">
+                      <input class="form-control" placeholder="Enter Amount..." name="amount">
                     </div>
                   </div>
                 </form>
               </div>
               <div class="col-3">
                 <dl id="priorities" style="display: none">
-                  {% for i in factorio_raw %}
+                  {% for i in raw %}
                     <li class="ui-state-default" style="list-style-type:none" id="{{ i }}">
                       <div class="card text-white bg-secondary w-50">
                         <h4 class="text-center">{{ i | empty:"-" | title }}</h4>
@@ -85,19 +83,7 @@
                 </dl> 
               </div>
               <div class="col">
-                {% for a in factorio_alt %}
-                <div class="form-check form-check-inline">
-                  <label class="form-check-label" onclick="Update()">
-                    {% if forloop.first %}
-                    <input class="form-check-input" type="radio" value="{{ a }}" name="alt-checkbox" checked>
-                    {% else %}
-                    <input class="form-check-input" type="radio" value="{{ a }}" name="alt-checkbox">
-                    {% endif %}
-                    {{ a | empty:"-" | title }}
-                    </input>
-                  </label>
-                </div>
-                {% endfor %}
+                {% block options %}{% endblock options %}
               </div>
             </div>
             <div class="row">
@@ -145,18 +131,6 @@
                 </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="card text-white bg-dark">
-      <div class="card-header" id="headingTwo">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <h3 class="text-white bg-dark">Satisfactory</3>
-          </button>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
 app_name = 'calculator'
 
 from django.conf.urls import url
-from . import views
+from . import factorio_views
 
 
 urlpatterns = [
-    url('main/', views.calculator_main),
-    url('update/', views.update),
-    url('get_recipe/', views.get_recipe),
+    url('factorio/', factorio_views.factorio),
+    url('update/', factorio_views.update),
+    url('get_recipe/', factorio_views.get_recipe),
 ]
