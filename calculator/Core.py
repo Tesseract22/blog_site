@@ -51,7 +51,6 @@ class Calculator:
         self.multiplier = multiplier
         self.matrix = RecipeMatrix.RecipeMatrix(tmp_matrix, range(self.alt_start, self.alt_end), [self.item_idx_dict[r] for r in self.raw], self.multiplier)
         
-        print(self.recipe_names)
 
     def RecipeArrToNameDict(self, arr) -> dict:
         '''

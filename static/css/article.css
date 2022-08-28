@@ -1,0 +1,33 @@
+#articles-container {
+    padding-top: 50px;
+    width: 99%;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding: 2px;
+}
+.card {
+    background-color: #1a0a0a;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    color: white;
+}
+
+h2>b {
+    font-size: xxx-large;
+    flex-basis: 100%;
+}
+
+.card-header {
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: -2px
+}
+
+.card-body {
+    background-color: transparent;
+    text-align: center;
+    flex-direction: column;
+}   

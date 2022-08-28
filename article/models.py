@@ -1,3 +1,4 @@
+from email.policy import default
 from django.db import models
 
 from django.contrib.auth.models import User
@@ -21,6 +22,8 @@ class Article(models.Model):
 
     # 文章更新时间。参数 auto_now=True 指定每次数据更新时自动写入当前时间
     updated = models.DateTimeField(auto_now=True)
+
+    cover = models.ImageField(upload_to="article_cover", default="img/article_default.jpg")
 
     class Meta():
         ordering = ('-created',)

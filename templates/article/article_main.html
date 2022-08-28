@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/article.css' %}">
+{% endblock head %}
 
 {% block title %}
     Cat's Blog
@@ -8,28 +11,26 @@
 
 
 {% block content %}
-<div class="container-fluid">
-    {% for article in articles %}
-    <div class="row mt-5">
-        <div class="w-50 mx-auto">
-
-            <div class="col-4 mb-4">
-
-                <div class="card h-100">
-
-                    <h4 class="card-header">{{ article.title }}</h4>
-
-                    <div class="card-body">
-                        <p class="card-text">{{ article.body|slice:'100' }}...</p>
-                    </div>
-    
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Read full article</a>
-                    </div>
+<div class="container-fluid" style="padding-top: 50px;" id="articles-container">
+    {% for article in articles %}   
+        {% if forloop.counter0|divisibleby:2 %}
+            <div class="row">
+        {% endif %}
+        <div class="col">
+            <div class="card d-flex" style="background-image: url({{ article.cover.url }})">
+                <h6 class="card-header">{{ article.created}}</h6>
+                <div class="card-body align-items-center d-flex justify-content-center">
+                    <h2><b>{{ article.title }}</b></h2>
+                    <h5>{{ article.body }}</h5>
                 </div>
             </div>
         </div>
-    </div>
+        {% if forloop.counter|divisibleby:2 %}
+            </div>
+        {% endif %}
     {% endfor %}
+    {% if not articles|length|divisibleby:2 %}
+        </div>
+    {% endif %}
 </div>
 {% endblock content %}
