@@ -17,13 +17,13 @@
             <div class="row">
         {% endif %}
         <div class="col">
-            <div class="card d-flex" style="background-image: url({{ article.cover.url }})">
+            <a class="card d-flex" style="background-image: url({{ article.cover.url }})" href="{% url 'article:view-article' article.id %}">
                 <h6 class="card-header">{{ article.created}}</h6>
                 <div class="card-body align-items-center d-flex justify-content-center">
                     <h2><b>{{ article.title }}</b></h2>
-                    <h5>{{ article.body }}</h5>
+                    <h5>{{ article.id }}</h5>
                 </div>
-            </div>
+            </a>
         </div>
         {% if forloop.counter|divisibleby:2 %}
             </div>

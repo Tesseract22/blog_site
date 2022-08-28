@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% load polls %}
+
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/article.css' %}">
+{% endblock head %}
+{% block title %} {{ article.title }} {% endblock title %}
+
+
+{% block content %}
+<div class="container-fluid" id="article-container">
+    <div class="row"><h1>{{ article.title }}</h1></div>
+    <div class="row">Created: {{ article.created }}</div>
+    <div class="row">Last Updated: {{ article.updated }}</div>
+    <div class="row">Author: {{ article.author }}</div>
+</div>
+
+{% endblock content %}
+
+
+
