@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+import markdown
 import article
 
 
@@ -20,6 +20,12 @@ def main(request):
 
 def view_article(request, id):
     article = Article.objects.get(id=id)
+    article.body = markdown.markdown(article.body,
+        extensions=[
+            'markdown.extensions.extra',
+            'markdown.extensions.codehilite',
+        ]
+    )
     ctx = {}
     ctx['article'] = article
 

@@ -1,11 +1,11 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
+# from article.models import Article
 
 
 
 def main_site(request):
 
-    return render(request, "main.html")
+    return redirect('article:list')
 
 def test(request):
 

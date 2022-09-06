@@ -15,6 +15,7 @@
     <div class="row">Created: {{ article.created }}</div>
     <div class="row">Last Updated: {{ article.updated }}</div>
     <div class="row">Author: {{ article.author }}</div>
+    <h4 class="row" id="article-body">{{ article.body|safe }} </h4>
 </div>
 
 {% endblock content %}
