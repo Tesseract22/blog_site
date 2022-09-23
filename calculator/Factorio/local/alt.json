@@ -1,37 +1,56 @@
 [
    {
-      "name":"advanced-oil-processing",
+      "name":"basic-oil-processing",
       "energy":5,
       "ingredients":[
          {
-            "name":"water",
+            "amount":100,
             "type":"fluid",
-            "amount":50
-         },
-         {
-            "name":"crude-oil",
-            "type":"fluid",
-            "amount":100
+            "name":"crude-oil"
          }
       ],
       "products":[
          {
-            "name":"heavy-oil",
-            "type":"fluid",
             "probability":1,
-            "amount":25
+            "amount":45,
+            "type":"fluid",
+            "name":"petroleum-gas"
+         }
+      ]
+   },
+   {
+      "name":"advanced-oil-processing",
+      "energy":5,
+      "ingredients":[
+         {
+            "amount":50,
+            "type":"fluid",
+            "name":"water"
          },
          {
-            "name":"light-oil",
+            "amount":100,
             "type":"fluid",
+            "name":"crude-oil"
+         }
+      ],
+      "products":[
+         {
             "probability":1,
-            "amount":45
+            "amount":25,
+            "type":"fluid",
+            "name":"heavy-oil"
          },
          {
-            "name":"petroleum-gas",
-            "type":"fluid",
             "probability":1,
-            "amount":55
+            "amount":45,
+            "type":"fluid",
+            "name":"light-oil"
+         },
+         {
+            "probability":1,
+            "amount":55,
+            "type":"fluid",
+            "name":"petroleum-gas"
          }
       ]
    },
@@ -40,60 +59,41 @@
       "energy":5,
       "ingredients":[
          {
-            "name":"coal",
+            "amount":10,
             "type":"item",
-            "amount":10
+            "name":"coal"
          },
          {
-            "name":"heavy-oil",
-            "type":"fluid",
             "catalyst_amount":25,
-            "amount":25
+            "amount":25,
+            "type":"fluid",
+            "name":"heavy-oil"
          },
          {
-            "name":"steam",
+            "amount":50,
             "type":"fluid",
-            "amount":50
+            "name":"steam"
          }
       ],
       "products":[
          {
             "probability":1,
+            "type":"fluid",
             "catalyst_amount":25,
             "amount":90,
-            "name":"heavy-oil",
-            "type":"fluid"
+            "name":"heavy-oil"
          },
          {
-            "name":"light-oil",
-            "type":"fluid",
             "probability":1,
-            "amount":20
+            "amount":20,
+            "type":"fluid",
+            "name":"light-oil"
          },
          {
-            "name":"petroleum-gas",
-            "type":"fluid",
             "probability":1,
-            "amount":10
-         }
-      ]
-   },
-   {
-      "name":"basic-oil-processing",
-      "energy":5,
-      "ingredients":[
-         {
-            "name":"crude-oil",
+            "amount":10,
             "type":"fluid",
-            "amount":100
-         }
-      ],
-      "products":[
-         {
-            "name":"petroleum-gas",
-            "type":"fluid",
-            "probability":1,
-            "amount":45
+            "name":"petroleum-gas"
          }
       ]
    }

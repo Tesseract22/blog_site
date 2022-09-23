@@ -188,12 +188,14 @@ class RecipeMatrix:
         res = {}
         res['input'] = {}
         res['output'] = {}
+        res['total'] = 0
         item_row = self.matrix[item]
         for i in range(len(item_row) - 1): #ignore tax
             t  = x[i] * item_row[i]
             if t < 0:
                 res["output"][i] = -t
             elif t > 0:
+                res['total'] += t
                 res['input'][i] = t
         return res
     def PrintAns(self, ans, recipe_name_list):

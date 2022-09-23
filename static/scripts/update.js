@@ -1,4 +1,5 @@
 
+
 var count = 1
 // $('#items-form').on('change', function(event) {
 //     event.preventDefault();
@@ -114,14 +115,16 @@ function DeleteRow(el) {
 
 function RenderItems(itemflow) {
     items = Object.keys(itemflow)
-    var ul = document.getElementById("res_items_list")
-    while (ul.firstChild) {
-        ul.removeChild(ul.firstChild)
-    }
-    
+    var table = document.getElementById("res_items_list")
+    console.log(table.lastElementChild)
+    table.removeChild(table.lastElementChild) // effectively remove <tbody>
+    var tbody = document.createElement("tbody")
+    table.appendChild(tbody)
     for (var i = 0; i < items.length; ++i) {
-        var li = document.createElement("li")
-        li.setAttribute("class", "list-group-item")
+        var tr = document.createElement("tr")
+        var td_item = document.createElement("td")
+        tr.appendChild(td_item)
+        // li.setAttribute("class", "list-group-item")
         var btn = document.createElement("button")
         btn.setAttribute("class", "btn btn-link collapsed")
         btn.setAttribute("data-toggle", "collapse")
@@ -144,23 +147,35 @@ function RenderItems(itemflow) {
         
 
         
-        li.appendChild(btn)
+        td_item.appendChild(btn)
         
 
         var coll = document.createElement("div")
         coll.setAttribute("id", "res_item_" + i)
         coll.setAttribute("class", "collapse")
 
-        RenderItemPut(coll, itemflow[items[i]])
+        // RenderItemPut(coll, itemflow[items[i]])
 
-        li.appendChild(coll)
+        tr.appendChild(coll)
 
-        if ((i + 1) % 2 == 0) {
-            li.setAttribute("style", "background-color: var(--res-color-1); color: white")
-        } else {
-            li.setAttribute("style", "background-color: var(--res-color-2); color: white")
-        }
-        ul.appendChild(li)
+        // if ((i + 1) % 2 == 0) {
+        //     li.setAttribute("style", "background-color: var(--res-color-1); color: white")
+        // } else {
+        //     li.setAttribute("style", "background-color: var(--res-color-2); color: white")
+        // }
+        var td_amount = document.createElement("td")
+        td_amount.innerText = itemflow[items[i]]['total'].toFixed(4)
+        tr.appendChild(td_amount)
+
+        var td_factory = document.createElement("td")
+        td_factory.innerText = itemflow[items[i]]['total'].toFixed(4)
+        tr.appendChild(td_factory)
+
+        var td_belt = document.createElement("td")
+        td_belt.innerText = (itemflow[items[i]]['total'] / 30).toFixed(4)
+        tr.appendChild(td_belt)
+
+        tbody.appendChild(tr)
 
     }
 }
@@ -226,7 +241,7 @@ function UpdateUI(res) {
 
 function Update(game) {
     console.log("update, game:" + game)
-    Solve(game)
+        Solve(game)
 }
 
 function GetRecipe(el) {

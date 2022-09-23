@@ -25,9 +25,17 @@
   {% comment %} $(document).ready(function() {
     $("body").tooltip({ selector: '[data-toggle=tooltip]' });
   }); {% endcomment %}
-
 </script>
 <script> var django_csrf_token = '{{ csrf_token }}'; </script>
+<script>
+  var machines = {}
+  fetch("{% static 'scripts/machines.json' %}")
+    .then((response) => response.json())
+    .then(function(json) {
+      machines = json
+      console.log(machines)
+    })
+</script>
 {% endblock head %}
 
 
@@ -107,32 +115,39 @@
                 <div class="card-header" style="color: black">
                   Results:
                 </div>
-                <ul class="list-group list-group-flush" id="res_items_list">
-                  {% comment %} <li class="list-group-item" style="background-color: #05111e; color: white">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#res_item_debug" aria-expanded="false" aria-controls="res_item_debug">
-                      DEBUG
-                    </button>
-                    <div id="res_item_debug" class="collapse show">
-                      <ul class="list-group list-group-flush">
-                        <h6>Produced By: </h6>
-                        <li class="list-group-item" style="color: black">
-                          <button class="btn" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                            aaaaaaaaaaaaaaaaaaaaa
-                          </button>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li> {% endcomment %}
-                  {% comment %} <li class="list-group-item" style="background-color: #05111e; color: white">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#res_item_debug" aria-expanded="false"   ="res_item_debug">
-                      DEBUG
-                    </button>
-                    <div id="res_item_debug" class="collapse show">
-                      DEBUG BODY
-                    </div>
-                  </li> {% endcomment %}
-                </ul>
+                {% comment %} <ul class="list-group list-group-flush" id="res_items_list">
+                </ul> {% endcomment %}
+                <table class="table table-striped table-dark" id="res_items_list">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Amount (/s)</th>
+                      <th scope="col">Factories</th>
+                      <th scope="col">Belts</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                    <tr>
+                      <td>
+                        <button class="btn">Mark</button>
+                      </td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+         
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
           </div>
         </div>

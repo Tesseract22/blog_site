@@ -119,6 +119,7 @@ class Calculator:
         '''
         raw_res = self.matrix.ItemFlow(self.item_idx_dict[item], x)
         res = {}
+        res['total'] = raw_res['total']
         res['output'] = {}
         for idx, amount in raw_res['output'].items():
             res['output'][self.recipe_names[idx]] = amount
