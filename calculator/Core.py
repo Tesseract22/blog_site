@@ -33,18 +33,20 @@ class Calculator:
         for col in range(len(recipes)):
             r = recipes[col]
             self.recipe_names.append(r['name'])
+            energy = r["energy"]
             for i in r['ingredients']:
-                tmp_matrix[self.item_idx_dict[i[0]], col] = -i[1]
+                tmp_matrix[self.item_idx_dict[i["name"]], col] = -i["amount"] / energy
             for i in r['products']:
-                tmp_matrix[self.item_idx_dict[i[0]], col] = i[1]
+                tmp_matrix[self.item_idx_dict[i["name"]], col] = i["amount"] / energy * i["probability"]
         self.alt_start = len(self.recipe_names)
         for col in range(len(alt)):
             r = alt[col]
             self.recipe_names.append(r['name'])
+            energy = r["energy"]
             for i in r['ingredients']:
-                tmp_matrix[self.item_idx_dict[i[0]], self.alt_start + col] = -i[1]
+                tmp_matrix[self.item_idx_dict[i["name"]], self.alt_start + col] = -i["amount"] / energy
             for i in r['products']:
-                tmp_matrix[self.item_idx_dict[i[0]], self.alt_start + col] = i[1]
+                tmp_matrix[self.item_idx_dict[i["name"]], self.alt_start + col] = i["amount"] / energy * i["probability"]
         self.alt_end = len(self.recipe_names)
         for r in self.raw:
             self.recipe_names.append(self.raw_prefix + r)
