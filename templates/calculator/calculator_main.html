@@ -8,10 +8,10 @@
 {% block head %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'css/calculator.css' %}">
-<script src="{% static 'scripts/update.js' %}"></script>
 <script>
   var game = '{{ game }}'
   var img_type = '{{ img_type }}'
+  var base_dir = "{% static '' %}"
 </script>
 <script>
   $( function() {
@@ -29,13 +29,31 @@
 <script> var django_csrf_token = '{{ csrf_token }}'; </script>
 <script>
   var machines = {}
-  fetch("{% static 'scripts/machines.json' %}")
+  fetch("{% static 'json' %}" + `/${game}/machines.json`)
     .then((response) => response.json())
     .then(function(json) {
       machines = json
-      console.log(machines)
+    })
+  var belts = {}
+  fetch("{% static 'json' %}" + `/${game}/belts.json`)
+    .then((response) => response.json())
+    .then(function(json) {
+      belts = json
+    })
+  var machine_group = {}
+  fetch("{% static 'json' %}" + `/${game}/machine-group.json`)
+    .then((response) => response.json())
+    .then(function(json) {
+      machine_group = json
+    })
+  var recipe_group = {}
+  fetch("{% static 'json' %}" + `/${game}/recipe-group.json`)
+    .then((response) => response.json())
+    .then(function(json) {
+      recipe_group = json
     })
 </script>
+<script src="{% static 'scripts/update.js' %}"></script>
 {% endblock head %}
 
 
@@ -127,25 +145,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    
-                    <tr>
-                      <td>
-                        <button class="btn">Mark</button>
-                      </td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-         
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
+
                   </tbody>
                 </table>
             </div>

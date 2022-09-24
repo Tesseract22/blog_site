@@ -1,14 +1,7 @@
 
 
 var count = 1
-// $('#items-form').on('change', function(event) {
-//     event.preventDefault();
-//     console.log("calculating...")  // sanity check
-//     Update(game)
-// });
 function Solve(game) {
-    // console.log("game is:" + game)
-    
     var targets = GetTargets()
     var priorities = GetPriorities()
     var alt = GetAlt()
@@ -98,7 +91,7 @@ function GetTargets() {
     for (var i = 0; i < l; ++i) {
         var name = names[i].value
         var amount = amounts[i].value
-        res[name] = parseInt(amount)
+        res[name] = parseFloat(amount)
     }
     // console.log(res)
     return res
@@ -113,8 +106,12 @@ function DeleteRow(el) {
 }
 
 
-function RenderItems(itemflow) {
-    items = Object.keys(itemflow)
+function RenderItems(res, default_machines=Object.keys(machines)[0]) {
+    var itemflow = res['items']
+    var recipes = res['ans']
+    var items = Object.keys(itemflow)
+
+    // create the new tbody and its content
     var table = document.getElementById("res_items_list")
     console.log(table.lastElementChild)
     table.removeChild(table.lastElementChild) // effectively remove <tbody>
@@ -134,10 +131,10 @@ function RenderItems(itemflow) {
 
 
         var icon = document.createElement("img")
-        var icon_src = `/static/img/${game}_item_icon/` +  items[i].replaceAll(' ', '-').toLowerCase() + img_type
+        var icon_src = `${base_dir}img/${game}_item_icon/${items[i].replaceAll(' ', '-').toLowerCase()}${img_type}`
         // console.log(icon_src)
         icon.setAttribute("src", icon_src)
-        icon.setAttribute("class", "item-icon")
+        icon.setAttribute("class", "item-icon left-icon")
         btn.appendChild(icon)
 
         var name = document.createElement("h5")
@@ -153,31 +150,58 @@ function RenderItems(itemflow) {
         var coll = document.createElement("div")
         coll.setAttribute("id", "res_item_" + i)
         coll.setAttribute("class", "collapse")
-
+        coll.innerText = "test"
         // RenderItemPut(coll, itemflow[items[i]])
 
-        tr.appendChild(coll)
+        
 
         // if ((i + 1) % 2 == 0) {
         //     li.setAttribute("style", "background-color: var(--res-color-1); color: white")
         // } else {
         //     li.setAttribute("style", "background-color: var(--res-color-2); color: white")
         // }
+
+        var flow_data = itemflow[items[i]]
+
         var td_amount = document.createElement("td")
-        td_amount.innerText = itemflow[items[i]]['total'].toFixed(4)
+        td_amount.innerText = flow_data['total'].toFixed(4)
         tr.appendChild(td_amount)
 
         var td_factory = document.createElement("td")
-        td_factory.innerText = itemflow[items[i]]['total'].toFixed(4)
+        var default_recipe = Object.keys(flow_data['input'])[0]
+        var factory = GetFactory(default_recipe)
+
+        var factory_icon = document.createElement("img")
+        factory_icon.setAttribute("class", "item-icon left-icon")
+        factory_icon.setAttribute("src", GetIcon(factory))
+        td_factory.appendChild(factory_icon)
+
+        var factory_amount = document.createElement("div")
+        // console.log(machines[factory])
+        factory_amount.setAttribute("style", "display: inline")
+        factory_amount.innerText = (recipes[default_recipe] / machines[factory]["crafting_speed"]).toFixed(4)
+        td_factory.appendChild(factory_amount)
         tr.appendChild(td_factory)
 
         var td_belt = document.createElement("td")
-        td_belt.innerText = (itemflow[items[i]]['total'] / 30).toFixed(4)
+        td_belt.innerText = (flow_data['total'] / 30).toFixed(4)
         tr.appendChild(td_belt)
 
         tbody.appendChild(tr)
+        tbody.appendChild(coll)
+    
 
     }
+}
+
+function GetFactory(recipe) {
+    console.log(recipe)
+    console.log(recipe_group[recipe])
+    return machine_group[recipe_group[recipe]][0]
+}
+
+function GetIcon(name) {
+    return `${base_dir}img/${game}_item_icon/${name}.webp`
 }
 
 function RenderItemPut(el, put) {
@@ -236,7 +260,7 @@ function RenderItemPut(el, put) {
 
 
 function UpdateUI(res) {
-    RenderItems(res['items'])
+    RenderItems(res)
 }
 
 function Update(game) {
@@ -319,4 +343,6 @@ function ShowPriorities(el) {
     $("#priorities").toggle(500)
 
 }
+
+
 

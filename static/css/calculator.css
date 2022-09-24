@@ -98,10 +98,16 @@
   }
 
   .item-icon {
-    margin-top: -7px;
-    margin-right: 10px;
     width: 40px;
     display: inline;
+  }
+
+  .left-icon {
+    margin-right: 10px;
+  }
+
+  .right-icon {
+    margin-left: 10px;
   }
 
   h5 {
