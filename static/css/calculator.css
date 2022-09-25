@@ -113,3 +113,7 @@
   h5 {
     display: inline;
   }
+
+  .dropdown-menu {
+    min-width:min-content;
+  }

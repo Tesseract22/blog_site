@@ -1,4 +1,4 @@
-
+// import * as helper from 'update-helper.js'
 
 var count = 1
 function Solve(game) {
@@ -106,7 +106,7 @@ function DeleteRow(el) {
 }
 
 
-function RenderItems(res, default_machines=Object.keys(machines)[0]) {
+function RenderItems(res) {
     var itemflow = res['items']
     var recipes = res['ans']
     var items = Object.keys(itemflow)
@@ -145,12 +145,16 @@ function RenderItems(res, default_machines=Object.keys(machines)[0]) {
 
         
         td_item.appendChild(btn)
+
+        
         
 
         var coll = document.createElement("div")
         coll.setAttribute("id", "res_item_" + i)
         coll.setAttribute("class", "collapse")
         coll.innerText = "test"
+
+        // helper.test()
         // RenderItemPut(coll, itemflow[items[i]])
 
         
@@ -162,29 +166,27 @@ function RenderItems(res, default_machines=Object.keys(machines)[0]) {
         // }
 
         var flow_data = itemflow[items[i]]
+        var total = document.createElement("td")
+        total.innerText = (flow_data["total"]).toFixed(4)
+        tr.appendChild(total)
+        
+        tr.appendChild(_RenderFactory(flow_data, recipes))
 
-        var td_amount = document.createElement("td")
-        td_amount.innerText = flow_data['total'].toFixed(4)
-        tr.appendChild(td_amount)
-
-        var td_factory = document.createElement("td")
-        var default_recipe = Object.keys(flow_data['input'])[0]
-        var factory = GetFactory(default_recipe)
-
-        var factory_icon = document.createElement("img")
-        factory_icon.setAttribute("class", "item-icon left-icon")
-        factory_icon.setAttribute("src", GetIcon(factory))
-        td_factory.appendChild(factory_icon)
-
-        var factory_amount = document.createElement("div")
-        // console.log(machines[factory])
-        factory_amount.setAttribute("style", "display: inline")
-        factory_amount.innerText = (recipes[default_recipe] / machines[factory]["crafting_speed"]).toFixed(4)
-        td_factory.appendChild(factory_amount)
-        tr.appendChild(td_factory)
-
+        
         var td_belt = document.createElement("td")
-        td_belt.innerText = (flow_data['total'] / 30).toFixed(4)
+        var belt = Object.keys(belts)[0]
+
+        var belt_icon = document.createElement("img")
+        belt_icon.setAttribute("class", "item-icon left-icon")
+        belt_icon.setAttribute("src", GetIcon(belt))
+        td_belt.appendChild(belt_icon)
+        
+        var belt_amount = document.createElement("div")
+        // console.log(machines[factory])
+        belt_amount.setAttribute("style", "display: inline")
+        belt_amount.innerText = (flow_data['total'] / (480 * belts[belt])).toFixed(4)
+        td_belt.appendChild(belt_amount)
+
         tr.appendChild(td_belt)
 
         tbody.appendChild(tr)
@@ -194,10 +196,61 @@ function RenderItems(res, default_machines=Object.keys(machines)[0]) {
     }
 }
 
+function _RenderFactory(flow_data, recipes) {
+
+    var td_factory = document.createElement("td")
+    var default_recipe = Object.keys(flow_data['input'])[0]
+    var factories = GetFactory(default_recipe)
+
+    var factory = factories[0]
+
+    var factory_icon = document.createElement("img")
+    factory_icon.setAttribute("class", "item-icon left-icon")
+    factory_icon.setAttribute("src", GetIcon(factory))
+
+    if (factories.length == 1) {
+        td_factory.appendChild(factory_icon)
+    } else {
+        var dropdown = document.createElement("div")
+        dropdown.setAttribute("class", "dropdown")
+        $(td_factory).html(
+            `<div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 2px">
+                   
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                </div>
+            </div>`
+        )
+        td_factory.firstElementChild.firstElementChild.appendChild(factory_icon)
+        for (var k in factories) {
+            var a = document.createElement("a")
+            a.setAttribute("class", "dropdown-item")
+            var icon = document.createElement("img")
+            icon.setAttribute("class", "item-icon")
+            icon.setAttribute("src", GetIcon(factories[k]))
+            a.appendChild(icon)
+
+            td_factory.firstElementChild.firstElementChild.nextElementSibling.appendChild(a)
+        }
+        
+    }
+    var factory = factories[0]
+
+    var factory_amount = document.createElement("div")
+    // console.log(machines[factory])
+    factory_amount.setAttribute("style", "display: inline")
+    factory_amount.innerText = (recipes[default_recipe] / machines[factory]["crafting_speed"]).toFixed(4)
+    td_factory.appendChild(factory_amount)
+    return td_factory
+}
+
+
+
+
 function GetFactory(recipe) {
-    console.log(recipe)
-    console.log(recipe_group[recipe])
-    return machine_group[recipe_group[recipe]][0]
+    
+    return machine_group[recipe_group[recipe]]
 }
 
 function GetIcon(name) {
