@@ -205,20 +205,21 @@ function _RenderFactory(flow_data, recipes) {
     var factory = factories[0]
 
     var factory_icon = document.createElement("img")
-    factory_icon.setAttribute("class", "item-icon left-icon")
+    factory_icon.setAttribute("class", "item-icon")
     factory_icon.setAttribute("src", GetIcon(factory))
 
     if (factories.length == 1) {
+        factory_icon.setAttribute("class", "item-icon left-icon")
         td_factory.appendChild(factory_icon)
     } else {
         var dropdown = document.createElement("div")
         dropdown.setAttribute("class", "dropdown")
         $(td_factory).html(
             `<div class="dropdown">
-                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 2px">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 2px; background: #0000004d">
                    
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
                 </div>
             </div>`
         )

@@ -114,6 +114,14 @@
     display: inline;
   }
 
+  .dropdown {
+    display: inline;
+  }
   .dropdown-menu {
     min-width:min-content;
+    background:  #0000004d;
+  }
+
+  .dropdown-item {
+    padding: 0em;
   }
