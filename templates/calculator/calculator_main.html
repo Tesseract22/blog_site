@@ -131,10 +131,37 @@
             <div class="row">
               <div class="card w-75">
                 <div class="card-header" style="color: black">
-                  Results:
+                  <b>Default: </b>
+                  <div class="dropdown">
+                    <button class="btn" type="button" id="default-assembling" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 2px; background: #0000004d">
+                      <img class="item-icon" src="/static/img/factorio_item_icon/assembling-machine-3.webp">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 36px, 0px);">
+                      <a class="dropdown-item">
+                        <img class="item-icon" src="/static/img/factorio_item_icon/assembling-machine-1.webp" onclick="OnClickFactory(this)" factory="assembling-machine-1">
+                      </a>
+                      <a class="dropdown-item">
+                        <img class="item-icon" src="/static/img/factorio_item_icon/assembling-machine-2.webp" onclick="OnClickFactory(this)" factory="assembling-machine-2">
+                      </a>
+                      <a class="dropdown-item">
+                        <img class="item-icon" src="/static/img/factorio_item_icon/assembling-machine-3.webp" onclick="OnClickFactory(this)" factory="assembling-machine-3">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 2px; background: #0000004d">
+                      <img class="item-icon" src="/static/img/factorio_item_icon/electric-mining-drill.webp">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 36px, 0px);">
+                      <a class="dropdown-item">
+                        <img class="item-icon" src="/static/img/factorio_item_icon/burner-mining-drill.webp" onclick="OnClickFactory(this)" factory="burner-mining-drill">
+                      </a>
+                      <a class="dropdown-item">
+                        <img class="item-icon" src="/static/img/factorio_item_icon/electric-mining-drill.webp" onclick="OnClickFactory(this)" factory="electric-mining-drill">
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                {% comment %} <ul class="list-group list-group-flush" id="res_items_list">
-                </ul> {% endcomment %}
                 <table class="table table-striped table-dark" id="res_items_list">
                   <thead>
                     <tr>

@@ -168,6 +168,7 @@ function RenderItems(res) {
         var flow_data = itemflow[items[i]]
         var total = document.createElement("td")
         total.innerText = (flow_data["total"]).toFixed(4)
+        // total.setAttribute("data", (flow_data["total"]).toFixed(4))
         tr.appendChild(total)
         
         tr.appendChild(_RenderFactory(flow_data, recipes))
@@ -230,6 +231,8 @@ function _RenderFactory(flow_data, recipes) {
             var icon = document.createElement("img")
             icon.setAttribute("class", "item-icon")
             icon.setAttribute("src", GetIcon(factories[k]))
+            icon.setAttribute('onclick', "OnClickFactory(this)")
+            icon.setAttribute('factory', factories[k])
             a.appendChild(icon)
 
             td_factory.firstElementChild.firstElementChild.nextElementSibling.appendChild(a)
@@ -242,9 +245,23 @@ function _RenderFactory(flow_data, recipes) {
     // console.log(machines[factory])
     factory_amount.setAttribute("style", "display: inline")
     factory_amount.innerText = (recipes[default_recipe] / machines[factory]["crafting_speed"]).toFixed(4)
+    factory_amount.setAttribute('data', recipes[default_recipe])
     td_factory.appendChild(factory_amount)
     return td_factory
 }
+
+function OnClickFactory(el) {
+    console.log("click")
+    console.log(el.getAttribute('src'))
+    var old_icon = el.parentNode.parentNode.previousElementSibling.firstElementChild
+    old_icon.setAttribute('src', el.getAttribute('src'))
+
+    var old_amount = el.parentNode.parentNode.parentNode.nextElementSibling
+    console.log(el.getAttribute('factory'))
+    old_amount.innerText =  old_amount.getAttribute("data") / (machines[el.getAttribute('factory')]["crafting_speed"]).toFixed(4)
+
+}
+
 
 
 
@@ -397,6 +414,17 @@ function ShowPriorities(el) {
     $("#priorities").toggle(500)
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
