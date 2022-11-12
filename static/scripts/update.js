@@ -1,4 +1,6 @@
 // import * as helper from 'update-helper.js'
+var default_machines = ["assembling-machine-3", "electric-mining-drill"]
+
 
 var count = 1
 function Solve(game) {
@@ -113,7 +115,6 @@ function RenderItems(res) {
 
     // create the new tbody and its content
     var table = document.getElementById("res_items_list")
-    console.log(table.lastElementChild)
     table.removeChild(table.lastElementChild) // effectively remove <tbody>
     var tbody = document.createElement("tbody")
     table.appendChild(tbody)
@@ -197,14 +198,26 @@ function RenderItems(res) {
     }
 }
 
+function _RenderBelt(flow_data) {
+    var td_belt = document.createElement('td')
+    var total = flow_data['total']
+    // to do 
+}
+
 function _RenderFactory(flow_data, recipes) {
 
     var td_factory = document.createElement("td")
     var default_recipe = Object.keys(flow_data['input'])[0]
-    var factories = GetFactory(default_recipe)
-
+    var factories = _GetAllFactories(default_recipe)
+    
     var factory = factories[0]
-
+    for (const i of factories) {
+        for (const d of default_machines) {
+            if (d == i) {
+                factory = d
+            }
+        }
+    }
     var factory_icon = document.createElement("img")
     factory_icon.setAttribute("class", "item-icon")
     factory_icon.setAttribute("src", GetIcon(factory))
@@ -231,7 +244,7 @@ function _RenderFactory(flow_data, recipes) {
             var icon = document.createElement("img")
             icon.setAttribute("class", "item-icon")
             icon.setAttribute("src", GetIcon(factories[k]))
-            icon.setAttribute('onclick', "OnClickFactory(this)")
+            icon.setAttribute('onclick', "UpdateFactory(this)")
             icon.setAttribute('factory', factories[k])
             a.appendChild(icon)
 
@@ -239,7 +252,6 @@ function _RenderFactory(flow_data, recipes) {
         }
         
     }
-    var factory = factories[0]
 
     var factory_amount = document.createElement("div")
     // console.log(machines[factory])
@@ -250,23 +262,49 @@ function _RenderFactory(flow_data, recipes) {
     return td_factory
 }
 
-function OnClickFactory(el) {
-    console.log("click")
-    console.log(el.getAttribute('src'))
+function _OnClickFactory(el) {
     var old_icon = el.parentNode.parentNode.previousElementSibling.firstElementChild
     old_icon.setAttribute('src', el.getAttribute('src'))
+    old_icon.setAttribute('factory', el.getAttribute('factory'))
+    
 
+}
+
+function UpdateFactory(el) {
+    _OnClickFactory(el)
     var old_amount = el.parentNode.parentNode.parentNode.nextElementSibling
-    console.log(el.getAttribute('factory'))
-    old_amount.innerText =  old_amount.getAttribute("data") / (machines[el.getAttribute('factory')]["crafting_speed"]).toFixed(4)
+    old_amount.innerText =  (parseFloat(old_amount.getAttribute("data")) / (machines[el.getAttribute('factory')]["crafting_speed"])).toFixed(4)
+}
 
+function ChangeDefaultFactory(el) {
+    var old_icon = el.parentNode.parentNode.previousElementSibling.firstElementChild
+    var old_factory = old_icon.getAttribute("factory")
+    default_machines = default_machines.filter(function(e) { return e != old_factory })
+    _OnClickFactory(el)
+    default_machines.push(old_icon.getAttribute('factory'))
+    Update(game)
+    
+}
+
+function _GetBestFactory(factories) {
+    var max = 0
+    var max_f = ""
+    for (var f in factories) {
+        for (var d in default_machines) {
+            if (f == d) return f
+        }
+        if (machines[f]["crafting_speed"] > max) {
+            max = machines[f]["crafting_speed"]
+            max_f = f
+        }
+    }
+    return max_
 }
 
 
 
 
-
-function GetFactory(recipe) {
+function _GetAllFactories(recipe) {
     
     return machine_group[recipe_group[recipe]]
 }
@@ -287,7 +325,6 @@ function RenderItemPut(el, put) {
     var input_data = put['input']
     for (var k in input_data) {
 
-        // console.log(k)
         var li = document.createElement("li")
         li.setAttribute("class", "list-group-item")
         li.setAttribute("style", "color: white; background: #490000")
