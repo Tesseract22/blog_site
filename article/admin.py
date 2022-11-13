@@ -10,4 +10,5 @@ class ArticleModelAdmin(admin.ModelAdmin):
         'title',
         'body',
         'author',
+        'cover',
         ]
