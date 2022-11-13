@@ -25,7 +25,7 @@ class Article(models.Model):
 
     def cover_location(instance, filename):
         ext = filename.split('.')[-1]
-        filename = "%s_%s.%s" % (instance.user.id, instance.questid.id, ext)
+        filename = "%s_%s.%s" % (instance.author.id, instance.created, ext)
         return "img/article_cover/%s"%filename
 
     cover = models.ImageField(upload_to=cover_location, default="img/article_default.jpg")
