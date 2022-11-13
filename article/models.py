@@ -23,10 +23,17 @@ class Article(models.Model):
     # 文章更新时间。参数 auto_now=True 指定每次数据更新时自动写入当前时间
     updated = models.DateTimeField(auto_now=True)
 
-    cover = models.ImageField(upload_to="article_cover", default="img/article_default.jpg")
+    def cover_location(instance, filename):
+        ext = filename.split('.')[-1]
+        filename = "%s_%s.%s" % (instance.user.id, instance.questid.id, ext)
+        return "img/article_cover/%s"%filename
+
+    cover = models.ImageField(upload_to=cover_location, default="img/article_default.jpg")
 
     class Meta():
         ordering = ('-created',)
 
     def __str__(self) -> str:
         return self.title
+
+    
