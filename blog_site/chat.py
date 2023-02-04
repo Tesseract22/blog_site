@@ -3,7 +3,8 @@ import json
 from django.http import HttpResponse
 from django.shortcuts import render
 import re
-openai.api_key = "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"
+import os
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 
 
