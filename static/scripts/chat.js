@@ -1,12 +1,14 @@
 function RenderInput(txt) {
     chatOutput.value += "ChatGPT: "  + txt + '\n';
+    const arr  = [...txt.matchAll(/\d\.(.*)：/g)];
+    console.log(arr)
 }
 
 
 
-function Send() {
-    chatOutput.value = "正在生成...";
-    var q = search.value;
+function Retrieve(q) {
+    chatOutput.value += "\n正在生成...\n";
+    // var q = search.value;
     $.ajax({
         url : `/search/`, // the endpoint
         type : "POST", // http method
@@ -15,8 +17,7 @@ function Send() {
         headers:{"X-CSRFToken": django_csrf_token},
         success : function(json) {
             console.log(json); // log the returned json to the console
-            RenderInput(json["a1"]);
-            RenderInput(json["a2"]);
+            RenderInput(json["result"]);
         },
         // handle a non-successful response
         error : function(xhr,errmsg,err) {
@@ -25,6 +26,12 @@ function Send() {
             console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
         }
     });
+}
 
+
+function Send() {
+    var major = search.value;
+    var q = `${major}专业可以有哪些职业发展方向`;
     
+    Retrieve(q)
 }
