@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.abspath("."))
 from django.shortcuts import render
 from django.http import HttpResponse
 import json
-
+import re
 from calculator.Factorio import Factorio as FC
 
 
