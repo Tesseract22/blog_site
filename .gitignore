@@ -1,0 +1,6 @@
+blog_site/settings.py
+./**/migrations/
+./**/__pycache__/
+*.pyc
+./db.sqlite3
+db.sqlite3
