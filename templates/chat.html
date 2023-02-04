@@ -9,6 +9,9 @@
     .row {
         padding: 10px;
     }
+    li:hover {
+        background-color: blue;
+    }
 </style>
 {% endblock head %}
 
@@ -22,8 +25,18 @@
         <input id="search" type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
     </div>
 
+    <ul class="list-group" id="list">
+    </ul>
+
     <div class="row">
-        <button class="btn btn-primary" onclick="Send()">查询</button>
+        <div class="col">
+            <button class="btn btn-primary" onclick="Send()">查询</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-danger">重新开始</button>
+        </div>
+
+
     </div>
     <div class="row">
         <textarea name="chatOutput" id="chatOutput" cols="200" rows="10">

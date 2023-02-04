@@ -1,12 +1,25 @@
 function RenderInput(txt) {
     chatOutput.value += "ChatGPT: "  + txt + '\n';
-    const arr  = [...txt.matchAll(/\d\.(.*)：/g)];
-    console.log(arr)
+    const arr  = [...txt.matchAll(/\d\.\s(.*)：/g)];
+    console.log(arr);
+    arr.forEach(PositonOptions);
+}
+
+function PositonOptions(value) {
+    ul = document.getElementById("list");
+    li = document.createElement("li");
+    li.className = "list-group-item";
+    $(li).html(`${value[1]}需要学习什么知识`);
+    li.onclick = function() {Retrieve(`${value[1]}需要学习什么知识`)};
+    ul.appendChild(li);
+}
+
+function Search(el) {
+    Retrieve(el.html)
 }
 
 
-
-function Retrieve(q) {
+function Retrieve(q, first=false) {
     chatOutput.value += "\n正在生成...\n";
     // var q = search.value;
     $.ajax({
@@ -33,5 +46,5 @@ function Send() {
     var major = search.value;
     var q = `${major}专业可以有哪些职业发展方向`;
     
-    Retrieve(q)
+    Retrieve(q, true)
 }
