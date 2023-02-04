@@ -3,41 +3,33 @@
 
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/article.css' %}">
-<script>
-    void function Send() {
-        var q = search.value;
-        $.ajax({
-            url : `/search`, // the endpoint
-            type : "POST", // http method
-            data : {"priorities" : "土木工程"}, // data sent with the post request
-            dataType: 'json',
-            headers:{"X-CSRFToken": django_csrf_token},
-            success : function(json) {
-                console.log(json); // log the returned json to the console
-            },
-            // handle a non-successful response
-            error : function(xhr,errmsg,err) {
-                $('#results').html("<div class='alert-box alert radius' data-alert>Oops! We have encountered an error: "+errmsg+
-                    " <a href='#' class='close'>&times;</a></div>"); // add the error to the dom
-                console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
-            }
-        });
+<script src={% static 'scripts/chat.js' %}></script>
+<script> var django_csrf_token = '{{ csrf_token }}'; </script>
+<style>
+    .row {
+        padding: 10px;
     }
-</script>
+</style>
 {% endblock head %}
 
 {% block title %}
     Cat's Article
 {% endblock title %}
 {% block content %}
-<div class="container-fluid" style="padding-top: 50px;" id="articles-container">
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">职业</span>
-        </div>
+<div class="container" style="padding-top: 50px;" id="articles-container">
+    <div class="row">
+        <span class="input-group-text" id="basic-addon1">职业</span>
         <input id="search" type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-
     </div>
-    <button class="btn btn-primary" onclick="Send()">查询</button>
+
+    <div class="row">
+        <button class="btn btn-primary" onclick="Send()">查询</button>
+    </div>
+    <div class="row">
+        <textarea name="chatOutput" id="chatOutput" cols="200" rows="10">
+            
+        </textarea>
+    </div>
+
 </div>
 {% endblock content %}
