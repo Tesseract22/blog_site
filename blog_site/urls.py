@@ -19,7 +19,7 @@ from django.views.static import serve
 from django.conf.urls.static import static
 from django.conf import settings
 from django.shortcuts import redirect
-from . import views
+from . import views, chat
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,5 +27,6 @@ urlpatterns = [
     path('calculator/', include('calculator.urls', namespace='calculator')),
     path('', views.main_site),
     path('test/', views.test),
+    path('search/', chat.Send),
     re_path(r'^stiaic/(?P<path>.*)$',serve,{'document_root':settings.STATIC_ROOT}),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

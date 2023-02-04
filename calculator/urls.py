@@ -2,9 +2,11 @@ app_name = 'calculator'
 
 from django.conf.urls import url
 from . import factorio_views
+from . import main
 # from . import satisfactory_views
 
 urlpatterns = [
+    url('<int:game>/<str:ver>/', main.main, name='main'),
     url('factorio/main', factorio_views.main, name="factorio_main"),
     # url('satisfactory/main', satisfactory_views.main),
     url('factorio/update/', factorio_views.update),

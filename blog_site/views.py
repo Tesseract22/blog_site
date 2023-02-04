@@ -5,7 +5,7 @@ from django.shortcuts import render, redirect
 
 def main_site(request):
 
-    return redirect('article:list')
+    return render(request, "chat.html")
 
 def test(request):
 
