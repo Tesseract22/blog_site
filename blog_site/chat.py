@@ -5,6 +5,8 @@ from django.shortcuts import render
 import re
 import os
 from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
+
 openai.api_key = settings.API_KEY
 
 
@@ -48,7 +50,7 @@ openai.api_key = settings.API_KEY
 #     print(q1)
 #     print(positions)
 #     return HttpResponse(json.dumps(results), content_type="application/json")
-
+@csrf_exempt
 def Send(request):
     q = request.POST["q"]
     print(q)
