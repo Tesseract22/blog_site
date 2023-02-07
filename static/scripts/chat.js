@@ -1,7 +1,7 @@
 var positions = [];
 var p_context;
 function RenderInput(txt, first=0) {
-    chatOutput.value += "ChatGPT: "  + txt + '\n';
+    chatOutput.value += "GrowU: "  + txt + '\n';
     const arr  = [...txt.matchAll(/\d((\.\s)|、)(.*)：/g)];
     console.log(arr);
 
@@ -31,7 +31,7 @@ function RenderInput(txt, first=0) {
             p_context += element[3] + ', ';
             li = document.createElement("li");
             li.className = "list-group-item";
-            $(li).html(`${element[3]}要学习哪些内容，你能给我列个大纲吗, 不重不漏的给我总结成几大板块吗`);
+            $(li).html(`${element[3]}要学习哪些内容`);
             li.onclick = function() {Retrieve(`${element[3]}要学习哪些内容，你能给我列个大纲吗, 不重不漏的给我总结成几大板块吗`, 0)};
             ul.appendChild(li);
         });

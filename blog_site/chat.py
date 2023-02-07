@@ -4,7 +4,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 import re
 import os
-openai.api_key = os.environ["OPENAI_API_KEY"]
+from django.conf import settings
+openai.api_key = settings.API_KEY
 
 
 
