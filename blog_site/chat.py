@@ -22,7 +22,7 @@ def Send(request):
     print(request.body.decode('utf-8'), file=sys.stderr, flush=True)
     q = request.GET["q"]
     print(request.GET, q, file=sys.stderr, flush=True)
-    return StreamingHttpResponse(streaming_content=testIter(), content_type='text/event-stream')
+    return StreamingHttpResponse(streaming_content=performRequestWithStreaming(q), content_type='text/event-stream')
 # Send(5)
 
 def testIter():
@@ -33,7 +33,7 @@ def performRequestWithStreaming(q):
     reqUrl = 'https://api.openai.com/v1/completions'
     reqHeaders = {
         'Accept': 'text/event-stream',
-        'Authorization': 'Bearer ' + "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"
+        'Authorization': 'Bearer ' + "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"
     }
     reqBody = {
       "model": "text-davinci-003",
@@ -47,6 +47,7 @@ def performRequestWithStreaming(q):
     for event in client.events():
         if event.data != '[DONE]':
             txt = json.loads(event.data)['choices'][0]['text']
+            print(txt, file=sys.stderr, flush=True)
             yield txt
 
 if __name__ == '__main__':
