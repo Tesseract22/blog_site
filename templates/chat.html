@@ -4,6 +4,7 @@
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/article.css' %}">
 <script src={% static 'scripts/chat.js' %}></script>
+<script src={% static 'scripts/sse.js' %} crossorigin="anonymous"></script>
 <script> var django_csrf_token = '{{ csrf_token }}'; </script>
 <style>
     .row {

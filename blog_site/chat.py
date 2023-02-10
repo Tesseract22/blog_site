@@ -19,21 +19,22 @@ import sys
 # openai.api_key = settings.API_KEY
 @csrf_exempt
 def Send(request):
-    print(request.body.decode('utf-8'), file=sys.stderr, flush=True)
+    # print(request.body.decode('utf-8'), file=sys.stderr, flush=True)
+    print(request)
     q = request.GET["q"]
-    print(request.GET, q, file=sys.stderr, flush=True)
+    # print(request.GET, q, file=sys.stderr, flush=True)
     return StreamingHttpResponse(streaming_content=testIter(), content_type='text/event-stream')
 # Send(5)
 
 def testIter():
     for i in range(1000):
-        yield "this is %i\n"%i
+        yield f"data: {i}\n\n"
 
 def performRequestWithStreaming(q):
     reqUrl = 'https://api.openai.com/v1/completions'
     reqHeaders = {
         'Accept': 'text/event-stream',
-        'Authorization': 'Bearer ' + "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"
+        'Authorization': 'Bearer ' + settings.API_KEY
     }
     reqBody = {
       "model": "text-davinci-003",
@@ -45,8 +46,10 @@ def performRequestWithStreaming(q):
     request = requests.post(reqUrl, stream=True, headers=reqHeaders, json=reqBody)
     client = sseclient.SSEClient(request)
     for event in client.events():
+        print("aaa")
         if event.data != '[DONE]':
             txt = json.loads(event.data)['choices'][0]['text']
+            print(txt, flush=True)
             yield txt
 
 if __name__ == '__main__':
