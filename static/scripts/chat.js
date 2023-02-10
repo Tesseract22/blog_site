@@ -82,6 +82,42 @@ function Send() {
 
 }
 
+function test(q="What is openai") {
+    var source = new SSE(
+        `/search?q=${q}`,
+        {
+          method: "GET",
+        }
+    );
+    source.addEventListener("open", function(e) {
+        console.log("open");
+    });
+    source.addEventListener("message", function(e) {
+        // rep = JSON.parse(e.data);
+        console.log(e)
+        // chatOutput.value += rep['choices'][0]['txt'] + ',';
+        // console.log(rep['choices'][0]['txt']);
+    });
+    source.addEventListener("error" , function(e) {
+        console.log("error");
+    })
+    source.stream()
+
+    // var source = new EventSource(`/search?q=${q}`)
+
+    // source.onopen = function() {
+    //     console.log("open");
+    // }
+
+    // source.onmessage = function(e) {
+    //     console.log(e);
+    // }
+    // source.onerror = function(e) {
+    //     console.log(e.data);
+    // }
+    
+}
+
 function Reset() {
     search.disabled = false;
     chatOutput.value = "Powered by ChatGPT";
