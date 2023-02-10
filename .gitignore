@@ -3,4 +3,5 @@ blog_site/settings.py
 ./**/__pycache__/
 *.pyc
 ./db.sqlite3
+logs.txt
 db.sqlite3
