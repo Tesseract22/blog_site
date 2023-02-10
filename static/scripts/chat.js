@@ -1,8 +1,25 @@
-function RenderInput(txt) {
+var positions = [];
+var p_context;
+function RenderInput(txt, first=false) {
     chatOutput.value += "ChatGPT: "  + txt + '\n';
     const arr  = [...txt.matchAll(/\d\.\s(.*)：/g)];
     console.log(arr);
     arr.forEach(PositonOptions);
+    if (first) {
+       
+        arr.forEach(element => {
+            positions.push(element[1]);
+            p_context += element[1] + ', ';
+        });
+        ul = document.getElementById("list");
+        li = document.createElement("li");
+        li.className = "list-group-item";
+        $(li).html(`我的性格适合什么职位`);
+        p_context += "我的性格适合什么职位";
+        li.onclick = function() { Retrieve(p_context);}
+        ul.appendChild(li)
+    }
+
 }
 
 function PositonOptions(value) {
@@ -30,7 +47,8 @@ function Retrieve(q, first=false) {
         headers:{"X-CSRFToken": django_csrf_token},
         success : function(json) {
             console.log(json); // log the returned json to the console
-            RenderInput(json["result"]);
+            RenderInput(json["result"], first);
+
         },
         // handle a non-successful response
         error : function(xhr,errmsg,err) {
@@ -45,6 +63,7 @@ function Retrieve(q, first=false) {
 function Send() {
     var major = search.value;
     var q = `${major}专业可以有哪些职业发展方向`;
-    
+    search.disabled = true;
     Retrieve(q, true)
+
 }
