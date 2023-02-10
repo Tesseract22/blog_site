@@ -1,79 +1,54 @@
 import openai
 import json
-from django.http import HttpResponse
+from django.http import StreamingHttpResponse 
 from django.shortcuts import render
 import re
 import os
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 
-openai.api_key = settings.API_KEY
 
+import requests
 
-
-
-# def Send(request):
-#     results = {}
-#     q = request.POST["q"]
-#     print("query: %s"%q)
-#     q1 = "Q: %s专业可以有哪些职业发展方向? A:"%q
-#     response = openai.Completion.create(
-#         model="text-davinci-003",
-#         prompt=q1,
-#         temperature=0,
-#         max_tokens=1000,
-#         top_p=1,
-#         frequency_penalty=0.0,
-#         presence_penalty=0.0,
-        
-#     )
-#     # r = json.loads(response)
-#     a1 = response['choices'][0]["text"]
-#     results["a1"] = a1
-#     positions = re.findall(r"[1-9]\.(.*)：", a1)
-#     results["a2"] = []
-#     for p in positions:
-#         q2 = "Q: 需要学习哪些知识来胜任%s? A:"%p
-#         response = openai.Completion.create(
-#             model="text-davinci-003",
-#             prompt=q2,
-#             temperature=0,
-#             max_tokens=1000,
-#             top_p=1,
-#             frequency_penalty=0.0,
-#             presence_penalty=0.0,
-#             stop=["\n"]
-#         )
-#         a2 = response['choices'][0]["text"]
-#         results["a2"].append(a2)
-
-#     print(q1)
-#     print(positions)
-#     return HttpResponse(json.dumps(results), content_type="application/json")
+import json
+import pprint
+# pip install sseclient-py
+import sseclient    
+import logging
+import sys
+# openai.api_key = settings.API_KEY
 @csrf_exempt
 def Send(request):
-    q = request.POST["q"]
-    print(q)
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt=q,
-        temperature=0,
-        max_tokens=1000,
-        top_p=1,
-        frequency_penalty=0.0,
-        presence_penalty=0.0, 
-    )
-    return HttpResponse(json.dumps({"result": response['choices'][0]["text"]}), content_type="application/json")
+    print(request.body.decode('utf-8'), file=sys.stderr, flush=True)
+    q = request.GET["q"]
+    print(request.GET, q, file=sys.stderr, flush=True)
+    return StreamingHttpResponse(streaming_content=testIter(), content_type='text/event-stream')
 # Send(5)
 
+def testIter():
+    for i in range(1000):
+        yield "this is %i\n"%i
+
+def performRequestWithStreaming(q):
+    reqUrl = 'https://api.openai.com/v1/completions'
+    reqHeaders = {
+        'Accept': 'text/event-stream',
+        'Authorization': 'Bearer ' + "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"
+    }
+    reqBody = {
+      "model": "text-davinci-003",
+      "prompt": q,
+      "max_tokens": 1000,
+      "temperature": 0,
+      "stream": True,
+    }
+    request = requests.post(reqUrl, stream=True, headers=reqHeaders, json=reqBody)
+    client = sseclient.SSEClient(request)
+    for event in client.events():
+        if event.data != '[DONE]':
+            txt = json.loads(event.data)['choices'][0]['text']
+            yield txt
+
 if __name__ == '__main__':
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt="What is earth?",
-        temperature=0,
-        max_tokens=1000,
-        top_p=1,
-        frequency_penalty=0.0,
-        presence_penalty=0.0, 
-    )
-    print(response['choices'][0]["text"])
+    for i in performRequestWithStreaming("Can you explain in datail the sino-japanese war"):
+        print(i, flush=True, end="")
