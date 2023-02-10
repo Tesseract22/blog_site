@@ -33,7 +33,7 @@ def performRequestWithStreaming(q):
     reqUrl = 'https://api.openai.com/v1/completions'
     reqHeaders = {
         'Accept': 'text/event-stream',
-        'Authorization': 'Bearer ' + "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"
+        'Authorization': 'Bearer ' + "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"
     }
     reqBody = {
       "model": "text-davinci-003",
@@ -43,6 +43,7 @@ def performRequestWithStreaming(q):
       "stream": True,
     }
     request = requests.post(reqUrl, stream=True, headers=reqHeaders, json=reqBody)
+    print(request)
     client = sseclient.SSEClient(request)
     for event in client.events():
         if event.data != '[DONE]':
