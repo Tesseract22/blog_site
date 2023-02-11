@@ -23,7 +23,7 @@ def Send(request):
     print(request)
     q = request.GET["q"]
     # print(request.GET, q, file=sys.stderr, flush=True)
-    return StreamingHttpResponse(streaming_content=testIter(), content_type='text/event-stream')
+    return StreamingHttpResponse(streaming_content=performRequestWithStreaming(q), content_type='text/event-stream')
 # Send(5)
 
 def testIter():
@@ -48,7 +48,8 @@ def performRequestWithStreaming(q):
     for event in client.events():
         if event.data != '[DONE]':
             txt = json.loads(event.data)['choices'][0]['text']
-            yield txt
+            print(txt)
+            yield f"data: {txt}\n\n"
 
 if __name__ == '__main__':
     for i in performRequestWithStreaming("Can you explain in datail the sino-japanese war"):
